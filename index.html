@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أ.د. آمال جمعة — عميد كلية التربية، جامعة الفيوم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main" id="skip">تخطَّ إلى المحتوى</a>
+
+<header class="top" id="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#ar" data-home>
+      <span class="crest"><img src="assets/img/fayoum-university.png" alt="" width="44" height="48"></span>
+      <span class="crest"><img src="assets/img/faculty-of-education.png" alt="" width="46" height="46"></span>
+      <span class="brand-text"><strong data-t="brand"></strong><small><span data-t="fac"></span>، <span data-t="uni"></span></small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Sections"></nav>
+    <a class="lang" id="langBtn" href="#en"></a>
+  </div>
+</header>
+
+<main id="main">
+<!-- ===== Home view ===== -->
+<div id="home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="role in" style="--d:0" data-t="role"></p>
+        <h1 class="in" style="--d:1"><span data-t="name1"></span><br><span data-t="name2"></span></h1>
+        <p class="spec in" style="--d:2" data-t="spec"></p>
+        <p class="lead in" style="--d:3" data-t="lead"></p>
+        <div class="cta in" style="--d:4">
+          <a class="btn gold" id="cta1" href="#cv-ar"></a>
+          <a class="btn ghost" id="cta2" href="#cv-en"></a>
+        </div>
+      </div>
+      <figure class="portrait in" style="--d:2">
+        <div class="arch"><img id="portrait" src="assets/img/portrait.jpg" alt="" width="272" height="399"></div>
+        <figcaption>
+          <img src="assets/img/faculty-of-education.png" alt="" width="40" height="40">
+          <span data-t="role"></span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <h2 class="sr" data-t="statsTitle"></h2>
+      <dl class="stats" id="stats"></dl>
+    </div>
+  </section>
+
+  <section class="sec" id="path">
+    <div class="wrap">
+      <h2 data-t="pathTitle"></h2>
+      <ol class="path" id="pathList"></ol>
+    </div>
+  </section>
+
+  <section class="sec tint" id="deanship">
+    <div class="wrap split">
+      <div class="split-head">
+        <h2 data-t="deanTitle"></h2>
+        <p class="sec-lead" data-t="deanLead"></p>
+        <h3 class="mini" data-t="unitsTitle"></h3>
+        <ul class="chips" id="units"></ul>
+      </div>
+      <ul class="deeds" id="deeds"></ul>
+    </div>
+  </section>
+
+  <section class="sec" id="books">
+    <div class="wrap sec-head">
+      <div>
+        <h2 data-t="booksTitle"></h2>
+        <p class="sec-lead" data-t="booksLead"></p>
+      </div>
+      <div class="head-actions">
+        <button type="button" class="btn line small" id="marqueeBtn" aria-pressed="false"></button>
+        <a class="more" id="booksAll" href="#cv-ar"></a>
+      </div>
+    </div>
+    <div class="marquee" id="marquee"><div class="track" id="track"></div></div>
+  </section>
+
+  <section class="sec tint" id="research">
+    <div class="wrap">
+      <h2 data-t="researchTitle"></h2>
+      <p class="sec-lead" data-t="researchLead"></p>
+      <div class="tabs" role="tablist" id="themeTabs"></div>
+      <ul class="papers" id="papers"></ul>
+    </div>
+  </section>
+
+  <section class="sec" id="gallery">
+    <div class="wrap">
+      <h2 data-t="galleryTitle"></h2>
+      <p class="sec-lead" data-t="galleryLead"></p>
+      <div id="photosBlock" class="photos-first" hidden>
+        <h3 class="sub" data-t="photosTitle"></h3>
+        <ul class="cards photos" id="photoGrid"></ul>
+      </div>
+      <h3 class="sub" data-t="certsTitle"></h3>
+      <div class="filters" id="filters"></div>
+      <ul class="cards" id="certGrid"></ul>
+    </div>
+  </section>
+
+  <section class="sec dark" id="honors">
+    <div class="wrap">
+      <h2 data-t="honorsTitle"></h2>
+      <p class="sec-lead" data-t="honorsLead"></p>
+      <ul class="wall" id="shieldGrid"></ul>
+    </div>
+  </section>
+
+  <section class="sec" id="initiatives">
+    <div class="wrap">
+      <h2 data-t="initTitle"></h2>
+      <p class="sec-lead" data-t="initLead"></p>
+      <ul class="inits" id="inits"></ul>
+    </div>
+  </section>
+
+  <section class="sec tint cvband">
+    <div class="wrap cvband-row">
+      <div>
+        <h2 data-t="cvBandTitle"></h2>
+        <p class="sec-lead" data-t="cvBandLead"></p>
+      </div>
+      <div class="cta">
+        <a class="btn navy" href="#cv-ar">السيرة الذاتية بالعربية</a>
+        <a class="btn line" href="#cv-en" lang="en" dir="ltr">CV in English</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== CV view ===== -->
+<article id="cv" hidden>
+  <div class="wrap cv-wrap">
+    <div class="cv-bar">
+      <a class="more" id="cvBack" href="#ar"></a>
+      <a class="btn line small" id="cvOther" href="#cv-en"></a>
+    </div>
+    <header class="cv-head">
+      <img src="assets/img/fayoum-university.png" alt="" width="64" height="70">
+      <div>
+        <h1><span data-t="cvTitle"></span></h1>
+        <p><span data-t="name1"></span> <span data-t="name2"></span></p>
+        <p class="muted" data-t="role"></p>
+      </div>
+      <img src="assets/img/faculty-of-education.png" alt="" width="68" height="68">
+    </header>
+    <div id="cvBody"></div>
+  </div>
+</article>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="wrap foot-row">
+    <div>
+      <h2 data-t="contactTitle"></h2>
+      <p data-t="contactLead"></p>
+      <p><a class="mail" href="mailto:aga02@fayoum.edu.eg" dir="ltr">aga02@fayoum.edu.eg</a></p>
+    </div>
+    <div class="foot-logos">
+      <figure><span class="crest big"><img src="assets/img/fayoum-university.png" alt="" width="70" height="77"></span><figcaption data-t="uni"></figcaption></figure>
+      <figure><span class="crest big"><img src="assets/img/faculty-of-education.png" alt="" width="76" height="76"></span><figcaption data-t="fac"></figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap foot-note"><span data-t="footer"></span></div>
+</footer>
+
+<dialog class="lb" id="lb" aria-labelledby="lbCap">
+  <button type="button" class="lb-x" id="lbClose"></button>
+  <button type="button" class="lb-nav prev" id="lbPrev"></button>
+  <figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button type="button" class="lb-nav next" id="lbNext"></button>
+</dialog>
+
+<script src="data.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
