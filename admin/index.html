@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>لوحة التحكم — موقع أ.د. آمال جمعة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css?v=1">
+</head>
+<body>
+
+<!-- شاشة الدخول -->
+<section id="auth" class="auth" hidden>
+  <div class="auth-card">
+    <div class="auth-head">
+      <span class="crest"><img src="../assets/img/faculty-of-education.png" alt="" width="52" height="52"></span>
+      <div>
+        <h1>لوحة التحكم</h1>
+        <p>موقع أ.د. آمال جمعة عبد الفتاح</p>
+      </div>
+    </div>
+
+    <form id="loginForm" hidden>
+      <label>اسم المستخدم<input id="lgUser" autocomplete="username" required></label>
+      <label>كلمة المرور<input id="lgPass" type="password" autocomplete="current-password" required></label>
+      <button class="btn primary wide" type="submit">دخول</button>
+      <p class="msg" id="lgMsg" role="alert"></p>
+    </form>
+
+    <form id="setupForm" hidden>
+      <p class="note">أول تشغيل: أنشئ حساب المسؤول الرئيسي، واربط اللوحة بمستودع الموقع على GitHub بمفتاح وصول (Token).</p>
+      <details class="howto">
+        <summary>إزاي أعمل مفتاح الوصول؟</summary>
+        <ol>
+          <li>افتح <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">صفحة إنشاء Fine-grained token</a> من حساب GitHub صاحب المستودع.</li>
+          <li>الاسم: <b>لوحة تحكم موقع آمال جمعة</b>، والصلاحية لمدة سنة (أو بدون انتهاء).</li>
+          <li>Repository access: اختار <b>Only select repositories</b> ثم <b>amal-gomaa</b>.</li>
+          <li>Permissions ← Repository permissions ← <b>Contents: Read and write</b>.</li>
+          <li>اضغط Generate token وانسخه والصقه هنا. المفتاح يُحفظ مشفّرًا بكلمة مرورك ولا يُرسل لأي مكان غير GitHub.</li>
+        </ol>
+      </details>
+      <label>مفتاح الوصول (GitHub token)<input id="stToken" autocomplete="off" spellcheck="false" dir="ltr" required></label>
+      <label>اسم المستخدم للمسؤول<input id="stUser" autocomplete="username" required></label>
+      <label>كلمة المرور (10 أحرف على الأقل)<input id="stPass" type="password" autocomplete="new-password" minlength="10" required></label>
+      <label>تأكيد كلمة المرور<input id="stPass2" type="password" autocomplete="new-password" minlength="10" required></label>
+      <button class="btn primary wide" type="submit">إنشاء الحساب وبدء الاستخدام</button>
+      <p class="msg" id="stMsg" role="alert"></p>
+    </form>
+  </div>
+</section>
+
+<!-- اللوحة -->
+<div id="app" class="app" hidden>
+  <header class="bar">
+    <button class="icon-btn menu" id="menuBtn" type="button" aria-label="الأقسام">☰</button>
+    <a class="bar-brand" href="../" target="_blank" rel="noopener" title="فتح الموقع">
+      <span class="crest sm"><img src="../assets/img/faculty-of-education.png" alt="" width="34" height="34"></span>
+      <span><b>لوحة التحكم</b><small>موقع أ.د. آمال جمعة</small></span>
+    </a>
+    <span class="grow"></span>
+    <span class="draft-pill" id="draftPill" hidden></span>
+    <button class="btn ghost" id="discardBtn" type="button" hidden>إلغاء كل التعديلات</button>
+    <button class="btn primary" id="reviewBtn" type="button" disabled>مراجعة ونشر</button>
+    <div class="user-chip" id="userChip"></div>
+    <button class="btn ghost" id="logoutBtn" type="button">خروج</button>
+  </header>
+
+  <nav class="side" id="side" aria-label="أقسام اللوحة"></nav>
+  <main class="main" id="main" tabindex="-1"></main>
+</div>
+
+<!-- نافذة التعديل -->
+<dialog id="editor" class="sheet">
+  <form method="dialog" id="edForm">
+    <header class="sheet-head">
+      <h2 id="edTitle">تعديل</h2>
+      <button class="icon-btn" value="cancel" type="submit" aria-label="إغلاق">×</button>
+    </header>
+    <div class="sheet-body" id="edBody"></div>
+    <footer class="sheet-foot">
+      <p class="msg" id="edMsg" role="alert"></p>
+      <button class="btn ghost" value="cancel" type="submit">إلغاء</button>
+      <button class="btn primary" id="edSave" value="save" type="submit">حفظ في المسودة</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- نافذة تأكيد -->
+<dialog id="confirm" class="sheet small">
+  <form method="dialog">
+    <div class="sheet-body">
+      <h2 id="cfTitle"></h2>
+      <p id="cfText"></p>
+    </div>
+    <footer class="sheet-foot">
+      <button class="btn ghost" value="no" type="submit">رجوع</button>
+      <button class="btn danger" id="cfYes" value="yes" type="submit">تأكيد</button>
+    </footer>
+  </form>
+</dialog>
+
+<!-- المراجعة والنشر -->
+<dialog id="review" class="review">
+  <div class="rv">
+    <header class="rv-head">
+      <h2>مراجعة التعديلات قبل النشر</h2>
+      <span class="grow"></span>
+      <div class="seg" role="group" aria-label="طريقة العرض">
+        <button type="button" data-pv="split" aria-pressed="true">قبل وبعد</button>
+        <button type="button" data-pv="new" aria-pressed="false">بعد التعديل</button>
+        <button type="button" data-pv="old" aria-pressed="false">الموقع الحالي</button>
+      </div>
+      <div class="seg" role="group" aria-label="حجم الشاشة">
+        <button type="button" data-dev="desk" aria-pressed="true">كمبيوتر</button>
+        <button type="button" data-dev="mob" aria-pressed="false">موبايل</button>
+      </div>
+      <button class="icon-btn" id="rvClose" type="button" aria-label="إغلاق">×</button>
+    </header>
+    <div class="rv-body">
+      <aside class="rv-list">
+        <div class="legend"><span class="k add">جديد</span><span class="k edit">تعديل</span><span class="k del">حذف ← أرشيف</span></div>
+        <div id="rvChanges"></div>
+        <div class="rv-publish">
+          <label>ملاحظة على النشر (اختياري)<input id="rvNote" maxlength="120" placeholder="مثال: إضافة صور حفل التخرج"></label>
+          <button class="btn primary wide" id="rvPublish" type="button">نشر التعديلات على الموقع</button>
+          <p class="msg" id="rvMsg" role="status"></p>
+        </div>
+      </aside>
+      <section class="rv-preview" id="rvPreview">
+        <figure class="pane" id="paneOld"><figcaption>الموقع الحالي <i class="dot del"></i> اللي هيتشال</figcaption><div class="frame"><iframe id="frOld" title="الموقع الحالي"></iframe></div></figure>
+        <figure class="pane" id="paneNew"><figcaption>بعد التعديل <i class="dot add"></i> الجديد <i class="dot edit"></i> المعدّل</figcaption><div class="frame"><iframe id="frNew" title="بعد التعديل"></iframe></div></figure>
+      </section>
+    </div>
+  </div>
+</dialog>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="admin.js?v=1"></script>
+</body>
+</html>

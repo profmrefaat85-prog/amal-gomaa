@@ -1,5 +1,6 @@
 (function () {
   var S = window.SITE, $ = function (id) { return document.getElementById(id); };
+  var A = function (p) { var m = window.__PREVIEW_IMAGES__; return (m && m[p]) || p; };
   var lang = "ar", view = "home", theme = 0, filter = "all";
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var L = function (ar, en) { return lang === "ar" ? ar : en; };
@@ -14,7 +15,7 @@
   var lb = $("lb"), lbSet = [], lbIdx = 0;
   function lbShow() {
     var it = lbSet[lbIdx];
-    $("lbImg").src = it.src; $("lbImg").alt = it.cap; $("lbCap").textContent = it.cap;
+    $("lbImg").src = A(it.src); $("lbImg").alt = it.cap; $("lbCap").textContent = it.cap;
     var many = lbSet.length > 1;
     $("lbPrev").hidden = !many; $("lbNext").hidden = !many;
   }
@@ -32,7 +33,7 @@
   function shot(src, cap, set, i, alt) {
     var b = el("button", "shot"); b.type = "button";
     b.setAttribute("aria-label", S.ui[lang].zoom + ": " + cap);
-    var im = el("img"); im.src = src; im.alt = alt || ""; im.loading = "lazy";
+    var im = el("img"); im.src = A(src); im.alt = alt || ""; im.loading = "lazy";
     b.appendChild(im);
     b.onclick = function () { lbOpen(set, i); };
     return b;
@@ -55,6 +56,7 @@
     var other = lang === "ar" ? "en" : "ar";
     $("cta2").textContent = u.cta2; $("cta2").href = "#cv-" + other; $("cta2").lang = other; $("cta2").dir = other === "ar" ? "rtl" : "ltr";
     $("portrait").alt = u.portraitAlt;
+    if (window.__PREVIEW_IMAGES__ && window.__PREVIEW_IMAGES__["assets/img/portrait.jpg"]) $("portrait").src = window.__PREVIEW_IMAGES__["assets/img/portrait.jpg"];
     $("booksAll").textContent = u.booksAll; $("booksAll").href = "#cv-" + lang;
     $("cvBack").textContent = u.back; $("cvBack").href = "#" + lang;
     $("cvOther").textContent = u.cvOther; $("cvOther").href = "#" + u.cvOtherTarget;
@@ -122,10 +124,10 @@
   function renderBooks() {
     var tr = $("track"); tr.textContent = "";
     var cap = S.ui[lang].bookAlt, set = [];
-    for (var i = 1; i <= 33; i++) set.push({ src: "assets/books/b" + ("0" + i).slice(-2) + ".jpg", cap: cap });
+    (S.covers || []).forEach(function (f) { set.push({ src: "assets/books/" + f, cap: cap }); });
     for (var k = 0; k < 2; k++) set.forEach(function (it, i) {
       var b = el("button", "book"); b.type = "button";
-      var im = el("img"); im.src = it.src; im.loading = "lazy"; im.height = 270;
+      var im = el("img"); im.src = A(it.src); im.loading = "lazy"; im.height = 270;
       if (k === 0) { im.alt = cap; b.setAttribute("aria-label", S.ui[lang].zoom + ": " + cap + " " + (i + 1)); }
       else { im.alt = ""; b.tabIndex = -1; b.setAttribute("aria-hidden", "true"); }
       b.appendChild(im); b.onclick = function () { lbOpen(set, i); };

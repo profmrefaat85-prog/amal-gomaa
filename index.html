@@ -181,6 +181,10 @@
   <button type="button" class="lb-nav next" id="lbNext"></button>
 </dialog>
 
+<script>
+/* معاينة لوحة التحكم: تُحمَّل بيانات المسودة من النافذة الأم */
+(function(){try{var q=new URLSearchParams(location.search).get("pv");if(q&&window.parent!==window&&window.parent.__PV&&window.parent.__PV[q]){window.__PREVIEW_SITE__=window.parent.__PV[q].site;window.__PREVIEW_IMAGES__=window.parent.__PV[q].images;}}catch(e){}})();
+</script>
 <script src="data.js?v=4"></script>
 <script src="site.js?v=4"></script>
 </body>

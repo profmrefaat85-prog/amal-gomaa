@@ -1,793 +1,1691 @@
-/* محتوى الموقع باللغتين. لتعديل أي نص أو إضافة صورة عدّل هذا الملف فقط.
-   لإضافة صور فعاليات: ضع الصورة في assets/events/ ثم أضف سطرًا في EVENTS بالأسفل. */
-
-window.SITE = {
-  email: "aga02@fayoum.edu.eg",
-
-  ui: {
-    ar: {
-      title: "أ.د. آمال جمعة — عميد كلية التربية، جامعة الفيوم",
-      brand: "أ.د. آمال جمعة",
-      uni: "جامعة الفيوم", fac: "كلية التربية",
-      nav: [["path", "المسار"], ["deanship", "العمادة"], ["books", "المؤلفات"], ["research", "البحوث"], ["gallery", "الفعاليات"], ["honors", "التكريمات"], ["contact", "تواصل"]],
-      langBtn: "English", langTarget: "en",
-      role: "عميد كلية التربية، جامعة الفيوم",
-      name1: "أ.د. آمال جمعة", name2: "عبد الفتاح محمد",
-      spec: "أستاذ المناهج وطرق تدريس الفلسفة وعلم الاجتماع",
-      lead: "ربع قرن في إعداد معلّم الفلسفة والعلوم الاجتماعية، بدأ بمعيدة في القسم عام 2000 ووصل إلى عمادة الكلية في أغسطس 2022، وبدأت فترتها الحالية في العمادة في أبريل 2026.",
-      cta1: "السيرة الذاتية بالعربية", cta2: "CV in English",
-      portraitAlt: "صورة أ.د. آمال جمعة",
-      statsTitle: "الإنتاج العلمي بالأرقام",
-      pathTitle: "المسار الأكاديمي",
-      deanTitle: "في عمادة كلية التربية",
-      deanLead: "عميد الكلية من 24 أغسطس 2022 حتى 2025، والفترة الحالية للعمادة من 14 أبريل 2026، مع رئاسة تحرير مجلة جامعة الفيوم للعلوم التربوية والنفسية والإشراف على قسم التربية المقارنة.",
-      unitsTitle: "مراكز ووحدات برئاستها",
-      booksTitle: "39 كتابًا في التربية وعلم النفس والاجتماع",
-      booksLead: "أغلفة من مؤلفاتها المنشورة في مصر والإمارات والسعودية بين 2010 و2025. اضغط على أي غلاف لتكبيره.",
-      booksAll: "القائمة الكاملة في السيرة الذاتية",
-      bookAlt: "غلاف كتاب من مؤلفات أ.د. آمال جمعة",
-      pause: "إيقاف الحركة", play: "تشغيل الحركة",
-      researchTitle: "محاور البحث",
-      researchLead: "64 بحثًا وورقة عمل منشورة. هذه أبرز محاورها ونماذج منها.",
-      galleryTitle: "فعاليات ومشاركات موثّقة",
-      galleryLead: "صور من فعاليات الكلية خلال العمادة، ثم مؤتمرات وبرامج تدريبية ومبادرات مجتمعية موثّقة بشهاداتها.",
-      certsTitle: "شهادات المشاركة",
-      filters: [["all", "الكل"], ["conf", "مؤتمرات"], ["train", "تدريب وقيادة"], ["comm", "خدمة المجتمع"]],
-      photosTitle: "من فعاليات العمادة",
-      honorsTitle: "دروع وتكريمات",
-      honorsLead: "من 72 شهادة تقدير ودرعًا حصلت عليها من الكلية والجامعة والمحافظة وطلابها.",
-      initTitle: "المبادرات الرئاسية",
-      initLead: "مشاركات ميدانية مع مديريات الصحة والشباب والمراكز الإعلامية بمحافظة الفيوم.",
-      cvBandTitle: "السيرة الذاتية الكاملة",
-      cvBandLead: "متاحة للقراءة باللغتين من أي نسخة من الموقع.",
-      contactTitle: "للتواصل الأكاديمي",
-      contactLead: "قسم المناهج وطرق التدريس، كلية التربية، جامعة الفيوم، مصر",
-      footer: "الموقع الشخصي لـ أ.د. آمال جمعة عبد الفتاح محمد",
-      back: "العودة إلى الصفحة الرئيسية",
-      cvTitle: "السيرة الذاتية",
-      cvOther: "Read the CV in English", cvOtherTarget: "cv-en",
-      close: "إغلاق", prev: "السابق", next: "التالي", zoom: "تكبير الصورة"
-    },
-    en: {
-      title: "Prof. Amal Gomaa — Dean, Faculty of Education, Fayoum University",
-      brand: "Prof. Amal Gomaa",
-      uni: "Fayoum University", fac: "Faculty of Education",
-      nav: [["path", "Career"], ["deanship", "Deanship"], ["books", "Books"], ["research", "Research"], ["gallery", "Events"], ["honors", "Honours"], ["contact", "Contact"]],
-      langBtn: "العربية", langTarget: "ar",
-      role: "Dean, Faculty of Education, Fayoum University",
-      name1: "Prof. Amal Gomaa", name2: "Abdel-Fattah Mohammad",
-      spec: "Professor of Curriculum and Methods of Teaching Philosophy and Sociology",
-      lead: "A quarter of a century preparing teachers of philosophy and the social sciences, from demonstrator in the department in 2000 to dean of the faculty in August 2022, with her current term as dean beginning in April 2026.",
-      cta1: "Read the CV in English", cta2: "السيرة الذاتية بالعربية",
-      portraitAlt: "Portrait of Prof. Amal Gomaa",
-      statsTitle: "Scholarly output in numbers",
-      pathTitle: "Academic career",
-      deanTitle: "Leading the Faculty of Education",
-      deanLead: "Dean from 24 August 2022 to 2025, with the current term beginning on 14 April 2026; also Editor-in-Chief of the Fayoum University Journal of Educational and Psychological Sciences and supervisor of the Department of Comparative Education.",
-      unitsTitle: "Centres and units she chairs",
-      booksTitle: "39 books on education, psychology and sociology",
-      booksLead: "Covers of her books, published in Egypt, the UAE and Saudi Arabia between 2010 and 2025. Select a cover to enlarge it.",
-      booksAll: "Full list in the CV",
-      bookAlt: "Cover of a book by Prof. Amal Gomaa",
-      pause: "Pause motion", play: "Play motion",
-      researchTitle: "Research themes",
-      researchLead: "64 published papers and working papers. These are the main themes, with examples.",
-      galleryTitle: "Documented events and participation",
-      galleryLead: "Photos from faculty events during her deanship, followed by conferences, training programmes and community initiatives documented by their certificates.",
-      certsTitle: "Certificates of participation",
-      filters: [["all", "All"], ["conf", "Conferences"], ["train", "Training and leadership"], ["comm", "Community service"]],
-      photosTitle: "From her deanship",
-      honorsTitle: "Shields and honours",
-      honorsLead: "A selection from 72 certificates of appreciation and shields awarded by the faculty, the university, the governorate and her students.",
-      initTitle: "Presidential initiatives",
-      initLead: "Field work with the health and youth directorates and the media centres of Fayoum Governorate.",
-      cvBandTitle: "Full curriculum vitae",
-      cvBandLead: "Available to read in both languages from either version of the site.",
-      contactTitle: "Academic contact",
-      contactLead: "Department of Curriculum and Instruction, Faculty of Education, Fayoum University, Egypt",
-      footer: "Personal website of Prof. Amal Gomaa Abdel-Fattah Mohammad",
-      back: "Back to the home page",
-      cvTitle: "Curriculum vitae",
-      cvOther: "اقرأ السيرة بالعربية", cvOtherTarget: "cv-ar",
-      close: "Close", prev: "Previous", next: "Next", zoom: "Enlarge image"
-    }
-  },
-
-  stats: [
-    [64, "بحث منشور", "published papers"],
-    [39, "كتاب ومؤلَّف", "books"],
-    [47, "مؤتمر علمي", "conferences"],
-    [35, "رسالة علمية بإشرافها", "theses supervised"],
-    [113, "دورة تدريبية", "training courses"],
-    [72, "شهادة تقدير ودرع", "certificates and shields"]
-  ],
-
-  path: [
-    ["2000", "معيدة بقسم المناهج وطرق التدريس", "Demonstrator, Department of Curriculum and Instruction"],
-    ["2005", "مدرس مساعد، ماجستير بتقدير ممتاز", "Assistant lecturer; master's with distinction"],
-    ["2008", "مدرس، دكتوراه في التربية", "Lecturer; doctorate in education"],
-    ["2013", "أستاذ مساعد", "Assistant professor"],
-    ["2019", "أستاذ، ووكيل الكلية لخدمة المجتمع وتنمية البيئة", "Professor; Vice Dean for Community Service"],
-    ["2022", "عميد كلية التربية", "Dean of the Faculty of Education"],
-    ["2026", "الفترة الحالية لعمادة الكلية", "Current term as Dean"]
-  ],
-
-  deanship: [
-    ["دبلومة مهنية جديدة", "استحداث الدبلومة المهنية في إعداد معلّم الفصل بقرار وزاري عام 2023.",
-     "A new professional diploma", "Introduced the Professional Diploma in Classroom Teacher Preparation by ministerial decree in 2023."],
-    ["لائحة الساعات المعتمدة", "رئاسة فريق إعداد لائحة الدراسات العليا بنظام الساعات المعتمدة للدبلوم العامة والمهنية (2023–2025).",
-     "Credit-hour bylaws", "Chaired the team that drafted the credit-hour postgraduate bylaws for the general and professional diplomas (2023–2025)."],
-    ["برامج بينية مع كليات الجامعة", "إعداد معلّم ريادة الأعمال، والتعليم الصناعي والهندسة التطبيقية، وتطبيقات الذكاء الاصطناعي، والتعليم الزراعي والبيوتكنولوجي.",
-     "Interdisciplinary programmes", "Teacher-preparation programmes with other faculties: entrepreneurship, industrial education and applied engineering, AI applications, and agricultural education and biotechnology."],
-    ["برامج مميزة جديدة", "معلّم الحاسب الآلي، والعلوم والرياضيات باللغة الإنجليزية، والتربية الخاصة، واللغة العربية للناطقين بغيرها.",
-     "New distinguished programmes", "Computer teacher, science and mathematics in English, special education, and Arabic for non-native speakers."],
-    ["الخطة الاستراتيجية للجامعة", "عضو فريق إعداد خطتي جامعة الفيوم 2016–2021 و2022–2027.",
-     "University strategic plans", "Member of the teams that prepared Fayoum University's strategic plans for 2016–2021 and 2022–2027."],
-    ["اليوبيل الذهبي للكلية", "احتفلت الكلية بيوبيلها الذهبي وتخريج دفعتها الخمسين عام 2024 خلال عمادتها.",
-     "The faculty's golden jubilee", "The faculty marked its golden jubilee and its fiftieth graduating class in 2024 during her deanship."]
-  ],
-
-  units: [
-    ["مركز التدريب التربوي", "Educational Training Centre"],
-    ["مركز الإرشاد النفسي", "Psychological Counselling Centre"],
-    ["مركز التميز للتنمية المهنية المستدامة", "Centre of Excellence for Sustainable Professional Development"],
-    ["مركز الخدمة العامة", "Public Service Centre"],
-    ["وحدة نظم التقويم والامتحانات", "Assessment and Examination Systems Unit"],
-    ["وحدة إدارة الأزمات", "Crisis Management Unit"],
-    ["وحدة متابعة الخريجين", "Graduate Follow-up Unit"]
-  ],
-
-  themes: [
-    {
-      ar: "تدريس الفلسفة والتفكير", en: "Teaching philosophy and thinking",
-      items: [
-        ["استخدام مدخل القضايا الجدلية في تدريس الفلسفة لتنمية مهارات الحوار", "Using the dialectical issues approach in teaching philosophy to develop dialogue skills"],
-        ["استراتيجية محطات التعلم في تدريس الفلسفة لتنمية دافعية الإنجاز والاتجاه نحو القضايا الفلسفية", "Learning stations in teaching philosophy to develop achievement motivation and attitudes toward philosophical issues"],
-        ["وحدة مقترحة في الأخلاق التطبيقية لتنمية الوعي بالقضايا الأخلاقية لدى الطلاب المعلمين", "A suggested unit in applied ethics to develop awareness of moral issues among student teachers"]
-      ]
-    },
-    {
-      ar: "علم النفس الإيجابي والتلوث النفسي", en: "Positive psychology and psychological pollution",
-      items: [
-        ["برنامج مقترح في تدريس قضايا التلوث النفسي", "A suggested programme for teaching psychological pollution issues"],
-        ["محطات التعلم في تدريس علم نفس السعادة لتنمية الرفاهية النفسية لدى الطلاب المعلمين", "Learning stations in teaching the psychology of happiness to develop student teachers' psychological well-being"],
-        ["وحدة مقترحة في الثروة النفسية لتنمية المثابرة الأكاديمية لدى الطلاب المعلمين", "A proposed unit in psychological wealth to develop academic perseverance among student teachers"]
-      ]
-    },
-    {
-      ar: "الأمن السيبراني والمواطنة الرقمية", en: "Cybersecurity and digital citizenship",
-      items: [
-        ["مهارات الأمن السيبراني في عصر الثورة الصناعية الرابعة (2025)", "Cybersecurity skills in the era of the Fourth Industrial Revolution (2025)"],
-        ["التنمر الإلكتروني لدى طلاب كلية التربية في ضوء بعض المتغيرات الديموغرافية", "Cyberbullying among Faculty of Education students in light of some demographic variables"],
-        ["دور الجامعة في تعزيز قيم المواطنة الرقمية", "The role of universities in fostering digital citizenship values"]
-      ]
-    },
-    {
-      ar: "التعلم النشط والتربية المدنية", en: "Active learning and civic education",
-      items: [
-        ["برنامج مقترح باستخدام التعلم الخدمي في تدريس علم الاجتماع", "A suggested programme using service learning in teaching sociology"],
-        ["استراتيجية تدريس الأقران في تنمية مهارات كتابة خطة البحث لدى طلاب الدراسات العليا", "Peer teaching to develop research-plan writing skills among postgraduate students"],
-        ["تقويم الأداء التدريسي لمعلمي علم النفس والاجتماع في ضوء معايير الجودة الشاملة", "Evaluating the teaching performance of psychology and sociology teachers against total quality standards"]
-      ]
-    }
-  ],
-
-  /* [ملف, تصنيف, وصف عربي, English caption] */
-  certs: [
-    ["c-07", "conf", "المؤتمر الدولي الثامن عشر لأكاديمية رواد التميز عن التعليم في عصر الذكاء الاصطناعي، أغسطس 2024.", "18th international conference of Rowad Al-Tamayoz Academy, on education in the age of artificial intelligence, August 2024."],
-    ["c-03", "conf", "شهادة تقدير من قسم الإدارة التربوية وسياسات التعليم عن مؤتمره الأول «الذكاء الاصطناعي وتطوير منظومة الإدارة التربوية في عصر المعلوماتية».", "Certificate of achievement from the Department of Educational Administration for its first conference, on artificial intelligence and educational administration."],
-    ["y-06", "train", "الأكاديمية الوطنية للتدريب: برنامج «المرأة تقود في المحافظات المصرية»، فبراير 2024.", "National Training Academy: the “Women Lead in Egyptian Governorates” programme, February 2024."],
-    ["y-07", "comm", "شكر وتقدير من وحدة حقوق الإنسان بمحافظة الفيوم لتدريب العاملين بالمحافظة على حقوق الإنسان، 2024.", "Appreciation from the Human Rights Unit of Fayoum Governorate for training its employees in human rights, 2024."],
-    ["c-10", "conf", "المؤتمر الدولي السادس عشر لأكاديمية رواد التميز، سبتمبر 2023.", "16th international conference of Rowad Al-Tamayoz Academy, September 2023."],
-    ["c-15", "comm", "شكر وتقدير للمشاركة في ملتقى التوظيف الحادي عشر ويوم الخريجين بكلية التربية، 11 أكتوبر 2023.", "Appreciation for taking part in the 11th Employment Forum and Alumni Day at the Faculty of Education, 11 October 2023."],
-    ["q-16", "comm", "مركز الإرشاد النفسي بالكلية: الإشراف على ندوة الاحتفال باليوم العالمي لمتلازمة داون.", "Psychological Counselling Centre: supervising the World Down Syndrome Day seminar."],
-    ["c-16", "conf", "كلية الخدمة الاجتماعية بجامعة الفيوم: الملتقى العلمي الأول لقسم طرق الخدمة الاجتماعية، 11 ديسمبر 2022.", "Faculty of Social Work, Fayoum University: first scientific forum of the Department of Social Work Methods, 11 December 2022."],
-    ["y-09", "train", "جائزة مصر للتميز الحكومي: اجتياز دورة المواصفة القياسية ISO 37000:2021 للحوكمة، 2022.", "Egypt Government Excellence Award: completed the ISO 37000:2021 governance standard course, 2022."],
-    ["y-11", "train", "مركز تنمية قدرات أعضاء هيئة التدريس والقيادات: برنامج إعداد القيادات الجامعية للترشح لمنصب عميد، سبتمبر 2021.", "Faculty and Leadership Development Centre: programme preparing university leaders to stand for dean, September 2021."],
-    ["c-42", "conf", "الندوة العلمية الأولى لقسم التربية المقارنة «الاتجاهات المعاصرة في مجال التربية المقارنة»، 15 ديسمبر 2020.", "First scientific symposium of the Department of Comparative Education, on contemporary trends in the field, 15 December 2020."],
-    ["c-36", "conf", "المؤتمر العلمي الدولي الرابع عشر لكلية التربية «تطوير التعليم في عصر اقتصاد المعرفة وتكنولوجيا المستقبل»، أكتوبر 2017.", "14th international scientific conference of the Faculty of Education, on developing education in the knowledge economy, October 2017."],
-    ["c-57", "conf", "المؤتمر الدولي الثالث لجامعة بني سويف مع اتحاد الجامعات العربية عن التعلم عن بُعد، 20–21 ديسمبر 2015.", "3rd International Conference of Beni Suef University with the Association of Arab Universities, on distance learning, 20–21 December 2015."],
-    ["c-55", "conf", "المؤتمر القومي الثاني للتدريب والتنمية في التعليم العالي، جامعة بني سويف، نوفمبر 2014.", "2nd National Conference for Training and Development in Higher Education, Beni-Suef University, November 2014."]
-  ],
-
-  shields: [
-    ["aw-01", "جائزة جامعة الفيوم للتفوق في خدمة المجتمع وتنمية البيئة 2025، من كتاب احتفالية عيد العلم الثامن عشر.", "Fayoum University Award for Excellence in Community Service and Environmental Development, 2025 (18th Science Day book)."],
-    ["aw-02", "جائزة جامعة الفيوم التشجيعية في التأليف العلمي (القطاع الأدبي) 2025.", "Fayoum University Incentive Award for Scholarly Authorship (humanities), 2025."],
-    ["s-13", "درع اليوبيل الذهبي لكلية التربية، 2024.", "Golden jubilee shield of the Faculty of Education, 2024."],
-    ["s-02", "وحدة حقوق الإنسان بمحافظة الفيوم: لتدريب العاملين بالمحافظة.", "Human Rights Unit, Fayoum Governorate: for training the governorate's employees."],
-    ["s-10", "إهداء الدفعة الخمسين بكلية التربية إلى عميدة الكلية.", "A gift from the fiftieth graduating class to the dean."],
-    ["s-09", "المدرسة المصرية اليابانية بالفيوم الجديدة: لدعمها الدائم للمدرسة.", "Egyptian Japanese School, New Fayoum: for her continued support of the school."],
-    ["s-01", "كلية التربية: للمشاركة ودعم ملتقى التوظيف الحادي عشر، 2023.", "Faculty of Education: for supporting the 11th Employment Forum, 2023."],
-    ["s-05", "إهداء طلاب الدبلومة المهنية تخصص تربية خاصة، 2024.", "A gift from the Professional Diploma students in special education, 2024."],
-    ["s-03", "درع شكر وتقدير من كلية التربية لعميد الكلية.", "Shield of thanks from the Faculty of Education to its dean."],
-    ["s-08", "قسم المناهج وطرق التدريس: ملتقى التربية العملية الثاني بالكلية.", "Department of Curriculum and Instruction: the faculty's second Field Training Forum."],
-    ["s-12", "المدرسة المصرية اليابانية: حضور حفل ختام الأنشطة للعام الدراسي 2022/2023.", "Egyptian Japanese School: attending the end-of-year activities ceremony, 2022/2023."],
-    ["s-06", "إهداء كلية التربية جامعة الفيوم إلى عميدة الكلية.", "A gift from the Faculty of Education, Fayoum University, to its dean."],
-    ["o-10", "جامعة الفيوم، احتفالية عيد العلم السادس 2013: جائزة التميز في الترقي.", "Fayoum University, sixth Science Day, 2013: award for excellence in promotion."],
-    ["o-06", "إهداء طلاب قسم علم النفس، دفعة 2017.", "A gift from the psychology students, class of 2017."]
-  ],
-
-  /* صور الفعاليات: ["اسم-الملف.jpg", "الوصف بالعربية", "English caption"] — الملفات في assets/events/ */
-  events: [
-    ["ev-00-science-day.jpg", "تسلّم شهادة التكريم من رئيس جامعة الفيوم في احتفالية الجامعة بعيد العلم الثامن عشر، 24 يونيو 2026.", "Receiving her award certificate from the President of Fayoum University at the 18th Science Day celebration, 24 June 2026."],
-    ["ev-08-awards-stage.jpg", "مع المكرَّمين على منصة احتفالية عيد العلم الثامن عشر بجامعة الفيوم، يونيو 2026.", "With fellow honourees on stage at Fayoum University's 18th Science Day, June 2026."],
-    ["ev-09-gowns.jpg", "بالزي الأكاديمي مع زميلاتها من أعضاء هيئة التدريس في احتفالية جامعية.", "In academic dress with faculty colleagues at a university ceremony."],
-    ["ev-03-president.jpg", "تكريم عميد الكلية لرئيس جامعة الفيوم تقديرًا لجهوده في دعم مسيرة الجامعة، يوليو 2026.", "The dean honours the President of Fayoum University for his support of the university, July 2026."],
-    ["ev-01-graduates.jpg", "افتتاح ملتقى المستفيدين ويوم الخريج تحت رعاية العميد، وتكريم أوائل دفعات 1993–1995 وخريجي 2024–2026، أكتوبر 2026.", "Opening of the Stakeholders' Forum and Graduate Day under the dean's patronage, honouring top graduates of 1993–1995 and graduates of 2024–2026, October 2026."],
-    ["ev-04-units.jpg", "تكريم رئيس الجامعة لمديري وحدات الكلية التابعة لقطاع خدمة المجتمع وتنمية البيئة بحضور العميد، سبتمبر 2026.", "The university president honours the faculty's community-service unit directors in the dean's presence, September 2026."],
-    ["ev-12-honour-essawy.jpg", "تكريم كلية التربية للأستاذ الدكتور عاصم فؤاد العيسوي.", "The Faculty of Education honours Prof. Assem Fouad El-Essawy."],
-    ["ev-11-phd-defense.jpg", "مناقشة رسالة الدكتوراه المقدمة من الباحثة شرين محمد محمود أبو العيد عن برنامج مقترح في الجغرافيا المناخية.", "The doctoral defence of researcher Sherine Mohamed Mahmoud Abu El-Eid, on a proposed programme in climate geography."],
-    ["ev-10-defense-panel.jpg", "لجنة مناقشة رسالة علمية بكلية التربية بالزي الأكاديمي.", "A thesis examination committee in academic dress at the Faculty of Education."],
-    ["ev-18-nta.jpg", "ندوة الأكاديمية الوطنية للتدريب: مناقشة مخرجات تقرير المستقبل وعلاقتها بالخريجين وسوق العمل.", "National Training Academy session on the outputs of a future-of-work report and their relation to graduates and the labour market."],
-    ["ev-13-aesthetic-salon.jpg", "صالون الثقافة الجمالية بكلية التربية جامعة الفيوم.", "The Aesthetic Culture Salon at the Faculty of Education, Fayoum University."],
-    ["ev-05-postgrad.jpg", "اجتماع العميد مع طلاب الدراسات العليا لمناقشة احتياجات سوق العمل وربط البحث العلمي بمتطلبات التنمية، أبريل 2026.", "The dean meets postgraduate students to discuss labour-market needs and linking research to development, April 2026."],
-    ["ev-06-october.jpg", "ندوة «انتصارات أكتوبر يوم العزة والكرامة» تحت رعاية العميد بمشاركة نخبة من الخبراء، أكتوبر 2026.", "Seminar on the October victory, held under the dean's patronage with a panel of experts, October 2026."],
-    ["ev-02-youth-conf.jpg", "مؤتمر «دور الشباب في بناء الوطن» الذي نظمته الكلية تحت رعاية العميد، أكتوبر 2026.", "The faculty's conference on the role of youth in building the nation, held under the dean's patronage, October 2026."],
-    ["ev-14-shield.jpg", "تسليم درع تكريم في إحدى فعاليات الكلية.", "Presenting a shield of honour at a faculty event."],
-    ["ev-15-guests.jpg", "استقبال ضيوف الكلية.", "Welcoming guests to the faculty."],
-    ["ev-16-certificates.jpg", "تسليم شهادات تقدير لعضوات هيئة التدريس.", "Presenting certificates of appreciation to faculty members."],
-    ["ev-17-certificate.jpg", "تسليم شهادة تقدير في إحدى ندوات الكلية.", "Presenting a certificate at a faculty seminar."],
-    ["ev-19-graduation.jpg", "بالزي الأكاديمي في حفل تخرج.", "In academic dress at a graduation ceremony."],
-    ["ev-20-staff.jpg", "لقاء مع عضوات هيئة التدريس بمكتب العمادة.", "Meeting faculty members in the dean's office."],
-    ["ev-21-students.jpg", "مع طلاب الكلية في إحدى الندوات.", "With students at a faculty seminar."],
-    ["ev-07-ideal.jpg", "مسابقة الطالب والطالبة المثالية بالكلية تحت رعاية العميد، نوفمبر 2026.", "The faculty's Ideal Student competition, held under the dean's patronage, November 2026."]
-  ],
-
-  initiatives: [
-    ["حياة كريمة", "ندوات حقوق المرأة والفتاة والانتماء الوطني بقرية الظافر بمركز إطسا، ويوم الرحمة للأطفال الأولى بالرعاية.",
-     "Decent Life", "Seminars on women's and girls' rights and national belonging in Al-Zafer village, and the Day of Mercy for disadvantaged children."],
-    ["قادرون باختلاف", "دورات لغة الإشارة والتخاطب، ورئاسة المؤتمر الدولي الأول لمركز الإرشاد النفسي عن تعليم ذوي الإعاقة السمعية، 2022.",
-     "Differently Abled", "Sign-language and speech-therapy courses, and chairing the Counselling Centre's first international conference on teaching the hearing impaired, 2022."],
-    ["100 مليون صحة", "ندوات الكشف المبكر عن السكري والضغط وأمراض الكلى وسرطان الثدي بالتعاون مع مديرية الصحة بالفيوم.",
-     "100 Million Healthy Lives", "Seminars on early detection of diabetes, hypertension, kidney disease and breast cancer with the Fayoum Health Directorate."],
-    ["تأهيل الشباب للقيادة", "دورات الأكاديمية العسكرية للدراسات العليا والاستراتيجية والأكاديمية الوطنية للتدريب، وتدريب موظفي المحافظة على حقوق الإنسان.",
-     "Leadership Qualification for Youth", "Courses at the Military Academy for Postgraduate and Strategic Studies and the National Training Academy, and human-rights training for governorate staff."],
-    ["بداية جديدة لبناء الإنسان", "ندوات أهمية التعليم ومخاطر عمالة الأطفال لأولياء أمور المدارس المجتمعية، والتوعية بمواجهة الشائعات.",
-     "A New Beginning for Human Development", "Seminars for community-school parents on the importance of education and the dangers of child labour, and on countering misinformation."]
-  ],
-
-  cv: {
-    ar: [
-      { h: "البيانات الأساسية", list: [
-        "الاسم: آمال جمعة عبد الفتاح محمد",
-        "المنصب الحالي: عميد كلية التربية، جامعة الفيوم",
-        "التخصص العام: أستاذ المناهج وطرق التدريس",
-        "التخصص الدقيق: المناهج وطرق تدريس الفلسفة وعلم الاجتماع، قسم المناهج وطرق التدريس",
-        "البريد الإلكتروني: aga02@fayoum.edu.eg"
-      ]},
-      { h: "المؤهلات العلمية", list: [
-        "ليسانس في الآداب والتربية، تخصص فلسفة وعلم اجتماع، مايو 2000، بتقدير عام جيد جدًا مع مرتبة الشرف، كلية التربية جامعة القاهرة فرع الفيوم.",
-        "دبلوم خاص في التربية، تخصص مناهج وطرق تدريس، بتقدير عام جيد جدًا، 2002، كلية التربية جامعة القاهرة فرع الفيوم.",
-        "ماجستير في التربية، تخصص مناهج وطرق تدريس فلسفة وعلم اجتماع، بتقدير ممتاز مع التوصية بطبع الرسالة على نفقة الجامعة والتداول بين الجامعات المصرية، مايو 2005.",
-        "دكتوراه في التربية، تخصص مناهج وطرق تدريس فلسفة وعلم اجتماع، مع التوصية بطبع الرسالة على نفقة الجامعة والتداول بين الجامعات، أبريل 2008، كلية التربية جامعة الفيوم."
-      ]},
-      { h: "التدرج الوظيفي", list: [
-        "معيدة بقسم المناهج وطرق التدريس، كلية التربية جامعة الفيوم، 9 نوفمبر 2000.",
-        "مدرس مساعد بذات القسم، يوليو 2005.",
-        "مدرس بذات القسم، يوليو 2008.",
-        "أستاذ مساعد، سبتمبر 2013.",
-        "أستاذ، يناير 2019."
-      ]},
-      { h: "المناصب الإدارية", ol: true, list: [
-        "عميد كلية التربية جامعة الفيوم من 24 أغسطس 2022 حتى 2025، والفترة الحالية للعمادة من 14 أبريل 2026.",
-        "الإشراف على قسم التربية المقارنة منذ أغسطس 2022.",
-        "رئيس هيئة تحرير مجلة جامعة الفيوم للعلوم التربوية والنفسية منذ أغسطس 2022.",
-        "وكيل كلية التربية لشؤون خدمة المجتمع وتنمية البيئة من 30 مايو 2019 حتى 30 مايو 2022.",
-        "قائم بعمل وكيل الكلية لشؤون الدراسات العليا والبحوث من 2 سبتمبر حتى 28 نوفمبر 2019.",
-        "قائم بعمل وكيل الكلية لشؤون التعليم والطلاب من 23 ديسمبر 2020 حتى 22 يناير 2021.",
-        "منسق كلية التربية في مشروع نظم المعلومات الإدارية (MIS) من 2010 حتى يوليو 2019.",
-        "مدير وحدة متابعة الخريجين التابعة لوحدة ضمان الجودة من 2013 حتى يوليو 2019.",
-        "نائب المدير التنفيذي لمشروع التعلم الخدمي والتربية المدنية لبناء قادة المستقبل، بالشراكة بين جامعة ميريلاند الأمريكية وجامعة الفيوم، 2010–2012.",
-        "منسق كلية التربية في مشروع البوابة الإلكترونية من 2010 حتى مايو 2013.",
-        "مستشار مشروع تدريب الأقران وتفعيل المشاركة الطلابية في تنمية المهارات اللغوية ومهارات التحليل الإحصائي، 2011/2012.",
-        "منسق وحدة مناهضة العنف ضد المرأة بكلية التربية من 2018 حتى يوليو 2019.",
-        "رئيس مجلس إدارة وحدة متابعة الخريجين منذ 2022.",
-        "رئيس مجلس إدارة مركز التدريب التربوي منذ 2022.",
-        "رئيس مجلس إدارة وحدة إدارة الأزمات منذ 2022.",
-        "رئيس مجلس إدارة وحدة نظم التقويم والامتحانات منذ 2022.",
-        "رئيس مجلس إدارة مركز الإرشاد النفسي منذ 2022.",
-        "رئيس مجلس إدارة مركز الخدمة العامة منذ 2022.",
-        "رئيس مجلس إدارة مركز التميز للتنمية المهنية المستدامة منذ 2022.",
-        "رئيس مجلس إدارة مجلة جامعة الفيوم للعلوم التربوية والنفسية منذ 2022."
-      ]},
-      { h: "عضوية اللجان والمجالس", list: [
-        "محكّم في اللجان العلمية الدائمة لترقية الأساتذة والأساتذة المساعدين، تخصص المناهج وطرق التدريس.",
-        "محكّم في عدد من المجلات العلمية المحلية والدولية.",
-        "عضو لجنة اختيار القيادات في التربية والتعليم بمحافظة الفيوم.",
-        "عضو هيئة تحرير مجلة جامعة الفيوم للعلوم التربوية والنفسية، 2014–2022.",
-        "عضو مجلس إدارة وحدة مناهضة العنف ضد المرأة بجامعة الفيوم، 2022–2025.",
-        "عضو مجلس إدارة مركز اللغات والترجمة بجامعة الفيوم، 2022–2024.",
-        "عضو مجلس إدارة المطبعة المركزية ومركز الخدمة العامة بجامعة الفيوم، 2024/2025.",
-        "عضو الفريق التنفيذي في وحدة ضمان الجودة بكلية التربية، 2010–2021.",
-        "عضو فرق الدعم الفني والمراجعة الداخلية والخارجية لمشروع تطوير نظم التقويم والامتحانات بجامعة الفيوم، 2010–2016.",
-        "عضو مجلس إدارة مركز التدريب التربوي بكلية التربية، 2009–2018."
-      ]},
-      { h: "تطوير اللوائح والبرامج", list: [
-        "عضو فريق إعداد الخطة الاستراتيجية لجامعة الفيوم 2016–2021 و2022–2027.",
-        "رئيس فريق إعداد لائحة الدراسات العليا بنظام الساعات المعتمدة للدبلوم العامة والدبلومة المهنية معلّم فصل، 2023–2025.",
-        "استحداث الدبلومة المهنية في إعداد معلّم الفصل بقرار وزاري، 2023.",
-        "إعداد برامج بينية مع كليات الجامعة: معلّم ريادة الأعمال، التعليم الصناعي والهندسة التطبيقية، تطبيقات الذكاء الاصطناعي، التعليم الزراعي والبيوتكنولوجي.",
-        "استحداث برامج مميزة: معلّم الحاسب الآلي، التعليم الفندقي، العلوم والرياضيات باللغة الإنجليزية، اللغة العربية للناطقين بغيرها.",
-        "إضافة برنامجي بكالوريوس إعداد معلّم التربية الخاصة باللغتين العربية والإنجليزية."
-      ]},
-      { h: "المبادرات الرئاسية", list: ["حياة كريمة", "قادرون باختلاف", "100 مليون صحة", "تأهيل الشباب للقيادة", "بداية جديدة لبناء الإنسان"] },
-      { h: "المشروعات البحثية والتطبيقية", list: [
-        "مشروع تميّز المعلّم الممول من المعونة الأمريكية، 2022–2027.",
-        "مشروع تكافؤ الفرص بجامعة الفيوم.",
-        "مشروع تطوير نظم التقويم والامتحانات بجامعة الفيوم.",
-        "مشروع التعلم الخدمي والتربية المدنية لإعداد قادة المستقبل، بالشراكة بين جامعة الفيوم وجامعة ميريلاند.",
-        "مشروع تدريب الأقران وتفعيل المشاركة الطلابية في تنمية المهارات اللغوية ومهارات التحليل الإحصائي.",
-        "مشروع اليوتوبيا المعاصرة بمدرسة أم المؤمنين الثانوية للبنات.",
-        "المشروع الصيفي لمحو الأمية وتعليم الكبار مع الهيئة العامة لمحو الأمية وتعليم الكبار.",
-        "مشروع الجودة بكلية التربية جامعة الفيوم.",
-        "مشروع الطرق المؤدية للتعليم العالي: تنمية المهارات القيادية للمرأة."
-      ]},
-      { h: "الدورات التدريبية وورش العمل", list: [
-        "22 دورة شاركت في الإشراف على تنفيذها، و58 دورة مدرِّبةً، و33 دورة متدرِّبةً.",
-        "المرأة تقود في المحافظات المصرية، الأكاديمية الوطنية للتدريب، فبراير 2024.",
-        "الاستراتيجية القومية للأمن القومي، الأكاديمية العسكرية للدراسات العليا والاستراتيجية، يوليو 2024.",
-        "إدارة الأزمات وحل الصراع، الأكاديمية العسكرية للدراسات العليا والاستراتيجية، يوليو 2024.",
-        "التطور التكنولوجي والأمن القومي، الأكاديمية العسكرية للدراسات العليا والاستراتيجية، ديسمبر 2024.",
-        "أساليب الوقاية من الحروب الحديثة، الأكاديمية العسكرية للدراسات العليا والاستراتيجية، فبراير 2025."
-      ]},
-      { h: "الكتب والمؤلفات العلمية (39)", ol: true, books: "ar" },
-      { h: "الأبحاث المنشورة وأوراق العمل (64)", ol: true, list: [
-        "\"تقويم الأداء التدريسي لمعلمي علم النفس والاجتماع في ضوء معايير ومؤشرات الجودة الشاملة\"، مجلة القراءة والمعرفة، الجمعية المصرية للقراءة والمعرفة، العدد (87) الجزء الثاني, مارس 2009 م.",
-        "\"فاعلية استخدام نموذج بايبي للتعلم البنائي في تعديل التصورات الخاطئة لبعض المفاهيم الفلسفية لدي طلاب المرحلة الثانوية واتجاهاتهم نحو المادة\"، مجلة دراسات في المناهج وطرق التدريس، الجمعية المصرية للمناهج وطرق التدريس، العدد (156) الجزء الثاني, مارس 2010م.",
-        "\"فاعلية استخدام استراتيجية بناء توافق وجهات النظر في تدريس علم الاجتماع علي التحصيل وتنمية بعض مهارات التفاوض الاجتماعي لدي طلاب المرحلة الثانوية\"\"، مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية، العدد(٢ ٧) يوليو ٢٠ ١٠ م.",
-        "\"فاعلية برنامج مقترح في تدريس علم الاجتماع باستخدام التعلم الخدمي علي تنمية المسئولية الاجتماعية ومهارات اتخاذ القرار لدي الطلاب المعلمين شعبة الفلسفة والاجتماع\", مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية، العدد(42) مايو 2012 م.",
-        "\"فاعلية مقرر الكتروني مقترح في طرق تدريس المواد الفلسفية علي التحصيل الدراسي وبقاء أثر التعلم والاتجاه نحو استخدام التعلم الإلكتروني لدي طلاب كلية التربية\", المؤتمر الدولي الأول لمركز تطوير التعليم الجامعي, التميز في الأداء الجامعي \"فلسفته – آلياته – معاييره\", في الفترة من 10-11 فبراير 2013م.",
-        "\"فاعلية وحدة مقترحة في فلسفة الأخلاق التطبيقية لتنمية الوعي بالقضايا الأخلاقية لدي الطلاب المعلمين شعبة الفلسفة والاجتماع\" مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية، العدد(50) ابريل 2013م.",
-        "\"دور التربية المدنية في تنمية بعض القيم الاجتماعية والوعي لدى فئات عمرية مختلفة\" تجربة جامعة الفيوم \",المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.(بحث مشترك)",
-        "\"فاعلية استخدام استراتيجية تدريس الأقران في تنمية المهارات الأساسية في اللغة العربية لدي طلاب كلية التربية غير المتخصصين واتجاهاتهم نحو استخدام الإستراتيجية\",المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.(بحث مشترك)",
-        "فاعلية استخدام استراتيجية تدريس الأقران في تنمية مهارات كتابة الخطة البحثية لدي طلاب الدراسات العليا بكلية التربية واتجاهاتهم نحو استخدام الإستراتيجية \",المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.(بحث مشترك)",
-        "\"The Effectiveness of Using Peer Coaching Strategy on Developing The Faculty of Education Non-Majors' English Language Basic Skills and their Attitude towards the Strategy\",المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.(بحث مشترك)",
-        "سمات الشخصية المصرية بين الايجابية والسلبية قبل وبعد ثورة 25 يناير 2011 م في ضوء متغيري النوع والعمر الزمني \"., الندوة الثانية لقسم علم النفس بعنوان علم النفس وتحصين الشباب في عصر العولمة, فى الفترة 3-4 1434 هـ الموافق من 13-14 فبراير 2013م المملكة العربية السعودية جامعة الإمام محمد بن سعود الإسلامية كلية العلوم الاجتماعية -قسم علم النفس (2013). (بحث مشترك).",
-        "فاعلية برنامج مقترح فى تدريس علم الاجتماع السياسي باستخدام شبكات التواصل الاجتماعي على تنمية المفاهيم السياسية ومهارات الحوار لدى الطلاب المعلمين شعبة الفلسفة والاجتماع واتجاهاتهم نحوها \" مجلة دراسات عربية في التربية وعلم النفس، رابطة التربويين العرب،العدد (46) الجزء الرابع, فبراير 2014 م.",
-        "فاعلية استراتيجية التفكير بصوت عال في تدريس الفلسفة علي التحصيل وتنمية مهارات ما وراء المعرفة والذكاء الروحي والاتجاه نحو الاستراتيجية لدي طلاب المرحلة الثانوية, مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(86) ديسمبر 2016م.",
-        "فاعلية استخدام استراتيجية الرحلة المعرفية عبر الويب في تدريس الفلسفة علي تنمية مهارات التفكير المستقبلي والدافعية للانجاز لدي طلاب المرحلة الثانوية., مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(90) مايو 2017م.",
-        "فاعلية استخدام استراتيجية محطات التعلم في تدريس علم الاجتماع على تنمية التفكير الاستدلالي والتسامح الاجتماعي لدى طلاب المرحلة الثانوية مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(96) ديسمبر 2017م.",
-        "فاعلية استخدام استراتيجية التعلم التخيلي في تدريس الفلسفة علي تنمية مهارات الحكمة والتحصيل الدراسي وبقاء أثر التعلم لدي طلاب المرحلة الثانوية,مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(98) مارس 2018م.",
-        "تدريس الفلسفة وتنمية مهارات التفكير التأملي والمفاهيم الفلسفية لدي طلاب الصف الأول الثانوي, مجلة العلوم التربوية والنفسية، كلية التربية جامعة الفيوم, العدد (7) 2017م. (بحث مشترك).",
-        "فاعلية وحدة مقترحة في فلسفة الأخلاق التطبيقية باستخدام استراتيجية العصف الذهني علي تنمية التفكير الأخلاقي لدي الطلاب المعلمين شعبة الفلسفة والاجتماع, مجلة العلوم التربوية والنفسية، كلية التربية جامعة الفيوم, العدد (7) 2017م. (بحث مشترك).",
-        "\"أثر استخدام استراتيجية بناء توافق وجهات النظر في تدريس علم النفس علي تنمية مهارات الذكاء العملي لدي طلاب المرحلة الثانوية\" المؤتمر العلمي الدولي الرابع عشر بعنوان\"تطوير التعليم في عصر اقتصاد المعرفة وتكنولوجيا المستقبل\" والذي عقد في الفترة من 24 الي 26 أكتوبر 2017 م. (بحث مشترك)",
-        "فاعلية الدمج بين نموذج التعلم التوليدي والسقالات التعليمية في تدريس الفلسفة علي تنمية مهارات التفكير الفلسفي لدى طلاب المرحلة الثانوية, مجلة العلوم التربوية والنفسية، كلية التربية جامعة الفيوم, العدد (8) 2017م. (بحث مشترك).",
-        "وحدة مقترحة في المشكلات النفسية قائمة علي استراتيجية (K.W.L) لتنمية مهارات الذكاء الوجداني ليد الطلاب المعليمن شعبة علم النفس, مجلة العلوم التربوية والنفسية، كلية التربية جامعة الفيوم, العدد (8) 2017م. (بحث مشترك).",
-        "\"برنامج مقترح في قضايا علم الاجتماع الجنائي لتنمية القدرة علي تحمل الاحباط وتحمل الغموض والوعي بهذه القضايا لدى الطلاب المعلمين شعبة الفلسفة وعلم الاجتماع\", مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(103) أغسطس 2018 م.",
-        "\"فاعلية برنامج مقترح في تدريس قضايا التلوث النفسي لتنمية المهارات الإبداعية وتحسين مستوي السعادة النفسية لدى الطلاب المعلمين شعبة علم النفس\" - مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (14), العدد(12).2020 م.",
-        "\"فاعلية برنامج مقترح في تدريس قضايا التلوث النفسي لتحسين مستوي المناعة النفسية لدى الطلاب المعلمين شعبة علم النفس\"- مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (14), العدد(12).2020 م.",
-        "استخدام استراتيجية التعلم التخيلي في تدريس علم النفس لتنمية مهارات التفكير الاستكشافي لدى طلاب الصف الثاني الثانوي- مجلة جامعة للعلوم التربوية والنفسية في المجلد الخامس عشر 2021.",
-        "فاعلية وحدة مقترحة في الثراء النفسى لتنمية المثابرة الأكاديمية لدي الطلاب المعلمين شعبة علم النفس- مجلة جامعة للعلوم التربوية والنفسية في المجلد الخامس عشر 2021.",
-        "فاعلية استخدام استراتيجية محطات التعلم في تدريس علم نفس السعادة على تنمية الرفاهية النفسية للطلاب المعلمين شعبة علم النفس- مجلة جامعة للعلوم التربوية والنفسية في المجلد الخامس عشر 2021.",
-        "\"استخدام استراتيجية بناء المعنى KWL في تدريس الفلکلور الشعبي لتنمية القدرة على تحدي الخرافات لدى طلاب الصف الأول الثانوي\",مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (14) العدد(1) شتاء 2020. (بحث مشترك).",
-        "\" فاعلية استخدام المدخل التفاعلي في تدريس علم الاجتماع على تنمية المسئولية الاجتماعية لدى طلاب المرحلة الثانوية,مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (14) العدد(1) شتاء 2020. (بحث مشترك).",
-        "\" فاعلية استخدام التعلم الخدمي في تدريس علم الاجتماع لتنمية بعض مهارات التفکير المنطقي لدى طلاب المرحلة الثانوية,مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (14) العدد(1) شتاء 2020. (بحث مشترك).",
-        "\"استخدام المدخل التفاوضي في تدريس علم الاجتماع لتنمية مهارات التواصل والتکيف مع المواقف الاجتماعية لدى طلاب الصف الثاني الثانوي\",مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (14) العدد(1) شتاء 2020. (بحث مشترك).",
-        "فاعلية برنامج مقترح في تدريس قضايا التلوث النفسي لتنمية المهارات الإبداعية وتحسين مستوي السعادة النفسية لدى الطلاب المعلمين شعبة علم النفس، مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (14), العدد(12).2020 م(بحث مشترك).",
-        "فاعلية برنامج مقترح في تدريس قضايا التلوث النفسي لتحسين مستوي المناعة النفسية لدى الطلاب المعلمين شعبة علم النفس، مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (14), العدد(12).2020 م(بحث مشترك).",
-        "فاعلية وحدة مقترحة في الثراء النفسى لتنمية المثابرة الأكاديمية لدي الطلاب المعلمين شعبة علم النفس، مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (15), 2020 م(بحث مشترك).",
-        "فاعلية استخدام استراتيجية محطات التعلم في تدريس علم نفس السعادة على تنمية الرفاهية النفسية للطلاب المعلمين شعبة علم النفس، مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (15), 2021 م(بحث مشترك).",
-        "\"فاعلية استخدام مُدخل القضايا الجدلية في تدريس الفلسفة لتنمية مهارات الحوار وبقاء أثر التعلم لدى طلاب المرحلة الثانوية\"، مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (15) العدد 2021. (بحث مشترك).",
-        "استخدام استراتيجية التعلم التخيلي في تدريس علم النفس لتنمية مهارات التفكير الاستكشافي لدى طلاب الصف الثاني الثانوي، مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (15) العدد 2021. (بحث مشترك).",
-        "أثر استخدام استراتيجية الأبعاد السداسية في تدريس علم الاجتماع على التحصيل والاتجاه نحو الاستراتيجية لدي طلاب المرحلة الثانوية\"، مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (15) العدد 2021. (بحث مشترك).",
-        "ورقة عمل بعنوان: استراتيجيات التدريس والتعلم عن بعد لمواكبة تحديات العصر, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م.",
-        "ورقة عمل بعنوان: مهارات الثقافة الرقمية كمتطلب أساسي لمهارات القرن الحادي والعشرين), المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م. (ورقة مشتركة)",
-        "ورقة عمل بعنوان: ظاهرة التنمر الإلكتروني آفة الألفية الثالثة, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م(ورقة مشتركة)",
-        "ورقة عمل بعنوان: مستوى وعى طلاب المرحلة الثانوية بأخلاقيات القضايا البيئية المعاصرة, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م(ورقة مشتركة)",
-        "مستوي التلوث النفسي لدي طلاب كلية التربية, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م(بحث مشترك).",
-        "ورقة عمل بعنوان\"المخدرات الرقمية آفة عصر الرقمنة\" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
-        "ورقة عمل بعنوان\"التسامح ضرورة اجتماعية وتربوية وفريضة عصرية وأخلاقية\" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
-        "ورقة عمل بعنوان\"الابتزاز الالكتروني قنبلة موقوتة وآفة الجيل الرابع\" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
-        "ورقة عمل بعنوان\"دور الجامعة في تنمية قيم المواطنة الرقمية\" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
-        "ورقة عمل بعنوان\"الوعي بالتغيرات المناخية ضرورية تربوية وفريضة عصرية\", المؤتمر البيئي الثاني لقطاع خدمة المجتمع وتنمية البيئة بكلية التربية جامعة الفيوم بعنوان التغيرات المناخية ومنظومة التعليم\"\"رؤية مستقبلية\" خلال الفترة من (12 – 13) ديسمبر 2022 م.",
-        "اتجاهات طلاب جامعة الفيوم نحو استخدام التعلم الإلكتروني في التدريس\", المؤتمر العلمي الأول لقسم التربية المقارنة بعنوان الثورة الصناعية الخامسة وانعكاساتها علي المنظومة التربوية رؤي دولية\" كلية التربية جامعة الفيوم 2023م.",
-        "استخدام استراتيجيات محطات التعلم في تدريس الفلسفة لتنمية الدافعية للإنجاز والاتجاه نحو القضايا الفلسفية لدى طلاب المرحلة الثانوية\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 15، العدد 16، ديسمبر 2021م.",
-        "استخدام استراتيجيات محطات التعلم في تدريس الفلسفة لتنمية التحصيل والذكاء الروحي لدى طلاب المرحلة الثانوية\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 15، العدد 16، ديسمبر 2021م.",
-        "استخدام مدخل التحليل الأخلاقي في تدريس الفلسفة لتنمية التحصيل ومهارات حل المشکلات لدى طلاب الصف الثاني الثانوي\", مجلة جامعة الفيوم للعلوم التربوية والنفسية,أكتوبر 2022م.",
-        "برنامج مقترح في قضايا علم النفس السيبراني لتنمية الازدهار النفسي والاتجاه نحو هذه القضايا لدى الطلاب المعلمين شعبة علم النفس\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 17، العدد 6، إبريل 2023م.",
-        "وحدة مقترحة في قضايا علم اجتماع المرأة لتنمية التحصيل الدراسي والقدرة على تحمل الإحباط لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 16، العدد 10، ديسمبر 2022م.",
-        "\"فاعلية استخدام استراتيجية بناء توافق وجهات النظر في تدريس قضايا علم الاجتماع لتنمية مهارات الذكاء العملي و التحصيل الأكاديمي لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
-        "\"فاعلية استخدام استراتيجية محطات التعلم في تدريس قضايا علم الاجتماع لتنمية مهارات الذكاء التحليلي و الاتجاه نحو القضايا لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
-        "\"برنامج مقترح في تدريس علم الاجتماع قائم على استراتيجية بناء المعنى (k.w.l) لتنمية التنظيم الانفعالي وتحمل المسئولية لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
-        "\"برنامج مقترح في تدريس علم الاجتماع قائم على نموذج بايبي للتعلم البنائي لتعديل التصورات الخاطئة لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
-        "\"برنامج مقترح في قضايا علم الاجتماع قائم على استراتيجية خرائط المفاهيم لتنمية الاتجاه نحو المادة وتحمل المسئولية لدى طلاب المرحلة الثانوية\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
-        "\"برنامج مقترح في قضايا علم اجتماع الجريمة لتنمية الكفاءة الشخصية وحل المشكلات لدى طلاب المرحلة الثانوية\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك).",
-        "مهارات الأمن السيبراني في عصر الثورة الصناعية الرابعة ورقة عمل مقدمة في الملتقي الثقافي الثاني لكلية التربية جامعة الفيوم بعنوان قضايا الأمن السيبراني رؤية تربوية,2025 م.",
-        "اتجاهات طلاب المرحلة الثانوية نحو استخدام المنصات التعليمية الالكترونية في تدريس المواد العلمية\", الملتقي الثقافي الثاني لكلية التربية جامعة الفيوم بعنوان قضايا الأمن السيبراني رؤية تربوية,2025 م. (مشترك)",
-        "واقع استخدام المعامل الافتراضية في تدريس العلوم لدي طلاب كلية التربية جامعة الفيوم, الملتقي الثقافي الثاني لكلية التربية جامعة الفيوم بعنوان قضايا الأمن السيبراني رؤية تربوية,2025 م. (مشترك)",
-        "التنمر الالكتروني لدي طلاب كلية التربية جامعة الفيوم في ضوء بعض المتغيرات الديموجرافية, الملتقي الثقافي الثاني لكلية التربية جامعة الفيوم بعنوان قضايا الأمن السيبراني رؤية تربوية,2025 م. (مشترك)"
-      ]},
-      { h: "المؤتمرات العلمية التي شاركت فيها بالحضور أو إلقاء بحث (47)", ol: true, list: [
-        "حضور مؤتمر الجمعية التربوية للدراسات الاجتماعية: كلية التربية جامعة عين شمس بعنوان: \"تربية المواطنة ومناهج الدراسات الاجتماعية\" والذي عقد في الفترة من 19 الي 20 يوليو 2008.",
-        "حضور مؤتمر الجمعية المصرية للمناهج وطرق التدريس: كلية التربية جامعة عين شمس بعنوان: \"مناهج التعليم والهوية الثقافية\" والذي عقد في الفترة من 30 الي 31 يوليو 2008.",
-        "حضور مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي التاسع \"تطوير التعليم في الوطن العربي الواقع والمأمول\" والذي عقد في الفترة من 14 الي 15 أكتوبر 2008.",
-        "حضور مؤتمر كلية التربية جامعة الزقازيق بعنوان: المؤتمر العلمي السنوي السابع \"التحديات التكنولوجية وتطوير منظومة التعليم\" والذي عقد في الفترة من 29 الي 30 ابريل 2009.",
-        "حضور مؤتمر الجمعية المصرية للمناهج وطرق التدريس: كلية التربية جامعة عين شمس بعنوان: المؤتمر العلمي الحادي والعشرون,\"تطوير المناهج الدراسية بين الأصالة والمعاصرة\", والذي عقد في الفترة من 28 إلي 29 يوليو 2009.",
-        "حضور مؤتمر الجمعية المصرية للقراءة والمعرفة: كلية التربية جامعة عين شمس بعنوان: \"كتب القراءة بين الإنقرائية والإخراج\", والذي عقد في الفترة من 15 إلي 16 يوليو 2009.",
-        "حضور ندوة البحث العلمي في قسم المناهج وطرق التدريس كلية التربية جامعة الفيوم في 11/5/2009 م.",
-        "حضور المؤتمر العلمي السنوي العاشر للجمعية المصرية لتربويات الرياضيات:بعنوان \"الاتجاهات الحديثة في تطوير تدريس الرياضيات\" في 3/8/2010م.",
-        "حضور مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي العاشر \"البحث التربوي في الوطن العربي رؤية مستقبلية\" والذي عقد في الفترة من 20 الي 21 أبريل 2010م.",
-        "رئيس اللجنة الإعلامية في مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الحادي عشر بعنوان \"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.",
-        "المشاركة بأربعة أبحاث مع مجموعة من الأساتذة في المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.",
-        "المشاركة في إعداد كتاب المؤتمر الختامي لمشروع التعلم الخدمي والتربية المدنية لبناء قادة المستقبل في المجتمع المصري والمشروع شراكة بين جامعة ميريلاند بالولايات المتحدة الأمريكية وجامعة الفيوم سبتمبر 2012م.",
-        "المشاركة ببحث بعنوان: فاعلية مقرر الكتروني مقترح في طرق تدريس المواد الفلسفية علي التحصيل الدراسي وبقاء أثر التعلم والاتجاه نحو استخدام التعلم الإلكتروني لدي طلاب كلية التربية\", المؤتمر الدولي الأول لمركز تطوير التعليم الجامعي, التميز في الأداء الجامعي\" فلسفته – آلياته – معاييره \", في الفترة من 10-11 فبراير 2013م.",
-        "المشاركة ببحث بعنوان: سمات الشخصية المصرية بين الايجابية والسلبية قبل وبعد ثورة 25 يناير 2011 م في ضوء متغيري النوع والعمر الزمني \"., الندوة الثانية لقسم علم النفس بعنوان علم النفس وتحصين الشباب في عصر العولمة, فى الفترة 3-4 1434 هـ الموافق من 13-14 فبراير 2013م المملكة العربية السعودية جامعة الإمام محمد بن سعود الإسلامية كلية العلوم الاجتماعية -قسم علم النفس. (بحث مشترك).",
-        "حضور مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الثاني عشر بعنوان\"التربية وبناء الانسان العربي في ضؤ تحديات الحاضر وتطلعات المستقبل\" والذي عقد في الفترة من 23 الي 24 أكتوبر 2013 م.",
-        "رئيس اللجنة الإعلامية في مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الحادي عشر بعنوان \"التربية وبناء الانسان العربي في ضؤ تحديات الحاضر وتطلعات المستقبل\" والذي عقد في الفترة من 23 الي 24 أكتوبر 2013 م.",
-        "حضور مؤتمر الجمعية المصرية للمناهج وطرق التدريس المؤتمر العلمي الثالث والعشرون الدولي الثاني: كلية التربية جامعة عين شمس بعنوان: \"تطوير المناهج رؤي وتوجهات\" والذي عقد في الفترة من 13 إلي 14 أغسطس 2014م.",
-        "حضور المؤتمر الدولي الثاني للتنمية والتدريب في التعليم العالي لجامعة بني سويف بعنوان \"تنمية الموهبة وفتح افاق المستقبل\" والذي عقد في 18 نوفمبر 2014م.",
-        "حضور مؤتمر كلية التربية جامعة حلوان بعنوان: المؤتمر العلمي السنوي الثامن عشر \"التربية ودعم الشخصية المصرية\" والذي عقد في الفترة من 18 الي 19 نوفمبر 2015م.",
-        "حضور المؤتمر الدولي الثالث لجامعة بني سويف بالتعاون مع منظمة جامعة الدول العربية بعنوان \"صعوبات التعلم: البيئة والتنمية والخبرات\" والذي عقد في الفترة من 20 الي 21 ديسمبر 2015م.",
-        "حضور المؤتمر الدولي الأول لقطاع خدمة المجتمع بجامعة الفيوم بعنوان \"التوجهات الحديثة في رعاية متحدي الإعاقة\" والذي عقد في الفترة من 9 الي 11 نوفمبر 2015م.",
-        "حضور مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الدولي الثالث عشر بعنوان\"العنف في مؤسسات التعليم المظاهر الأسباب سبل المواجهة\" والذي عقد في الفترة من 15 الي 17 أكتوبر 2016 م.",
-        "حضور مؤتمر الجمعية التربوية للدراسات الاجتماعية: كلية التربية جامعة عين شمس بعنوان: \"التسامح وقبول الأخر\" والذي عقد في الفترة من 3 الي 4 أكتوبر 2017م.",
-        "المشاركة ببحث في مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الدولي الرابع عشر بعنوان\"تطوير التعليم في عصر اقتصاد المعرفة وتكنولوجيا المستقبل\" والذي عقد في الفترة من 24 الي 26 أكتوبر 2017 م. عنوان البحث:\"أثر استخدام استراتيجية بناء توافق وجهات النظر في تدريس علم النفس علي تنمية مهارات الذكاء العملي لدي طلاب المرحلة الثانوية\".",
-        "حضور مؤتمر كلية الخدمة الاجتماعية جامعة الفيوم بعنوان: المؤتمر العلمي السابع والعشرون \"التربية وبناء الإنسان العربي في ضؤ تحديات الحاضر وتطلعات المستقبل الخدمة الاجتماعية وقضايا المرأة العربية\" والذي عقد في الفترة من 2 الي 3 مايو 2018 م.",
-        "رئيس اللجنة العلمية الأساتذة في المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة,\"التنمية المستدامة وبناء الإنسان في ظل تحديات العصر\" بكلية التربية جامعة الفيوم 30 نوفمبر 2021م.",
-        "المشاركة بأربعة أوراق عمل مع مجموعة من الأساتذة في المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة,\"التنمية المستدامة وبناء الإنسان في ظل تحديات العصر\" بكلية التربية جامعة الفيوم 30 نوفمبر 2021م. وهي كالتالي:.",
-        "بحث منشور بعنوان: مستوي التلوث النفسي لدي طلاب كلية التربية, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م(بحث مشترك)",
-        "مقرر \" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
-        "المشاركة بأربعة أوراق عمل مع مجموعة من الأساتذة \" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.وهي كالتالي:.",
-        "المؤتمر الدولي الأول لمركز الإرشاد النفسي لقطاع خدمة المجتمع وتنمية البيئة بكلية التربية جامعة الفيوم بعنوان الاتجاهات المعاصرة في تعليم وتعلم ذوي الإعاقة السمعية خلال الفترة 7 يونيو 2022 م.",
-        "المشاركة في المؤتمر البيئي الثاني لقطاع خدمة المجتمع وتنمية البيئة بكلية التربية جامعة الفيوم بعنوان التغيرات المناخية ومنظومة التعليم\"\"رؤية مستقبلية\"خلال الفترة من (12 – 13) ديسمبر 2022 م. بورقة عمل بعنوان\" الوعي بالتغيرات المناخية ضرورية تربوية وفريضة عصرية\".",
-        "المؤتمر القومي الأول لقطاع الدراسات التربوية لقطاع الدراسات التربوية بالمجلس الأعلى للجامعات للمشاركة في فعاليات المؤتمر القومي الأول لقطاع الدراسات التربوية المعنون بـ \"التعليم والشراكة المجتمعية، ومؤسسات إعداد المعلم وتأهيله في الجمهورية الجديدة\" والذي عقد يومي 3-4 ديسمبر 2022م.",
-        "(إفادة حضور المؤتمر القومي الأول لقطاع الدراسات التربوية) المقدمة من المجلس الأعلى للجامعات لجنة قطاع الدراسات التربوية المعنون بـ \"التعليم والشراكة المجتمعية، ومؤسسات إعداد المعلم وتأهيله في الجمهورية الجديدة\" والذي عقد يومي 3-4 ديسمبر 2022م.",
-        "رئيس المؤتمر البيئي الثاني لقطاع خدمة المجتمع وتنمية البيئة بكلية التربية جامعة الفيوم بعنوان التغيرات المناخية ومنظومة التعليم\"\"رؤية مستقبلية\" خلال الفترة من (12 – 13) ديسمبر 2022 م.",
-        "المؤتمر الدولي الرابع عشر عنوان المؤتمر: التربية من أجل بيئة خضراء وواقع ومستقبل التغيرات المناخية (المخاطر والحلول) معًا لمواجهة التحديات المناخية من أجل حماية كوكبنا برعاية: الجمعية العربية لأصول التربية والتعليم المستمر، والمجلة الدولية للبحوث والدراسات وجمعية رواد التميز للتنمية المستدامة، والعديد من الجهات الراعية الأخرى الفترة من 4-6 فبراير 2023م.",
-        "المؤتمر الدولي السادس عشر لأكاديمية رواد التميز عنوان المؤتمر: التربية الوجدانية والأخلاقية وقيم المواطنة للطالب العربي في ظل عالم افتراضي معًا من أجل مجتمع عربي متحضر برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC) ا الفترة من 2-4 سبتمبر 2023م.",
-        "المؤتمر الدولي السادس عشر لأكاديمية رواد التميز للتعليم والتدريب والاستشارات عنوان المؤتمر: التربية الوجدانية والأخلاقية وقيم المواطنة للطالب العربي في ظل عالم افتراضي معًا من أجل مجتمع عربي متحضر برعاية: الجمعية العربية لأصول التربية والتعليم المستمر، والمجلة الدولية للبحوث والدراسات وجمعية رواد التميز للتنمية المستدامة، والعديد من الجهات الراعية الفترة من 7-9 أكتوبر 2023م.",
-        "المؤتمر الدولي السادس عشر لأكاديمية رواد التميز للتعليم والتدريب والاستشارات (PEATCHD) عنوان المؤتمر: التربية الوجدانية والأخلاقية وقيم المواطنة للطالب العربي في ظل عالم افتراضي معًا من أجل مجتمع عربي متحضر برعاية: الجمعية العربية لأصول التربية والتعليم المستمر، والمجلة الدولية للبحوث والدراسات وجمعية رواد التميز للتنمية المستدامة، والعديد من الجهات الراعية الفترة من 7-8 أكتوبر 2023م.",
-        "المؤتمر الدولي الرابع عشر لأكاديمية رواد التميز للتعليم والتدريب والاستشارات (PEATCHD) عنوان المؤتمر: التربية من أجل بيئة خضراء وواقع ومستقبل التغيرات المناخية (المخاطر والحلول) معًا لمواجهة التحديات المناخية من أجل حماية كوكبنا برعاية: أكاديمية رواد التميز للتعليم والتدريب والاستشارات الفترة من 4-6 فبراير 2023م.",
-        "المؤتمر الدولي الرابع عشر لأكاديمية رواد التميز عنوان المؤتمر: التربية من أجل بيئة خضراء وواقع ومستقبل التغيرات المناخية (المخاطر والحلول) معًا لمواجهة التحديات المناخية من أجل حماية كوكبنا برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC) الفترة من 4-6 فبراير 2023م.",
-        "المؤتمر الدولي الخامس عشر لأكاديمية رواد التميز عنوان المؤتمر: التربية الأسرية في المجتمع العربي على ضوء تداعيات العصر الرقمي (التحديات والحلول) يداً بيد من أجل أبناء أسوياء برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC الفترة من 3-5 يونيو 2023م.",
-        "المؤتمر الدولي الثامن عشر لأكاديمية رواد التميز عنوان المؤتمر: تعليم ورعاية الأبناء في عصر الذكاء الاصطناعي - رؤى الواقع، وتحديات الحاضر، وآمال المستقبل معًا من أجل مستقبل أفضل لأبنائنا برعاية: أكاديمية رواد التميز للتعليم والتدريب والاستشارات PEATCHD الفترة من 24-26 أغسطس 2024م.",
-        "المؤتمر الدولي الثالث عشر لأكاديمية رواد التميز عنوان المؤتمر: وسائل التواصل بين الإفراط والاعتدال وانعكاساتها التربوية والمجتمعية – الواقع والمأمول) معًا لتكوين طالب سوي نفسيًا وصحيًا وتربويًا ذي إدارة قوية برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC) الفترة من 5-6 نوفمبر 2022م بواقع 15 ساعة تدريبية.",
-        "المؤتمر الدولي الثامن عشر لأكاديمية رواد التميز عنوان المؤتمر: تعليم ورعاية الأبناء في عصر الذكاء الاصطناعي – رؤى الواقع، وتحديات الحاضر، وآمال المستقبل معًا من أجل مستقبل أفضل لأبنائنا برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC) الفترة: أيام (السبت - الاثنين) 20-22 صفر 1446 هـ، الموافق 24-26 أغسطس 2024م.",
-        "المؤتمر الدولي العربي الأول بعنوان تطوير منظومة تقويم المعلمين بالمرحلة الابتدائية في الوطن العربي الواقع والمأمول نحو تقويم عربي موحد برعاية المؤسسة القومية للبحوث والاستشارات والتدريب,كلية التربية جامعة الأزهر في الفترة من 26 أبريل إلي 28 أبريل 2025م.",
-        "المؤتمر العلمي الأول لقسم الإدارة التربوية وسياسات التعليم كلية التربية جامعة الفيوم بعنوان الذكاء الاصطناعي وتطوير منظومة الإدارة التربوية في عصر المعلوماتية في مايو 2025م."
-      ]},
-      { h: "الرسائل العلمية التي شاركت في الإشراف عليها (35)", ol: true, list: [
-        "ماجستير: \"فاعلية استخدام إستراتيجية خرائط العقل في تدريس الفلسفة لطلاب المرحلة الثانوية على استيعاب المفاهيم الفلسفية وتنمية التفكير التأملي\", تاريخ المنح, 19/10/2016م.",
-        "ماجستير: فاعلية استخدام نموذج التعلم التوليدي في تنمية مهارات التفكير الفلسفي والاتجاه نحو دراسة الفلسفة لدى طلاب المرحلة الثانوية, \", تاريخ المنح, 19/10/2016م.",
-        "ماجستير: فاعلية وحــدة مقترحــة فـي تدريس المشكــــــلات النفسيــــة على تنميـة الوعي بها ومهارات الذكــاء الوجــداني لدي الطــلاب المعلميـن شعبــة علــم النفــس. \", تاريخ المنح, 19/10/2016م.",
-        "ماجستير: فاعلية برنامج مقترح في قضايا فلسفة الأخلاق التطبيقية لتنمية التفكير الأخلاقي لدى الطلاب المعلمين شعبة الفلسفة واتجاهاتهم نحو هذه القضايا, \", تاريخ المنح, 19/10/2016م.",
-        "ماجستير: فاعلية استخدام إستراتيجية بناء توافق وجهات النظر في تدريس علم النفس على تنمية مهارات الذكاء الناجح والتفكير المستقبلي لطلاب المرحلة الثانوية, تاريخ المنح, 10/1/2018م.",
-        "ماجستير: تطوير نظام التربية العملية بكليات التربية فى الجامعات المصرية \"دراسة مقارنة\", تاريخ المنح, 13/8/2018م.",
-        "ماجستير: تصميم إستراتيجية تعليم مدمج قائمة على دعامات التعلم لتنمية بعض المهارات الحياتية لدى تلاميذ المدارس الفكرية القابلين للتعلم, تاريخ التسجيل, 13/4/2016م.",
-        "ماجستير: فاعلية استخدام المدخل التفاعلي في تدريس علم الاجتماع على تنمية التحصيل الدراسي ومهارات التفاعل الاجتماعي لدى طلاب المرحلة الثانوية, تاريخ التسجيل, 13/4/2016م.",
-        "ماجستير: أثر استخدام التعلم الخدمي فى تدريس علم الاجتماع على تنمية بعض مهارات التفكير التأملي وقيم المشاركة المجتمعية لدى طلاب المرحلة الثانوية, تاريخ التسجيل, 13/4/2016م.",
-        "ماجستير: برنامج مقترح في علم الاجتماع قائم على بعض قضايا الأمن القومي لتنمية التفكير الجمعي والمسئولية الاجتماعية لدى طلاب كلية التربية, تاريخ التسجيل, 19/10/2016م.",
-        "ماجستير: فاعلية استخدام مدخل القضايا الجدلية في تدريس الفلسفة على التحصيل الدراسي وتنمية مهارات التفاوض لدى طلاب المرحلة الثانوية. تاريخ التسجيل 19/4/2017م.",
-        "ماجستير: اثر أنموذجي(التناوب على محطات التعلم/الفصل المعكوس)في بيئة تعلم مدمج على تنمية بعض مهارات نظم تكنولوجيا المعلومات لدى طلاب كلية السياحة والفنادق. تاريخ التسجيل 19/4/2017م.",
-        "دكتوراه: برنامج مقترح باستخدام استراتيجيات محطات التعلم لتنمية الوعي بالقضايا الفلسفية ومهارات الحكمة لدى طلاب المرحلة الثانوية تاريخ التسجيل 14/3/2018م.",
-        "ماجستير: وحدة مقترحة في الفلكلور الشعبي لتنمية القدرة على تحدى الخرافات والاتجاه نحو دراسة علم الاجتماع لدى طلاب المرحلة الثانوية, تاريخ التسجيل 11/4/2018م.",
-        "ماجستير: استخدام المدخل التفاوضي في تدريس علم الاجتماع لتنمية مهارات اتخاذ القرار والذكاء الاجتماعي لدي طلاب المرحلة الثانوية, تاريخ التسجيل 11/4/2018م.",
-        "ماجستير: برنامج مقترح في الفلسفة الأخلاقية لتنمية المفاهيم واتخاذ القرار الأخلاقي لدى طلاب المرحلة الثانوية, تاريخ التسجيل 11/4/2018م.",
-        "ماجستير: فاعلية استراتيجية التسريع المعرفي في تدريس علم الاجتماع على تنمية عادات العقل وبقاء أثر التعلم لدى طلاب المرحلة الثانوية. تاريخ التسجيل 11/4/2018م.",
-        "ماجستير: استخدام نموذج التعلم القائم علي المواقف المزدوجة في تدريس علم الاجتماع لتعديل التصورات الخطأ للمفاهيم الاجتماعية وتنمية الكفاءة الذاتية لدى طلاب المرحلة الثانوية, تاريخ التسجيل 11/4/2018م.",
-        "ماجستير: فاعلية وحدة مقترحة في قضايا فلسفة القيم لتنمية الوعي بهذه القضايا والتفكير الايجابي لدى طلاب المرحلة الثانوية تاريخ التسجيل /4/2019م.",
-        "ماجستير: استخدام استراتيجية التعلم التخيلي في تدريس علم النفس لتنمية التفكير البصري والتحصيل لدى طلاب المرحلة الثانوية تاريخ التسجيل /4/2019م.",
-        "ماجستير: استخدام استراتيجية الأبعاد السداسية في تدريس علم الاجتماع لتنمية التفكير التحليلي لدى طلاب المرحلة الثانوية تاريخ التسجيل /4/2019م.",
-        "ماجستير: برنامج مقترح في تدريس قضايا علم اجتماع المرأة لتنمية قوة التحمل النفسي والوعي بهذه القضايا لدى الطلاب المعلمين, تاريخ المنح.2020م.",
-        "ماجستير: برنامج مقترح في قضايا علم النفس السيبراني لتنمية الوعي بأخلاقيات التكنولوجيا المعاصرة والرفاهية النفسية لدى الطلاب المعلمين شعبة علم نفس, 2022م.",
-        "دكتوراه: برنامج مقترح في قضايا علم الاجتماع البيئي لتنمية الوعي بأخلاقيات البيئة والذكاء الثقافي لدى طلاب المرحلة الثانوية \", 2024م.",
-        "دكتوراه: برنامج مقترح في قضايا علم الاجتماع الطبي لتعديل التصورات الخاطئة عن الصحة والمرض وتنمية مهارات التفكير الإيجابي لدى الطلاب المعلمين\", 2024م.",
-        "دكتوراه: برنامج مقترح في قضايا علم اجتماع الجريمة لتنمية الوعي الاجتماعي والصمود النفسي لدى طلاب المرحلة الثانوية. \", 2024م.",
-        "دكتوراه: برنامج مقترح في قضايا علم الاجتماع الأسري لتنمية الوعي بمشكلات الأسرة ومهارات الذكاء الناجح لدى الطلاب المعلمين\", 2024م.",
-        "دكتوراه: برنامج مقترح في قضايا علم الاجتماع الآلي لتنمية مهارات الذكاء الرقمي والتفكير التقويمي لدى الطلاب المعلمين\", 2024م.",
-        "دكتوراه: برنامج مقترح في قضايا الفلسفة الطبية لتنمية الوعي بهذه القضايا والمسئولية الأخلاقية لدى الطلاب المعلمين\", 2024م.",
-        "دكتوراه: تفاعل بين نمط الوكيل الذكي والمثابرة الأكاديمية وأثره في تنمية مهارات إدارة مخاطر الأمن السيبراني واليقظة العقلية لدى تلاميذ المرحلة الابتدائية\", 2024م.",
-        "ماجستير: استخدام التعلم النقال في تدريس علم الاجتماع وأثره في تنمية المفاهيم الاجتماعية والدافعية للإنجاز لدي طلاب المرحلة الثانوية\", 2024م.",
-        "دكتوراه: برنامج مقترح في قضايا علم النفس الإعلامي لتنمية القدرة على تحدي الشائعات والرشاقة المعرفية لدى الطلاب المعلمين 2024م.",
-        "دكتوراه: نمط التنافس في بيئة محفزات رقمية قائمة على المشاعر وأثره في تنمية المهارات الحياتية الإلكترونية والطفو الأكاديمي لدى تلاميذ المرحلة الابتدائية 2024م.",
-        "دكتوراه: برنامج مقترح في قضايا علم النفس الأسري لتنمية المفاهيم والمرونة النفسية لدى الطلاب المعلمين شعبة علم النفس\" 2024م.",
-        "دكتوراه: برنامج مقترح في تدريس قضايا علم اجتماع الشباب لتنمية التوازن المعرفي والثراء النفسي لدى الطلاب المعلمين 2024م."
-      ]},
-      { h: "التقديرات", list: ["جائزة جامعة الفيوم للتفوق في خدمة المجتمع وتنمية البيئة، 2025.", "جائزة جامعة الفيوم التشجيعية في التأليف العلمي (القطاع الأدبي)، 2025.", "72 شهادة تقدير ودرعًا من الكلية والجامعة والمحافظة والطلاب."]},
-      { h: "المقررات التي تدرّسها", list: [
-        "مرحلة الليسانس: طرق تدريس الفلسفة والاجتماع وعلم النفس، التدريس المصغر، تكنولوجيا التعليم، التفكير الفلسفي والعلمي.",
-        "الدبلوم العامة والمهنية والخاصة: طرق التدريس، مناهج البحث، التدريب الميداني، مناهج ذوي الاحتياجات الخاصة، الاتجاهات الحديثة في طرق التدريس.",
-        "تمهيدي الماجستير والدكتوراه: مناهج البحث، الاتجاهات الحديثة في البحث التربوي والتدريس، مشكلات تدريس المواد الفلسفية.",
-        "مقرر إلكتروني من تأليفها وإنتاجها: طرق تدريس المواد الفلسفية، مركز التعلم الإلكتروني بجامعة الفيوم."
-      ]},
-      { h: "الجمعيات العلمية", list: [
-        "الجمعية المصرية للدراسات الفلسفية والنفسية.",
-        "رابطة التربية الحديثة.",
-        "الجمعية المصرية للدراسات الاجتماعية.",
-        "الجمعية المصرية للمناهج وطرق التدريس.",
-        "الجمعية العربية لاتحاد الجامعات العربية."
-      ]}
+/* محتوى الموقع — يُكتب تلقائيًا من لوحة التحكم (admin/). لا تعدّل يدويًا إلا عند الضرورة. */
+window.SITE = window.__PREVIEW_SITE__ || /*JSON*/{
+ "email": "aga02@fayoum.edu.eg",
+ "ui": {
+  "ar": {
+   "title": "أ.د. آمال جمعة — عميد كلية التربية، جامعة الفيوم",
+   "brand": "أ.د. آمال جمعة",
+   "uni": "جامعة الفيوم",
+   "fac": "كلية التربية",
+   "nav": [
+    [
+     "path",
+     "المسار"
     ],
-    en: [
-      { h: "Basic information", list: [
-        "Name: Amal Gomaa Abdel-Fattah Mohammad",
-        "Current position: Dean, Faculty of Education, Fayoum University",
-        "General specialisation: Professor of Curriculum and Instruction",
-        "Specialisation: Curriculum and methods of teaching philosophy and sociology, Department of Curriculum and Instruction",
-        "Email: aga02@fayoum.edu.eg"
-      ]},
-      { h: "Academic qualifications", list: [
-        "Bachelor of Arts and Education in philosophy and sociology, May 2000, very good with honours, Faculty of Education, Cairo University, Fayoum Branch.",
-        "Special Diploma in Education, curricula and teaching methods, very good, 2002, Faculty of Education, Cairo University, Fayoum Branch.",
-        "Master's in Education, curricula and methods of teaching philosophy and sociology, excellent, with a recommendation to print the thesis at the university's expense and circulate it among Egyptian universities, May 2005.",
-        "Doctorate in Education, curricula and methods of teaching philosophy and sociology, with a recommendation to print the thesis at the university's expense and circulate it among universities, April 2008, Faculty of Education, Fayoum University."
-      ]},
-      { h: "Academic positions", list: [
-        "Demonstrator, Department of Curricula and Teaching Methods, Faculty of Education, Fayoum University, 9 November 2000.",
-        "Assistant lecturer, July 2005.",
-        "Lecturer, July 2008.",
-        "Assistant professor, September 2013.",
-        "Professor, January 2019."
-      ]},
-      { h: "Administrative positions", ol: true, list: [
-        "Dean of the Faculty of Education, Fayoum University, from 24 August 2022 to 2025; current term began on 14 April 2026.",
-        "Supervisor of the Department of Comparative Education since August 2022.",
-        "Editor-in-Chief of the Fayoum University Journal of Educational and Psychological Sciences since August 2022.",
-        "Vice Dean for Community Service and Environmental Development, 30 May 2019 to 30 May 2022.",
-        "Acting Vice Dean for Graduate Studies and Research, 2 September to 28 November 2019.",
-        "Acting Vice Dean for Education and Student Affairs, 23 December 2020 to 22 January 2021.",
-        "Faculty coordinator for the Management Information Systems (MIS) project, 2010 to July 2019.",
-        "Director of the Alumni Monitoring Unit of the Quality Assurance Unit, 2013 to July 2019.",
-        "Deputy Executive Director of the Service-Learning and Civic Education Project for Future Leaders, a partnership between the University of Maryland, USA, and Fayoum University, 2010–2012.",
-        "Faculty coordinator for the Electronic Portal Project, 2010 to May 2013.",
-        "Advisor to the Peer Training and Student Participation Project for developing language and statistical analysis skills, 2011/2012.",
-        "Coordinator of the Anti-Violence Against Women Unit at the Faculty of Education, 2018 to July 2019.",
-        "Chairperson of the Graduate Follow-up Unit since 2022.",
-        "Chairperson of the Educational Training Centre since 2022.",
-        "Chairperson of the Crisis Management Unit since 2022.",
-        "Chairperson of the Assessment and Examination Systems Unit since 2022.",
-        "Chairperson of the Psychological Counselling Centre since 2022.",
-        "Chairperson of the Public Service Centre since 2022.",
-        "Chairperson of the Centre of Excellence for Sustainable Professional Development since 2022.",
-        "Chairperson of the board of the Fayoum University Journal of Educational and Psychological Sciences since 2022."
-      ]},
-      { h: "Committees and boards", list: [
-        "Referee on the permanent scientific committees for the promotion of professors and assistant professors in curriculum and instruction.",
-        "Referee for a number of local and international scholarly journals.",
-        "Member of the committee for selecting education leaders in Fayoum Governorate.",
-        "Member of the editorial board of the Fayoum University Journal of Educational and Psychological Sciences, 2014–2022.",
-        "Board member of the Anti-Violence Against Women Unit, Fayoum University, 2022–2025.",
-        "Board member of the Language and Translation Centre, Fayoum University, 2022–2024.",
-        "Board member of the Central Printing Press and the Public Service Centre, Fayoum University, 2024/2025.",
-        "Member of the executive team of the Quality Assurance Unit, Faculty of Education, 2010–2021.",
-        "Member of the technical support and internal and external review teams of the university-wide Assessment and Examinations Development Project, 2010–2016.",
-        "Board member of the Educational Training Centre, Faculty of Education, 2009–2018."
-      ]},
-      { h: "Regulations and programme development", list: [
-        "Member of the teams that prepared Fayoum University's strategic plans for 2016–2021 and 2022–2027.",
-        "Chair of the team that drafted the credit-hour postgraduate bylaws for the General Diploma and the Professional Diploma (classroom teacher), 2023–2025.",
-        "Introduced the Professional Diploma in Classroom Teacher Preparation by ministerial decree, 2023.",
-        "Prepared interdisciplinary programmes with other faculties: entrepreneurship teacher, industrial education and applied engineering, AI applications, agricultural education and biotechnology.",
-        "Introduced distinguished programmes: computer teacher, hospitality education, science and mathematics in English, Arabic for non-native speakers.",
-        "Added two bachelor's programmes in special education teacher preparation, in Arabic and in English."
-      ]},
-      { h: "Presidential initiatives", list: ["Decent Life (Haya Karima)", "Differently Abled", "100 Million Healthy Lives", "Leadership Qualification for Youth", "A New Beginning for Human Development"] },
-      { h: "Research and applied projects", list: [
-        "Teacher Excellence Initiative, funded by USAID, 2022–2027.",
-        "Equal Opportunity Project, Fayoum University.",
-        "Assessment and Examination Systems Development Project, Fayoum University.",
-        "Service-Learning and Civic Education Project for Future Leaders, a partnership between Fayoum University and the University of Maryland.",
-        "Peer Training and Student Participation Project for developing language and statistical analysis skills.",
-        "Contemporary Utopia Project, Umm Al-Mu'mineen Secondary School for Girls.",
-        "Summer Project for Literacy and Adult Education, with the General Authority for Literacy and Adult Education.",
-        "Quality Assurance Project, Faculty of Education, Fayoum University.",
-        "Pathways to Higher Education: developing leadership skills for women."
-      ]},
-      { h: "Training courses and workshops", list: [
-        "22 courses supervised, 58 delivered as a trainer and 33 attended as a trainee.",
-        "Women Lead in Egyptian Governorates, National Training Academy, February 2024.",
-        "National Security Strategy, Military Academy for Postgraduate and Strategic Studies, July 2024.",
-        "Crisis Management and Conflict Resolution, Military Academy for Postgraduate and Strategic Studies, July 2024.",
-        "Technological Development and National Security, Military Academy for Postgraduate and Strategic Studies, December 2024.",
-        "Methods of Protection Against Modern Warfare, Military Academy for Postgraduate and Strategic Studies, February 2025."
-      ]},
-      { h: "Books (39)", ol: true, books: "en" },
-      { h: "Published research and working papers (64)", ol: true, list: [
-        "\"Evaluating The Teaching Performance of psychology and Sociology Teachers in Light of Total Quality Standards and Indicators\", The Journal of Reading and Knowledge, The Egyptian Association for Reading and Knowledge, No. (87), Part Two, March 2009.",
-        "\"The Effectiveness of Using Bybee's Constructivist Learning Model in Manipulating Some Philosophical Misconceptions of Secondary Stage students and their Attitudes towards Philosophy\", Journal of Studies in Curricula and Teaching Methods, The Egyptian Association for Curricula and Teaching Methods, No. (156) Part Two, March 2010.",
-        "\"The Effectiveness of A Suggested Program Using Service Learning in Teaching Sociology in Developing Philosophy and Sociology Section Students' Social Responsibility and Decision Making Skills\"\", Journal of the Educational Association for Social Studies, Issue (42) May 2012.",
-        "\"The Effectiveness of A Suggested E-Syllabus in Methods of Teaching Philosophy in Faculty of Education Studnts' Achievement, Learning Retention and Attitudes Towards Using E-Learning\", The First International Conference of the Center for University Education Development, Excellence in University Performance \"Philosophy - Mechanisms - Standards\", from 10-11 February 2013.",
-        "\"The Effectiveness of a Suggested Unit in Applied Ethics in Developing Awareness of Moral Issues among Students Teachers, Department of Philosophy and Sociology,\" Journal of the Educational Association for Social Studies, Issue (50) April 2013.",
-        "\"The role of civic education in developing some social values and awareness among different age groups\", the experience of Fayoum University, the eleventh scientific conference of the Faculty of Education, Fayoum University: \"The crisis of values in educational institutions\" in the period from May 29 to 30, 2012. (Joint search)",
-        "\"The effectiveness of using the peer teaching strategy in developing basic skills in the Arabic language for non-specialized students of the College of Education and their attitudes towards the use of the strategy\", the eleventh scientific conference of the Faculty of Education, Fayoum University: \"The crisis of values in educational institutions\" in the period from May 29, to 30, 2012 (joint research)",
-        "\"The Effectiveness of Using Peer Coaching Strategy on Developing The Faculty of Education Non-Majors' English Language Basic Skills and their Attitude towards the Strategy\", the eleventh scientific conference of the Faculty of Education, Fayoum University: \"The crisis of values in institutions Educational program\"from May 29, 30 2012. (joint research)",
-        "Egyptian personality traits between positive and negative before and after the revolution of January 25, 2011 in the light of the variables of gender and chronological age. From 13-14 February 2013, Saudi Arabia, Imam Muhammad bin Saud Islamic University, College of Social Sciences - Department of Psychology (2013) (Joint research).",
-        "“The Effectiveness of a Suggested Program in Teaching Political Sociology Using Social Media networks in Developing Political Concepts and Dialogue Skills of Philosophy and Sociology Section Student Teachers and their Attitudes towards political sociology issues and using social media networks”, Journal of Arab Studies in Education and Psychology, Arab Education Association, No. (46), Part Four, February 2014.",
-        "The Effectiveness of Thinking Aloud Strategy in Teaching Philosophy to Secondary Stage Students in their Achievement, Development of Meta-Cognitive Skills, Spiritual Intelligence, and Attitudes towards the Strategy, Journal of the Educational Association for Social Studies, Issue (86) December 2016.",
-        "The Effectiveness of Using the Web Quest Strategy in Teaching Philosophy in Developing Secondary School Students’ Future Thinking Skills and Achievement Motivation, Journal of the Educational Association for Social Studies, Issue (90) May 2017.",
-        "The Effectiveness of Using Learning Stations Strategy in Teaching Sociology in Developing Reasoning Thinking and Social Tolerance of Secondary School Students, Journal of the Educational Association for Social Studies, Issue (96) December 2017.",
-        "The Effectiveness of Using the Imaginative Learning Strategy in Teaching Philosophy in Developing Wisdom Skills, Academic Achievement and Learning Retention of Secondary Stage Students, Journal of the Educational Association for Social Studies, No. (98) March 2018.",
-        "Teaching philosophy and developing reflective thinking skills and philosophical concepts among first-year secondary students, Journal of Educational and Psychological Sciences, Faculty of Education, Fayoum University, No. (7) 2017. (Joint research).",
-        "The Effectiveness of a Suggested Unit in Applied Ethics in philosophy in Developing Student Teachers' Awareness of Ethical Issues at the Philosophy and Sociology Section”, Department of Philosophy and Sociology, Journal of Educational and Psychological Sciences, Faculty of Education, Fayoum University, No. (7) 2017. (Joint research).",
-        "\"The Effectiveness of Using Consensus Building Strategy in Teaching Sociology in Achievement and the Development of Secondary Stage Students' Social Negotiation Skills\" The 14th International Scientific Conference entitled \"Development of Education in the Age of Knowledge Economy and Future Technology\" which was held from 24 of October to 26, 2017.",
-        "The Effectiveness of Combining the Generative Learning Model with Educational Scaffolding in Teaching Philosophy in Developing Philosophical Thinking Skills for High School Students, Journal of Educational and Psychological Sciences, Faculty of Education, Fayoum University, No. (8) 2017. (Joint research).",
-        "A Suggested Unit in Psychological Problems Based on a K.W.L Strategy for Developing Emotional Intelligence Skills for Educated Students in the Psychology section, Journal of Educational and Psychological Sciences, Faculty of Education, Fayoum University, No. (8) 2017. (Joint research).",
-        "\"A Proposed Program in Criminal Sociology Issues for Developing the Ability to Bear Frustration and Ambiguity and to Raise Awareness of these Issues among Student Teachers at Philosophy and Sociology Section\", Journal of the Educational Association for Social Studies, Educational Association for Social Studies, Issue (103) August 2018.",
-        "\"The Effectiveness of a Suggested Program Using Cognitive and Meta-cognitive Strategies in Teaching Social Issues on the Development of Student- Teachers at The Philosophy and Sociology Section's Awareness and Critical Thinking\" Summary of The Ph.D. Degree - Fayoum University.",
-        "“The Effectiveness of a Suggested Program in Teaching Psychological Pollution Issues for Developing Creative Skills and for Enhancing Psychological Happiness Level among Pre-Service Teachers in Psychology Major” Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (14), Issue (12) 2020.",
-        "The Effectiveness of a Suggested Program in Teaching Psychological Pollution Issues for Enhancing Psychological Immunity Level among Pre-Service Teachers in Psychology Major- Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (14), Issue (12) 2020.",
-        "“Using the Imaginative Learning Strategy in Teaching psychology to Develop Students exploratory Thinking Skills and their Attitude Towards the Strategy among Secondary School Students” Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (15), 2021.",
-        "“The Effectiveness of a Proposed Unit in Psychological Wealth in Developing Academic Perseverance among Student Teachers, Psychology Section” -Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (15), 2021.",
-        "“The Effectiveness of Using the Learning Stations Strategy in Teaching the Psychology of Happiness in Developing the Psychological Well-Being of Student Teachers, Psychology Section” Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (15), 2021.",
-        "“The Effectiveness of Using Controversial Issues Approach in Teaching Philosophy in Developing Dialogue Skills and The learning effect remains among Secondary School Students” Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (5), 2021.",
-        "“Using the KWL meaning-building strategy in teaching folklore to develop the ability to challenge myths among first-year secondary students”, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue (1), Winter 2020. (Joint research).",
-        "“The Effectiveness of Using the Interactive Approach in Teaching Sociology on Developing Social Responsibility for High School Students, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue (1), Winter 2020. (Joint research).",
-        "“The Effectiveness of Using Service Learning in Teaching Sociology in Developing Some Logical Thinking Skills for High School Students, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue (1), Winter 2020. (Joint research).",
-        "“Using the Negotiating Approach in Teaching Sociology to Develop Communication Skills and Adapt to Social Situations for Second Year Students”, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue (1), Winter 2020. (joint research).",
-        "“The Effectiveness of a Suggested Program in Teaching Psychological Pollution Issues for Developing Creative Skills and for Enhancing Psychological Happiness Level among Pre-Service Teachers in Psychology Major”, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue 2020. (joint search).",
-        "“The Effectiveness of a Suggested Program in Teaching Psychological Pollution Issues for Enhancing Psychological Immunity Level among Pre-Service Teachers in Psychology Major”, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue 2020. (joint search).",
-        "“The Effectiveness of Using the Dialectical Issues Approach in Teaching Philosophy in Developing Dialogue Skills and Sustaining the Impact of Learning for High School Students”, Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 2021. (joint search).",
-        "\" The Effectiveness of a Proposed Unit in Psychological Wealth in Developing Academic Perseverance among Student Teachers, Psychology Section”, Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 2021. (joint search).",
-        "\" Using the Imaginative Learning Strategy in Teaching psychology to Develop Students exploratory Thinking Skills and their Attitude Towards the Strategy among Secondary School Students”, Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 2021. (joint search).",
-        "\" The Effectiveness of Using the Learning Stations Strategy in Teaching the Psychology of Happiness in Developing the Psychological Well-Being of Student Teachers, Psychology Section”, Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 2021. (joint search).",
-        "A working paper entitled: Teaching and distance learning strategies to keep pace with the challenges of the times, the first environmental conference for the community service and environmental development sector, Faculty of Education, Fayoum University, November 30, 2021.",
-        "A working paper entitled: Digital Culture Skills as a Prerequisite for Twenty-First Century Skills), the First Environmental Conference for the Community Service and Environmental Development Sector, Faculty of Education, Fayoum University, November 30, 2021 AD. (joint paper)",
-        "A working paper entitled: The Phenomenon of Electronic Bullying, the Pest of the Third Millennium, the First Environmental Conference for the Community Service and Environmental Development Sector, Faculty of Education, Fayoum University, November 30, 2021 (joint paper)",
-        "A working paper entitled: The level of awareness of secondary school students about the ethics of contemporary environmental issues, the first environmental conference for the community service and environmental development sector, at the Faculty of Education, Fayoum University, November 30, 2021 (joint paper)",
-        "The Level of Psychological Pollution among Students of the Faculty of Education, the First Environmental Conference for the Community Service and Environmental Development Sector, Faculty of Education, Fayoum University, November 30, 2021 (joint research)",
-        "Using Learning Stations Strategies in Teaching Philosophy to Develop Motivation for Achievement and Attitude toward Philosophical Issues among Secondary School Students,” Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 16, December 2021.",
-        "Using Learning Stations Strategies in Teaching Philosophy to Develop Achievement and Spiritual Intelligence among Secondary School Students,” Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 16, December 2021.",
-        "Using the ethical analysis approach in teaching philosophy to develop achievement and problem-solving skills among second-year secondary school students,” Fayoum University Journal of Educational and Psychological Sciences, October 2022.",
-        "A proposed program on issues of cyberpsychology to develop psychological prosperity and the attitude towards these issues among student teachers in the Psychology Division,” Fayoum University Journal of Educational and Psychological Sciences, Volume 17, Issue 6, April 2023.",
-        "A proposed unit on women’s sociology issues to develop academic achievement and the ability to tolerate frustration among student teachers,” Fayoum University Journal of Educational and Psychological Sciences, Volume 16, Issue 10, December 2022.",
-        "A working paper entitled “Digital drugs are the scourge of the digital age,” the First Cultural Forum for the Community Service and Environmental Development Sector, entitled The Value System in the Age of Digitalization, Fayoum University - Faculty of Education, March 20, 2022 AD.",
-        "A working paper entitled “Tolerance is a social and educational necessity and a modern and moral obligation,” the First Cultural Forum for the Community Service and Environmental Development Sector, entitled The System of Values in the Age of Digitalization, Fayoum University - Faculty of Education, March 20, 2022 AD.",
-        "A working paper entitled “Electronic blackmail is a time bomb and the scourge of the fourth generation,” the First Cultural Forum for the Community Service and Environmental Development Sector, entitled The Value System in the Age of Digitalization, Fayoum University - Faculty of Education, March 20, 2022 AD.",
-        "A working paper entitled “The role of the university in developing the values of digital citizenship”, the First Cultural Forum for the Community Service and Environmental Development Sector, entitled The Value System in the Age of Digitalization, Fayoum University - Faculty of Education, March 20, 2022 AD.",
-        "A working paper entitled “Awareness of climate changes is a modern educational and obligatory necessity,” the second environmental conference for the community service and environmental development sector at the Faculty of Education, Fayoum University, entitled “Climate changes and the education system,” a “future vision,” during the period from (12-13) December 2022 AD.",
-        "“Attitudes of Fayoum University students towards using e-learning in teaching”, the First Scientific Conference of the Department of Comparative Education entitled “The Fifth Industrial Revolution and its Repercussions on the Educational System, International Perspectives”, Faculty of Education, Fayoum University 2023 AD.",
-        "Cybersecurity Skills in the Era of the Seventh Industrial Revolution, a working paper presented at the Second Cultural Forum of the Faculty of Education, Fayoum University, entitled Cybersecurity Issues: An Educational Vision, 2024 AD.",
-        "\"The effectiveness of using the strategy of building consensus of viewpoints in teaching sociology issues to develop practical intelligence skills and academic achievement among student teachers\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
-        "\"The effectiveness of using the strategy of learning stations in teaching sociology issues to develop analytical intelligence skills and the trend towards issues among student teachers\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
-        "\"A proposed program in teaching sociology based on the meaning building strategy (k.w.l) to develop emotional regulation and responsibility among student teachers\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
-        "\"A proposed program in teaching sociology based on the Bybee model of constructive learning to modify misconceptions among student teachers\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
-        "\"A proposed program in sociology issues based on the concept maps strategy to develop the attitude towards the subject and assume responsibility among secondary school students\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
-        "\"A proposed program in sociology issues of crime to develop personal efficiency and problem solving among secondary school students\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint).",
-        "Cybersecurity Skills in the Era of the Fourth Industrial Revolution – A working paper presented at the Second Cultural Forum of the Faculty of Education, Fayoum University, titled “Cybersecurity Issues: An Educational Vision,” 2025.",
-        "High School Students' Attitudes Towards Using E-learning Platforms in Teaching Scientific Subjects – Presented at the Second Cultural Forum of the Faculty of Education, Fayoum University, titled “Cybersecurity Issues: An Educational Vision,” 2025. (Co-authored)",
-        "The Reality of Using Virtual Labs in Teaching Science Among Students of the Faculty of Education, Fayoum University – Presented at the same forum, 2025. (Co-authored)",
-        "Cyber bullying Among Students of the Faculty of Education, Fayoum University in Light of Some Demographic Variables – Presented at the same forum, 2025. (Co-authored)"
-      ]},
-      { h: "Scientific conferences attended or presented at", ol: true, list: [
-        "Attending the conference of the Educational Association for Social Studies: Faculty of Education, Ain Shams University, entitled: \"Citizenship Education and Social Studies Curricula\", which was held from 19 to 20 July 2008.",
-        "Attending the Egyptian Association for Curricula and Teaching Methodology conference: Faculty of Education, Ain Shams University, entitled: \"Curricula of Education and Cultural Identity,\" which was held from 30 to 31 July 2008.",
-        "Attending the Conference of the Faculty of Education, Fayoum University, entitled: The Ninth Scientific Conference \"Developing education in the Arab world, reality and aspirations,\" which was held from 14 to 15 October 2008.",
-        "Attending the conference of the Faculty of Education, Zagazig University, entitled: The seventh annual scientific conference \"Technological challenges and the development of the education system\", which was held from 29 to 30 April 2009.",
-        "Attending the Egyptian Association for Curricula and Teaching Methodology conference: Faculty of Education, Ain Shams University, entitled: Twenty-first scientific conference, \"Curriculum development between originality and contemporary\", which was held from 28 to 29 July 2009.",
-        "Attending the Egyptian Association for Reading and Knowledge: The Faculty of Education, Ain Shams University, entitled: \"Reading Books between Induction and Directing,\" which was held from 15 to 16 July 2009.",
-        "Attending a symposium on scientific research in the Department of Curricula and Teaching Methods, Faculty of Education, Fayoum University, 11/5/2009.",
-        "Attending the tenth annual scientific conference of the Egyptian Association for Mathematics Education: entitled \"New Trends in the Development of Mathematics Teaching\" on 3/8/2010.",
-        "Attending the Conference of the Faculty of Education, Fayoum University, entitled: The Tenth Scientific Conference, \"Educational Research in the Arab World, A Future Vision\", which was held from 20 to 21 April 2010.",
-        "Head of the media committee at the Faculty of Education, Fayoum University, entitled: The eleventh scientific conference, entitled \"The Crisis of Values in Educational Institutions\", from May 30-29, 2012.",
-        "Participating with four research papers with a group of professors at the eleventh scientific conference of the Faculty of Education, Fayoum University: \"The Crisis of Values in Educational Institutions\" from May 30 to 29, 2012.",
-        "Participating in preparing the final conference book for the service learning and civic education project to build future leaders in Egyptian society. The project is a partnership between the University of Maryland in the United States of America and Fayoum University in September 2012.",
-        "A research paper entitled: \"The Effectiveness of A Suggested E-Syllabus in Methods of Teaching Philosophy in Faculty of Education Studnts' Achievement, Learning Retention and Attitudes Towards Using E-Learning\", The First International Conference of the Center for University Education Development, Excellence in University Performance \"Philosophy - Mechanisms - Standards\", from 10-11 February 2013.",
-        "A research paper entitled: Egyptian personality traits between positive and negative before and after the revolution of January 25, 2011 in the light of the variables of gender and chronological age. From 13-14 February 2013, Saudi Arabia, Imam Muhammad bin Saud Islamic University, College of Social Sciences - Department of Psychology (2013) (Joint research).",
-        "Attending the Conference of the Faculty of Education, Fayoum University, entitled: The Twelfth Scientific Conference entitled \"Education and Building the Arab Man in the Light of Present Challenges and Future Aspirations\", which was held from 23 to 24 October 2013.",
-        "Head of the Media Committee at the Faculty of Education, Fayoum University, entitled: The Eleventh Scientific Conference, entitled \"Education and Building the Arab Person in the Light of Present Challenges and Future aspirations,\" which was held from October 23 to 24, 2013.",
-        "Attending the Egyptian Association for Curricula and Teaching Methodology, the 23rd International Scientific Conference, Faculty of Education, Ain Shams University, entitled: \"Curriculum Development, Visions and Trends\", which was held from 13 to 14 August 2014.",
-        "Attending the second international conference for the development and training in higher education at Beni Suef University, entitled \"Talent Development and Opening Horizons for the Future\" which was held on November 18, 2014.",
-        "Attending the conference of the Faculty of Education, Helwan University, entitled: The Eighteenth Annual Scientific Conference \"Education and Support for the Egyptian Personality\", which was held from 18 to 19 November 2015.",
-        "Attending the third international conference of Beni Suef University in cooperation with the Organization of the League of Arab States, entitled \"Learning Disabilities: Environment, Development and Experiences\", which was held from 20 to 21 December 2015.",
-        "Attending the first international conference for the community service sector at Fayoum University, entitled \"New trends in care for people with disabilities\" which was held from 9 to 11 November 2015.",
-        "Attending the Conference of the Faculty of Education, Fayoum University, entitled: The Thirteenth International Scientific Conference, entitled \"Violence in educational institutions, appearances, causes, and ways of confrontation\", which was held from 15 to 17 October 2016.",
-        "Attending the conference of the Educational Association for Social Studies: Faculty of Education, Ain Shams University, entitled: \"Tolerance and acceptance of the other,\" which was held from 3 to 4 October 2017.",
-        "Participating with research in the conference of the Faculty of Education, Fayoum University, entitled: The Fourteenth International Scientific Conference entitled \"Development of Education in the Age of Knowledge Economy and Future Technology\", which was held from 24 to 26 October 2017. The research title: \"The Effectiveness of Using Consensus Building Strategy in Teaching Sociology in Achievement and the Development of Secondary Stage Students' Social Negotiation Skills\".",
-        "Participating with four research papers with a group of researchers in the first environmental conference for the community service and environmental development sector of the Faculty of Education, Fayoum University, entitled “sustainable development and human building in light of the age challenges” November30/ 2021. The research papers are:.",
-        "A published research entitled “the level of Psychological Pollution for Faculty of Education students” Faculty of Education, Fayoum University, 30/11/2021 (joint research)",
-        "Scheduled: \"The First Cultural Forum for the Community Service and Environmental Development Sector: The Value System in the Digital Age,\" Faculty of Education, Fayoum University, March 20, 2022.",
-        "Participation with Four Research Papers in the First Cultural Forum for the Community Service and Environmental Development Sector: The Value System in the Digital Age, Faculty of Education, Fayoum University, March 20, 2022:.",
-        "Participation in the First International Conference of the Psychological Counseling Center for the Community Service and Environmental Development Sector at the Faculty of Education, Fayoum University: \"Contemporary Trends in the Education and Learning of Hearing-Impaired Individuals,\" June 7, 2022.",
-        "Participation in the Second Environmental Conference for the Community Service and Environmental Development Sector at the Faculty of Education, Fayoum University: \"Climate Change and the Education System: A Future Vision,\" December 12–13, 2022, with a research paper titled: \"Awareness of Climate Change: An Educational Necessity and a Contemporary Obligation.\".",
-        "Participation in the First National Conference for the Educational Studies Sector at the Supreme Council of Universities: \"Education, Community Partnership, and Teacher Preparation and Qualification in the New Republic,\" December 3–4, 2022.",
-        "Attendance Certificate: First National Conference for the Educational Studies Sector at the Supreme Council of Universities.",
-        "Conference Chairperson: The Second Environmental Conference for the Community Service and Environmental Development Sector at the Faculty of Education, Fayoum University: \"Climate Change and the Education System: A Future Vision,\" December 12–13, 2022.",
-        "Participation in the 14th International Conference: \"Education for a Green Environment and the Reality and Future of Climate Change (Risks and Solutions),\" February 4–6, 2023.",
-        "Participation in the 16th International Conference of the Academy of Pioneers of Excellence: \"Emotional and Moral Education and Citizenship Values for the Arab Student in a Virtual World,\" September 2–4, 2023.",
-        "Participation in the 16th International Conference of the Academy of Pioneers of Excellence for Education, Training, and Consulting: \"Emotional and Moral Education and Citizenship Values for the Arab Student in a Virtual World,\" October 7–9, 2023.",
-        "Participation in the 16th International Conference of the Academy of Pioneers of Excellence for Education, Training, and Consulting (PEATCHD): \"Emotional and Moral Education and Citizenship Values for the Arab Student in a Virtual World,\" October 7–8, 2023.",
-        "Participation in the 14th International Conference of the Academy of Pioneers of Excellence for Education, Training, and Consulting (PEATCHD): \"Education for a Green Environment and the Reality and Future of Climate Change (Risks and Solutions),\" February 4–6, 2023.",
-        "Participation in the 15th International Conference of the Academy of Pioneers of Excellence: \"Family Education in the Arab Society in Light of the Digital Age (Challenges and Solutions),\" June 3–5, 2023.",
-        "Participation in the 18th International Conference of the Academy of Pioneers of Excellence: \"Teaching and Caring for Children in the Age of Artificial Intelligence – Reality Perspectives, Present Challenges, and Future Hopes,\" August 24–26, 2024.",
-        "Participation in the 13th International Conference of the Academy of Pioneers of Excellence: \"Social Media Between Excess and Moderation and Its Educational and Social Implications – Reality and Aspirations,\" November 5–6, 2022 (15 training hours).",
-        "Participation in the 18th International Conference of the Academy of Pioneers of Excellence: \"Teaching and Caring for Children in the Age of Artificial Intelligence – Reality Perspectives, Present Challenges, and Future Hopes,\" August 24–26, 2024.",
-        "First Arab International Conference: \"Developing the Evaluation System for Primary-School Teachers in the Arab World: Reality and Aspirations, towards a Unified Arab Evaluation\", National Foundation for Research, Consultancy and Training, Faculty of Education, Al-Azhar University, 26–28 April 2025.",
-        "First Scientific Conference of the Department of Educational Administration and Education Policies, Faculty of Education, Fayoum University: \"Artificial Intelligence and the Development of Educational Administration in the Information Age\", May 2025."
-      ]},
-      { h: "Theses and dissertations co-supervised (35)", ol: true, list: [
-        "Master: \"The Effectiveness of Using Mind Mapping Strategy in Teaching Philosophy for Secondary School Students in Understanding Philosophical Concepts and Developing Reflective Thinking\", Grant Date, 10/19/2016.",
-        "Master: The Effectiveness of Using the Generative Learning Model in Developing Philosophical Thinking Skills and the Attitude toward the Study of Philosophy among Secondary School Students, \"Date of Scholarships, October 19 /2016.",
-        "Master: The Effectiveness of a Suggested Unit in Teaching Psychological Problems in Developing Awareness of them and Emotional Intelligence Skills for Student teachers in the Psychology section. Date of Grants, 10/19/2016.",
-        "Master: The Effectiveness of a Proposed Program in Applied Ethics Philosophy Issues in the Development of Moral Thinking for Teachers' Students, Philosophy Section and Their Attitudes Towards These Issues, Date of Grant, 10/19/2016.",
-        "Master: The Effectiveness of Using Consensus Building Strategy in Teaching Psychology in Developing Successful Intelligence Skills and Future Thinking for Secondary Stage Students, Scholarship Date, 10/1/2018.",
-        "Master: Developing a system of practical education in colleges of education in Egyptian universities: a comparative study\", grant date, 13/8/2018.",
-        "Master: Designing an integrated education strategy based on the pillars of learning for developing some life skills for intellectual school students who are capable of learning, registration date, 4/13/2016.",
-        "Master: The Effectiveness of Using the Interactive Approach in Teaching Sociology in Developing Academic Achievement and Social Interaction Skills for Secondary School Students, Registration Date, 4/13/2016.",
-        "Master: The effect of using service learning in teaching sociology on developing some reflective thinking skills and societal participation values among secondary school students, registration date, 4/13/2016.",
-        "Master: A Proposed Program in Sociology Based on Some National Security Issues for the Development of Collective Thinking and Social Responsibility among College of Education Students, Registration Date, 10/19/2016.",
-        "Master: The Effectiveness of Using the Controversial Issues Approach in Teaching Philosophy in Academic Achievement and Development of Negotiation Skills for Secondary School Students. Registration date 4/19/2017.",
-        "Master: A Typical Impact (Rotation on Learning Stations / Inverted Classroom) in an Integrated Learning Environment on the Development of Some Skills of Information Technology Systems for College of Tourism and Hotels Students. Registration date 4/19/2017.",
-        "PhD: A Proposed Program Using Learning Stations Strategies for Developing Awareness of Philosophical Issues and Wisdom Skills for Secondary School Students. Registration Date 3/14/2018.",
-        "Master: A proposed unit in popular folklore for developing the ability to challenge myths and the attitude towards studying sociology for secondary school students. registration date 4/11/2018.",
-        "Master: Using the negotiating approach in teaching sociology for developing decision-making skills and social intelligence for secondary school students, registration date 11/4/2018.",
-        "Master: A Proposed Program in Moral Philosophy for Conceptual Development and Moral Decision-Making for Secondary School Students, Registration Date 11/4/2018.",
-        "Master: The effectiveness of the strategy of cognitive acceleration in teaching sociology in developing mind habits and maintaining the impact of learning among secondary school students. Registration date 4/11/2018.",
-        "Master: Using the learning model based on dual situations in teaching sociology for modifying wrong perceptions of social concepts and developing self-efficacy for secondary school students. Registration date 4/11/2018.",
-        "Master: Effectiveness of a proposed unit on issues of philosophy of values in developing awareness of these issues and positive thinking for secondary school students. registration date 4/4/2019.",
-        "Master: Using imaginative learning strategy in teaching psychology for developing visual thinking and achievement among secondary stage students, registration date 4/4/2019.",
-        "Master: \"Using the Hexagonal Dimensions Strategy in Teaching Sociology to Develop Analytical Thinking Among Secondary School Students,\" Registered: April 2019.",
-        "Master: \"A Proposed Program for Teaching Women’s Sociology Issues to Develop Psychological Resilience and Awareness Among Pre-Service Teachers,\" Awarded: 2020.",
-        "Master: \"A Proposed Program in Cyber Psychology Issues to Develop Awareness of Contemporary Technological Ethics and Psychological Well-being Among Pre-Service Psychology Teachers,\" 2022.",
-        "PhD: \"A Proposed Program in Environmental Sociology Issues to Develop Awareness of Environmental Ethics and Cultural Intelligence Among Secondary School Students,\" 2024.",
-        "PhD: \"A Proposed Program in Medical Sociology Issues to Modify Misconceptions About Health and Illness and Develop Positive Thinking Skills Among Pre-Service Teachers,\" 2024.",
-        "PhD: \"A Proposed Program in Criminology to Develop Social Awareness and Psychological Resilience Among Secondary School Students,\" 2024.",
-        "PhD: \"A Proposed Program in Family Sociology to Develop Awareness of Family Issues and Successful Intelligence Skills Among Pre-Service Teachers,\" 2024.",
-        "PhD: \"A Proposed Program in Automated Sociology to Develop Digital Intelligence Skills and Evaluative Thinking Among Pre-Service Teachers,\" 2024.",
-        "PhD: \"A Proposed Program in Medical Philosophy to Develop Awareness of These Issues and Ethical Responsibility Among Pre-Service Teachers,\" 2024.",
-        "PhD: \"The Effectiveness of the Intelligent Agent Pattern and Academic Perseverance in Developing Cybersecurity Risk Management Skills and Mental Vigilance Among Elementary School Students,\" 2024.",
-        "Master: \"Using Mobile Learning in Teaching Sociology and Its Impact on Developing Social Concepts and Achievement Motivation Among Secondary School Students,\" 2024.",
-        "PhD: \"A Proposed Program in Media Psychology Issues to Develop the Ability to Challenge Misinformation and Cognitive Agility Among Pre-Service Teachers,\" 2024.",
-        "PhD: \"The Effect of a Competitive Model in a Digitally Motivated Environment Based on Emotions on Developing E-Life Skills and Academic Resilience Among Elementary School Students,\" 2024.",
-        "PhD: \"A Proposed Program in Family Psychology Issues to Develop Concepts and Psychological Flexibility Among Pre-Service Psychology Teachers,\" 2024.",
-        "PhD: \"A Proposed Program in Youth Sociology Issues to Develop Cognitive Balance and Psychological Enrichment Among Pre-Service Teachers,\" 2024."
-      ]},
-      { h: "Honours", list: ["Fayoum University Award for Excellence in Community Service and Environmental Development, 2025.", "Fayoum University Incentive Award for Scholarly Authorship (humanities), 2025.", "72 certificates of appreciation and shields from the faculty, the university, the governorate and students."]},
-      { h: "Courses taught", list: [
-        "Undergraduate: methods of teaching philosophy, sociology and psychology; micro-teaching; educational technology; philosophical and scientific thinking.",
-        "General, professional and special diplomas: teaching methods, research methods, teaching practice, curricula for people with special needs, new trends in teaching methods.",
-        "Pre-master's and pre-doctoral: research methods, new trends in educational research and teaching, problems of teaching philosophical subjects.",
-        "An e-course she authored and produced: methods of teaching philosophical subjects, E-Learning Centre, Fayoum University."
-      ]},
-      { h: "Scholarly societies", list: [
-        "Egyptian Association for Philosophical and Psychological Studies.",
-        "Modern Education Association.",
-        "Egyptian Association for Social Studies.",
-        "Egyptian Association for Curriculum and Teaching Methods.",
-        "Arab association of the Association of Arab Universities."
-      ]}
+    [
+     "deanship",
+     "العمادة"
+    ],
+    [
+     "books",
+     "المؤلفات"
+    ],
+    [
+     "research",
+     "البحوث"
+    ],
+    [
+     "gallery",
+     "الفعاليات"
+    ],
+    [
+     "honors",
+     "التكريمات"
+    ],
+    [
+     "contact",
+     "تواصل"
     ]
+   ],
+   "langBtn": "English",
+   "langTarget": "en",
+   "role": "عميد كلية التربية، جامعة الفيوم",
+   "name1": "أ.د. آمال جمعة",
+   "name2": "عبد الفتاح محمد",
+   "spec": "أستاذ المناهج وطرق تدريس الفلسفة وعلم الاجتماع",
+   "lead": "ربع قرن في إعداد معلّم الفلسفة والعلوم الاجتماعية، بدأ بمعيدة في القسم عام 2000 ووصل إلى عمادة الكلية في أغسطس 2022، وبدأت فترتها الحالية في العمادة في أبريل 2026.",
+   "cta1": "السيرة الذاتية بالعربية",
+   "cta2": "CV in English",
+   "portraitAlt": "صورة أ.د. آمال جمعة",
+   "statsTitle": "الإنتاج العلمي بالأرقام",
+   "pathTitle": "المسار الأكاديمي",
+   "deanTitle": "في عمادة كلية التربية",
+   "deanLead": "عميد الكلية من 24 أغسطس 2022 حتى 2025، والفترة الحالية للعمادة من 14 أبريل 2026، مع رئاسة تحرير مجلة جامعة الفيوم للعلوم التربوية والنفسية والإشراف على قسم التربية المقارنة.",
+   "unitsTitle": "مراكز ووحدات برئاستها",
+   "booksTitle": "39 كتابًا في التربية وعلم النفس والاجتماع",
+   "booksLead": "أغلفة من مؤلفاتها المنشورة في مصر والإمارات والسعودية بين 2010 و2025. اضغط على أي غلاف لتكبيره.",
+   "booksAll": "القائمة الكاملة في السيرة الذاتية",
+   "bookAlt": "غلاف كتاب من مؤلفات أ.د. آمال جمعة",
+   "pause": "إيقاف الحركة",
+   "play": "تشغيل الحركة",
+   "researchTitle": "محاور البحث",
+   "researchLead": "64 بحثًا وورقة عمل منشورة. هذه أبرز محاورها ونماذج منها.",
+   "galleryTitle": "فعاليات ومشاركات موثّقة",
+   "galleryLead": "صور من فعاليات الكلية خلال العمادة، ثم مؤتمرات وبرامج تدريبية ومبادرات مجتمعية موثّقة بشهاداتها.",
+   "certsTitle": "شهادات المشاركة",
+   "filters": [
+    [
+     "all",
+     "الكل"
+    ],
+    [
+     "conf",
+     "مؤتمرات"
+    ],
+    [
+     "train",
+     "تدريب وقيادة"
+    ],
+    [
+     "comm",
+     "خدمة المجتمع"
+    ]
+   ],
+   "photosTitle": "من فعاليات العمادة",
+   "honorsTitle": "دروع وتكريمات",
+   "honorsLead": "من 72 شهادة تقدير ودرعًا حصلت عليها من الكلية والجامعة والمحافظة وطلابها.",
+   "initTitle": "المبادرات الرئاسية",
+   "initLead": "مشاركات ميدانية مع مديريات الصحة والشباب والمراكز الإعلامية بمحافظة الفيوم.",
+   "cvBandTitle": "السيرة الذاتية الكاملة",
+   "cvBandLead": "متاحة للقراءة باللغتين من أي نسخة من الموقع.",
+   "contactTitle": "للتواصل الأكاديمي",
+   "contactLead": "قسم المناهج وطرق التدريس، كلية التربية، جامعة الفيوم، مصر",
+   "footer": "الموقع الشخصي لـ أ.د. آمال جمعة عبد الفتاح محمد",
+   "back": "العودة إلى الصفحة الرئيسية",
+   "cvTitle": "السيرة الذاتية",
+   "cvOther": "Read the CV in English",
+   "cvOtherTarget": "cv-en",
+   "close": "إغلاق",
+   "prev": "السابق",
+   "next": "التالي",
+   "zoom": "تكبير الصورة"
   },
-
-  /* [عنوان عربي, English title, ناشر عربي, publisher, سنة, مشترك؟] */
-  books: [
-    ["التعلم التعاوني والمهارات الاجتماعية", "Cooperative Learning and Social Skills", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2010, 0],
-    ["القضايا الاجتماعية في القرن الحادي والعشرين", "Social Issues in the Twenty-first Century", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2010, 0],
-    ["استراتيجيات التدريس والتعلم: نماذج وتطبيقات", "Teaching and Learning Strategies: Models and Applications", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2010, 0],
-    ["القضايا الأخلاقية في الألفية الثالثة", "Ethical Issues in the Third Millennium", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2015, 0],
-    ["مهارات التفكير: رؤية تربوية معاصرة", "Thinking Skills: A Contemporary Educational Vision", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2015, 0],
-    ["القضايا والمشكلات الاجتماعية المعاصرة", "Contemporary Social Issues and Problems", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2015, 0],
-    ["التربية المدنية واستراتيجيات تنميتها: قضايا وتطبيقات", "Civic Education and its Development Strategies: Issues and Applications", "دار الفكر العربي، القاهرة", "Arab Thought House, Cairo", 2013, 1],
-    ["علم النفس الاجتماعي: قراءة تحليلية لقضاياه المعاصرة", "Analytical Readings in Social Psychology and its Contemporary Issues", "دار الزهراء للنشر والتوزيع", "Dar Al-Zahraa", 2014, 1],
-    ["الذكاءات المتعددة واستراتيجيات تنميتها", "Multiple Intelligences and their Development Strategies", "دار الزهراء للنشر والتوزيع", "Dar Al-Zahraa", 2014, 1],
-    ["مدخل إلى صعوبات التعلم", "Introduction to Learning Difficulties", "دار الرشد، الرياض", "Al-Rushd, Riyadh", 2014, 1],
-    ["استراتيجيات التدريس والتعلم لذوي صعوبات التعلم، الجزء الأول", "Teaching and Learning Strategies for People with Learning Disabilities, Part One", "دار الرشد، الرياض", "Al-Rushd, Riyadh", 2014, 1],
-    ["استراتيجيات التدريس والتعلم لذوي صعوبات التعلم، الجزء الثاني", "Teaching and Learning Strategies for People with Learning Disabilities, Part Two", "دار الرشد، الرياض", "Al-Rushd, Riyadh", 2014, 1],
-    ["مناهج ذوي الاحتياجات الخاصة: رؤية تربوية معاصرة", "Curricula for People with Special Needs: A Contemporary Educational Vision", "دار الرشد، الرياض", "Al-Rushd, Riyadh", 2014, 1],
-    ["أساليب تقييم ذوي الاحتياجات الخاصة في ضوء الجودة الشاملة", "Methods for Evaluating People with Special Needs in Light of Total Quality", "دار الرشد، الرياض", "Al-Rushd, Riyadh", 2014, 1],
-    ["الاتجاهات الحديثة في استراتيجيات التدريس والتعلم للموهوبين والمتفوقين", "New Trends in Teaching and Learning Strategies for the Gifted and Talented", "دار المتنبي، الدمام", "Dar Al-Mutanabi, Dammam", 2015, 1],
-    ["مهارات القيادة في الألفية الثالثة", "Leadership Skills in the Third Millennium", "دار المتنبي، الدمام", "Dar Al-Mutanabi, Dammam", 2015, 1],
-    ["الصحة النفسية لذوي الاحتياجات الخاصة", "Mental Hygiene for People with Special Needs", "دار المتنبي، الدمام", "Dar Al-Mutanabi, Dammam", 2015, 1],
-    ["برامج التوجيه والإرشاد النفسي: النظرية والتطبيق", "Psychological Guidance and Counselling Programmes: Theory and Practice", "دار المتنبي، الدمام", "Dar Al-Mutanabi, Dammam", 2015, 1],
-    ["علم نفس النمو لذوي الاحتياجات الخاصة", "Developmental Psychology for People with Special Needs", "دار المتنبي، الدمام", "Dar Al-Mutanabi, Dammam", 2015, 1],
-    ["استراتيجيات التدريس والتعلم لعلم النفس", "Teaching and Learning Strategies for Psychology", "دار الزهراء للنشر والتوزيع", "Dar Al-Zahraa", 2016, 1],
-    ["استراتيجيات التدريس والتعلم لذوي الإعاقة الفكرية", "Teaching and Learning Strategies for People with Intellectual Disabilities", "دار الزهراء للنشر والتوزيع", "Dar Al-Zahraa", 2016, 1],
-    ["البرامج الانتقالية لذوي الاحتياجات الخاصة: رؤية مستقبلية", "Transitional Programmes for People with Special Needs: A Future Vision", "دار الزهراء للنشر والتوزيع", "Dar Al-Zahraa", 2017, 1],
-    ["البرامج التربوية لذوي الاحتياجات الخاصة: مفاهيم وتطبيقات", "Educational Programmes for People with Special Needs: Concepts and Applications", "دار الزهراء للنشر والتوزيع", "Dar Al-Zahraa", 2017, 1],
-    ["التدريب الميداني في مجالات علم النفس: بين النظرية والتطبيق", "Teaching Practicum in the Fields of Psychology: Between Theory and Practice", "دار الزهراء للنشر والتوزيع", "Dar Al-Zahraa", 2017, 1],
-    ["التفكير الفلسفي والعلمي: رؤية تربوية", "Philosophical and Scientific Thinking: An Educational Vision", "دار البيان، الفيوم", "Dar Al-Bayan, Fayoum", 2017, 0],
-    ["الاتجاهات الحديثة في طرق واستراتيجيات التدريس والتعلم لذوي الاحتياجات الخاصة", "New Trends in Teaching Methods and Learning Strategies for People with Special Needs", "دار ميرنا، القاهرة", "Dar Merna, Cairo", 2019, 0],
-    ["مهارات الممارسة الاجتماعية", "Social Practice Skills", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2019, 0],
-    ["علم الاجتماع البيئي", "Environmental Sociology", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2019, 0],
-    ["أخلاقيات علم الاجتماع التطبيقي", "Ethics of Applied Sociology", "دار الكتاب الجامعي، العين", "University Book House, Al-Ain", 2019, 0],
-    ["استراتيجيات التدريس والتعلم الممتع", "Enjoyable Learning Strategies", "الناشرون المتحدون، الإمارات", "United Publishers, UAE", 2022, 0],
-    ["ثنائية الألفية الثالثة: التفكير الناقد والوعي الاجتماعي", "The Third Millennium Duality: Critical Thinking and Social Awareness", "الناشرون المتحدون، الإمارات", "United Publishers, UAE", 2022, 0],
-    ["التلوث النفسي: آفة الألفية الثالثة", "Psychological Pollution: The Scourge of the Third Millennium", "الناشرون المتحدون، الإمارات", "United Publishers, UAE", 2022, 0],
-    ["المشكلات النفسية في مرحلة المراهقة", "Psychological Problems in Adolescence", "الناشرون المتحدون، الإمارات", "United Publishers, UAE", 2022, 0],
-    ["علم النفس الإيجابي: السعادة، رؤية تربوية معاصرة", "Positive Psychology: Psychological Happiness, A Contemporary Educational Vision", "الناشرون المتحدون، الإمارات", "United Publishers, UAE", 2023, 0],
-    ["استراتيجيات التدريس والتعلم في عصر الرقمنة: نماذج وتطبيقات", "Teaching and Learning Strategies in the Era of Digitisation: Models and Applications", "الناشرون المتحدون، الإمارات", "United Publishers, UAE", 2023, 0],
-    ["مهارات القراءة واستراتيجيات تنميتها", "Reading Skills and Strategies for Developing Them", "الناشرون المتحدون، الإمارات", "United Publishers, UAE", 2023, 0],
-    ["الجرائم الإلكترونية", "Cybercrimes", "مكتبة الأنجلو المصرية، القاهرة", "Anglo-Egyptian Library, Cairo", 2024, 0],
-    ["استراتيجيات علاج قضايا الأمن السيبراني", "Strategies for Addressing Cybersecurity Issues", "المركز الأكاديمي العربي، القاهرة", "Arab Academic Center, Cairo", 2025, 0],
-    ["مهارات عصر الرقمنة", "Skills of the Digital Age", "المركز الأكاديمي العربي، القاهرة", "Arab Academic Center, Cairo", 2025, 0]
+  "en": {
+   "title": "Prof. Amal Gomaa — Dean, Faculty of Education, Fayoum University",
+   "brand": "Prof. Amal Gomaa",
+   "uni": "Fayoum University",
+   "fac": "Faculty of Education",
+   "nav": [
+    [
+     "path",
+     "Career"
+    ],
+    [
+     "deanship",
+     "Deanship"
+    ],
+    [
+     "books",
+     "Books"
+    ],
+    [
+     "research",
+     "Research"
+    ],
+    [
+     "gallery",
+     "Events"
+    ],
+    [
+     "honors",
+     "Honours"
+    ],
+    [
+     "contact",
+     "Contact"
+    ]
+   ],
+   "langBtn": "العربية",
+   "langTarget": "ar",
+   "role": "Dean, Faculty of Education, Fayoum University",
+   "name1": "Prof. Amal Gomaa",
+   "name2": "Abdel-Fattah Mohammad",
+   "spec": "Professor of Curriculum and Methods of Teaching Philosophy and Sociology",
+   "lead": "A quarter of a century preparing teachers of philosophy and the social sciences, from demonstrator in the department in 2000 to dean of the faculty in August 2022, with her current term as dean beginning in April 2026.",
+   "cta1": "Read the CV in English",
+   "cta2": "السيرة الذاتية بالعربية",
+   "portraitAlt": "Portrait of Prof. Amal Gomaa",
+   "statsTitle": "Scholarly output in numbers",
+   "pathTitle": "Academic career",
+   "deanTitle": "Leading the Faculty of Education",
+   "deanLead": "Dean from 24 August 2022 to 2025, with the current term beginning on 14 April 2026; also Editor-in-Chief of the Fayoum University Journal of Educational and Psychological Sciences and supervisor of the Department of Comparative Education.",
+   "unitsTitle": "Centres and units she chairs",
+   "booksTitle": "39 books on education, psychology and sociology",
+   "booksLead": "Covers of her books, published in Egypt, the UAE and Saudi Arabia between 2010 and 2025. Select a cover to enlarge it.",
+   "booksAll": "Full list in the CV",
+   "bookAlt": "Cover of a book by Prof. Amal Gomaa",
+   "pause": "Pause motion",
+   "play": "Play motion",
+   "researchTitle": "Research themes",
+   "researchLead": "64 published papers and working papers. These are the main themes, with examples.",
+   "galleryTitle": "Documented events and participation",
+   "galleryLead": "Photos from faculty events during her deanship, followed by conferences, training programmes and community initiatives documented by their certificates.",
+   "certsTitle": "Certificates of participation",
+   "filters": [
+    [
+     "all",
+     "All"
+    ],
+    [
+     "conf",
+     "Conferences"
+    ],
+    [
+     "train",
+     "Training and leadership"
+    ],
+    [
+     "comm",
+     "Community service"
+    ]
+   ],
+   "photosTitle": "From her deanship",
+   "honorsTitle": "Shields and honours",
+   "honorsLead": "A selection from 72 certificates of appreciation and shields awarded by the faculty, the university, the governorate and her students.",
+   "initTitle": "Presidential initiatives",
+   "initLead": "Field work with the health and youth directorates and the media centres of Fayoum Governorate.",
+   "cvBandTitle": "Full curriculum vitae",
+   "cvBandLead": "Available to read in both languages from either version of the site.",
+   "contactTitle": "Academic contact",
+   "contactLead": "Department of Curriculum and Instruction, Faculty of Education, Fayoum University, Egypt",
+   "footer": "Personal website of Prof. Amal Gomaa Abdel-Fattah Mohammad",
+   "back": "Back to the home page",
+   "cvTitle": "Curriculum vitae",
+   "cvOther": "اقرأ السيرة بالعربية",
+   "cvOtherTarget": "cv-ar",
+   "close": "Close",
+   "prev": "Previous",
+   "next": "Next",
+   "zoom": "Enlarge image"
+  }
+ },
+ "stats": [
+  [
+   64,
+   "بحث منشور",
+   "published papers"
+  ],
+  [
+   39,
+   "كتاب ومؤلَّف",
+   "books"
+  ],
+  [
+   47,
+   "مؤتمر علمي",
+   "conferences"
+  ],
+  [
+   35,
+   "رسالة علمية بإشرافها",
+   "theses supervised"
+  ],
+  [
+   113,
+   "دورة تدريبية",
+   "training courses"
+  ],
+  [
+   72,
+   "شهادة تقدير ودرع",
+   "certificates and shields"
   ]
-};
+ ],
+ "path": [
+  [
+   "2000",
+   "معيدة بقسم المناهج وطرق التدريس",
+   "Demonstrator, Department of Curriculum and Instruction"
+  ],
+  [
+   "2005",
+   "مدرس مساعد، ماجستير بتقدير ممتاز",
+   "Assistant lecturer; master's with distinction"
+  ],
+  [
+   "2008",
+   "مدرس، دكتوراه في التربية",
+   "Lecturer; doctorate in education"
+  ],
+  [
+   "2013",
+   "أستاذ مساعد",
+   "Assistant professor"
+  ],
+  [
+   "2019",
+   "أستاذ، ووكيل الكلية لخدمة المجتمع وتنمية البيئة",
+   "Professor; Vice Dean for Community Service"
+  ],
+  [
+   "2022",
+   "عميد كلية التربية",
+   "Dean of the Faculty of Education"
+  ],
+  [
+   "2026",
+   "الفترة الحالية لعمادة الكلية",
+   "Current term as Dean"
+  ]
+ ],
+ "deanship": [
+  [
+   "دبلومة مهنية جديدة",
+   "استحداث الدبلومة المهنية في إعداد معلّم الفصل بقرار وزاري عام 2023.",
+   "A new professional diploma",
+   "Introduced the Professional Diploma in Classroom Teacher Preparation by ministerial decree in 2023."
+  ],
+  [
+   "لائحة الساعات المعتمدة",
+   "رئاسة فريق إعداد لائحة الدراسات العليا بنظام الساعات المعتمدة للدبلوم العامة والمهنية (2023–2025).",
+   "Credit-hour bylaws",
+   "Chaired the team that drafted the credit-hour postgraduate bylaws for the general and professional diplomas (2023–2025)."
+  ],
+  [
+   "برامج بينية مع كليات الجامعة",
+   "إعداد معلّم ريادة الأعمال، والتعليم الصناعي والهندسة التطبيقية، وتطبيقات الذكاء الاصطناعي، والتعليم الزراعي والبيوتكنولوجي.",
+   "Interdisciplinary programmes",
+   "Teacher-preparation programmes with other faculties: entrepreneurship, industrial education and applied engineering, AI applications, and agricultural education and biotechnology."
+  ],
+  [
+   "برامج مميزة جديدة",
+   "معلّم الحاسب الآلي، والعلوم والرياضيات باللغة الإنجليزية، والتربية الخاصة، واللغة العربية للناطقين بغيرها.",
+   "New distinguished programmes",
+   "Computer teacher, science and mathematics in English, special education, and Arabic for non-native speakers."
+  ],
+  [
+   "الخطة الاستراتيجية للجامعة",
+   "عضو فريق إعداد خطتي جامعة الفيوم 2016–2021 و2022–2027.",
+   "University strategic plans",
+   "Member of the teams that prepared Fayoum University's strategic plans for 2016–2021 and 2022–2027."
+  ],
+  [
+   "اليوبيل الذهبي للكلية",
+   "احتفلت الكلية بيوبيلها الذهبي وتخريج دفعتها الخمسين عام 2024 خلال عمادتها.",
+   "The faculty's golden jubilee",
+   "The faculty marked its golden jubilee and its fiftieth graduating class in 2024 during her deanship."
+  ]
+ ],
+ "units": [
+  [
+   "مركز التدريب التربوي",
+   "Educational Training Centre"
+  ],
+  [
+   "مركز الإرشاد النفسي",
+   "Psychological Counselling Centre"
+  ],
+  [
+   "مركز التميز للتنمية المهنية المستدامة",
+   "Centre of Excellence for Sustainable Professional Development"
+  ],
+  [
+   "مركز الخدمة العامة",
+   "Public Service Centre"
+  ],
+  [
+   "وحدة نظم التقويم والامتحانات",
+   "Assessment and Examination Systems Unit"
+  ],
+  [
+   "وحدة إدارة الأزمات",
+   "Crisis Management Unit"
+  ],
+  [
+   "وحدة متابعة الخريجين",
+   "Graduate Follow-up Unit"
+  ]
+ ],
+ "themes": [
+  {
+   "ar": "تدريس الفلسفة والتفكير",
+   "en": "Teaching philosophy and thinking",
+   "items": [
+    [
+     "استخدام مدخل القضايا الجدلية في تدريس الفلسفة لتنمية مهارات الحوار",
+     "Using the dialectical issues approach in teaching philosophy to develop dialogue skills"
+    ],
+    [
+     "استراتيجية محطات التعلم في تدريس الفلسفة لتنمية دافعية الإنجاز والاتجاه نحو القضايا الفلسفية",
+     "Learning stations in teaching philosophy to develop achievement motivation and attitudes toward philosophical issues"
+    ],
+    [
+     "وحدة مقترحة في الأخلاق التطبيقية لتنمية الوعي بالقضايا الأخلاقية لدى الطلاب المعلمين",
+     "A suggested unit in applied ethics to develop awareness of moral issues among student teachers"
+    ]
+   ]
+  },
+  {
+   "ar": "علم النفس الإيجابي والتلوث النفسي",
+   "en": "Positive psychology and psychological pollution",
+   "items": [
+    [
+     "برنامج مقترح في تدريس قضايا التلوث النفسي",
+     "A suggested programme for teaching psychological pollution issues"
+    ],
+    [
+     "محطات التعلم في تدريس علم نفس السعادة لتنمية الرفاهية النفسية لدى الطلاب المعلمين",
+     "Learning stations in teaching the psychology of happiness to develop student teachers' psychological well-being"
+    ],
+    [
+     "وحدة مقترحة في الثروة النفسية لتنمية المثابرة الأكاديمية لدى الطلاب المعلمين",
+     "A proposed unit in psychological wealth to develop academic perseverance among student teachers"
+    ]
+   ]
+  },
+  {
+   "ar": "الأمن السيبراني والمواطنة الرقمية",
+   "en": "Cybersecurity and digital citizenship",
+   "items": [
+    [
+     "مهارات الأمن السيبراني في عصر الثورة الصناعية الرابعة (2025)",
+     "Cybersecurity skills in the era of the Fourth Industrial Revolution (2025)"
+    ],
+    [
+     "التنمر الإلكتروني لدى طلاب كلية التربية في ضوء بعض المتغيرات الديموغرافية",
+     "Cyberbullying among Faculty of Education students in light of some demographic variables"
+    ],
+    [
+     "دور الجامعة في تعزيز قيم المواطنة الرقمية",
+     "The role of universities in fostering digital citizenship values"
+    ]
+   ]
+  },
+  {
+   "ar": "التعلم النشط والتربية المدنية",
+   "en": "Active learning and civic education",
+   "items": [
+    [
+     "برنامج مقترح باستخدام التعلم الخدمي في تدريس علم الاجتماع",
+     "A suggested programme using service learning in teaching sociology"
+    ],
+    [
+     "استراتيجية تدريس الأقران في تنمية مهارات كتابة خطة البحث لدى طلاب الدراسات العليا",
+     "Peer teaching to develop research-plan writing skills among postgraduate students"
+    ],
+    [
+     "تقويم الأداء التدريسي لمعلمي علم النفس والاجتماع في ضوء معايير الجودة الشاملة",
+     "Evaluating the teaching performance of psychology and sociology teachers against total quality standards"
+    ]
+   ]
+  }
+ ],
+ "certs": [
+  [
+   "c-07",
+   "conf",
+   "المؤتمر الدولي الثامن عشر لأكاديمية رواد التميز عن التعليم في عصر الذكاء الاصطناعي، أغسطس 2024.",
+   "18th international conference of Rowad Al-Tamayoz Academy, on education in the age of artificial intelligence, August 2024."
+  ],
+  [
+   "c-03",
+   "conf",
+   "شهادة تقدير من قسم الإدارة التربوية وسياسات التعليم عن مؤتمره الأول «الذكاء الاصطناعي وتطوير منظومة الإدارة التربوية في عصر المعلوماتية».",
+   "Certificate of achievement from the Department of Educational Administration for its first conference, on artificial intelligence and educational administration."
+  ],
+  [
+   "y-06",
+   "train",
+   "الأكاديمية الوطنية للتدريب: برنامج «المرأة تقود في المحافظات المصرية»، فبراير 2024.",
+   "National Training Academy: the “Women Lead in Egyptian Governorates” programme, February 2024."
+  ],
+  [
+   "y-07",
+   "comm",
+   "شكر وتقدير من وحدة حقوق الإنسان بمحافظة الفيوم لتدريب العاملين بالمحافظة على حقوق الإنسان، 2024.",
+   "Appreciation from the Human Rights Unit of Fayoum Governorate for training its employees in human rights, 2024."
+  ],
+  [
+   "c-10",
+   "conf",
+   "المؤتمر الدولي السادس عشر لأكاديمية رواد التميز، سبتمبر 2023.",
+   "16th international conference of Rowad Al-Tamayoz Academy, September 2023."
+  ],
+  [
+   "c-15",
+   "comm",
+   "شكر وتقدير للمشاركة في ملتقى التوظيف الحادي عشر ويوم الخريجين بكلية التربية، 11 أكتوبر 2023.",
+   "Appreciation for taking part in the 11th Employment Forum and Alumni Day at the Faculty of Education, 11 October 2023."
+  ],
+  [
+   "q-16",
+   "comm",
+   "مركز الإرشاد النفسي بالكلية: الإشراف على ندوة الاحتفال باليوم العالمي لمتلازمة داون.",
+   "Psychological Counselling Centre: supervising the World Down Syndrome Day seminar."
+  ],
+  [
+   "c-16",
+   "conf",
+   "كلية الخدمة الاجتماعية بجامعة الفيوم: الملتقى العلمي الأول لقسم طرق الخدمة الاجتماعية، 11 ديسمبر 2022.",
+   "Faculty of Social Work, Fayoum University: first scientific forum of the Department of Social Work Methods, 11 December 2022."
+  ],
+  [
+   "y-09",
+   "train",
+   "جائزة مصر للتميز الحكومي: اجتياز دورة المواصفة القياسية ISO 37000:2021 للحوكمة، 2022.",
+   "Egypt Government Excellence Award: completed the ISO 37000:2021 governance standard course, 2022."
+  ],
+  [
+   "y-11",
+   "train",
+   "مركز تنمية قدرات أعضاء هيئة التدريس والقيادات: برنامج إعداد القيادات الجامعية للترشح لمنصب عميد، سبتمبر 2021.",
+   "Faculty and Leadership Development Centre: programme preparing university leaders to stand for dean, September 2021."
+  ],
+  [
+   "c-42",
+   "conf",
+   "الندوة العلمية الأولى لقسم التربية المقارنة «الاتجاهات المعاصرة في مجال التربية المقارنة»، 15 ديسمبر 2020.",
+   "First scientific symposium of the Department of Comparative Education, on contemporary trends in the field, 15 December 2020."
+  ],
+  [
+   "c-36",
+   "conf",
+   "المؤتمر العلمي الدولي الرابع عشر لكلية التربية «تطوير التعليم في عصر اقتصاد المعرفة وتكنولوجيا المستقبل»، أكتوبر 2017.",
+   "14th international scientific conference of the Faculty of Education, on developing education in the knowledge economy, October 2017."
+  ],
+  [
+   "c-57",
+   "conf",
+   "المؤتمر الدولي الثالث لجامعة بني سويف مع اتحاد الجامعات العربية عن التعلم عن بُعد، 20–21 ديسمبر 2015.",
+   "3rd International Conference of Beni Suef University with the Association of Arab Universities, on distance learning, 20–21 December 2015."
+  ],
+  [
+   "c-55",
+   "conf",
+   "المؤتمر القومي الثاني للتدريب والتنمية في التعليم العالي، جامعة بني سويف، نوفمبر 2014.",
+   "2nd National Conference for Training and Development in Higher Education, Beni-Suef University, November 2014."
+  ]
+ ],
+ "shields": [
+  [
+   "aw-01",
+   "جائزة جامعة الفيوم للتفوق في خدمة المجتمع وتنمية البيئة 2025، من كتاب احتفالية عيد العلم الثامن عشر.",
+   "Fayoum University Award for Excellence in Community Service and Environmental Development, 2025 (18th Science Day book)."
+  ],
+  [
+   "aw-02",
+   "جائزة جامعة الفيوم التشجيعية في التأليف العلمي (القطاع الأدبي) 2025.",
+   "Fayoum University Incentive Award for Scholarly Authorship (humanities), 2025."
+  ],
+  [
+   "s-13",
+   "درع اليوبيل الذهبي لكلية التربية، 2024.",
+   "Golden jubilee shield of the Faculty of Education, 2024."
+  ],
+  [
+   "s-02",
+   "وحدة حقوق الإنسان بمحافظة الفيوم: لتدريب العاملين بالمحافظة.",
+   "Human Rights Unit, Fayoum Governorate: for training the governorate's employees."
+  ],
+  [
+   "s-10",
+   "إهداء الدفعة الخمسين بكلية التربية إلى عميدة الكلية.",
+   "A gift from the fiftieth graduating class to the dean."
+  ],
+  [
+   "s-09",
+   "المدرسة المصرية اليابانية بالفيوم الجديدة: لدعمها الدائم للمدرسة.",
+   "Egyptian Japanese School, New Fayoum: for her continued support of the school."
+  ],
+  [
+   "s-01",
+   "كلية التربية: للمشاركة ودعم ملتقى التوظيف الحادي عشر، 2023.",
+   "Faculty of Education: for supporting the 11th Employment Forum, 2023."
+  ],
+  [
+   "s-05",
+   "إهداء طلاب الدبلومة المهنية تخصص تربية خاصة، 2024.",
+   "A gift from the Professional Diploma students in special education, 2024."
+  ],
+  [
+   "s-03",
+   "درع شكر وتقدير من كلية التربية لعميد الكلية.",
+   "Shield of thanks from the Faculty of Education to its dean."
+  ],
+  [
+   "s-08",
+   "قسم المناهج وطرق التدريس: ملتقى التربية العملية الثاني بالكلية.",
+   "Department of Curriculum and Instruction: the faculty's second Field Training Forum."
+  ],
+  [
+   "s-12",
+   "المدرسة المصرية اليابانية: حضور حفل ختام الأنشطة للعام الدراسي 2022/2023.",
+   "Egyptian Japanese School: attending the end-of-year activities ceremony, 2022/2023."
+  ],
+  [
+   "s-06",
+   "إهداء كلية التربية جامعة الفيوم إلى عميدة الكلية.",
+   "A gift from the Faculty of Education, Fayoum University, to its dean."
+  ],
+  [
+   "o-10",
+   "جامعة الفيوم، احتفالية عيد العلم السادس 2013: جائزة التميز في الترقي.",
+   "Fayoum University, sixth Science Day, 2013: award for excellence in promotion."
+  ],
+  [
+   "o-06",
+   "إهداء طلاب قسم علم النفس، دفعة 2017.",
+   "A gift from the psychology students, class of 2017."
+  ]
+ ],
+ "events": [
+  [
+   "ev-00-science-day.jpg",
+   "تسلّم شهادة التكريم من رئيس جامعة الفيوم في احتفالية الجامعة بعيد العلم الثامن عشر، 24 يونيو 2026.",
+   "Receiving her award certificate from the President of Fayoum University at the 18th Science Day celebration, 24 June 2026."
+  ],
+  [
+   "ev-08-awards-stage.jpg",
+   "مع المكرَّمين على منصة احتفالية عيد العلم الثامن عشر بجامعة الفيوم، يونيو 2026.",
+   "With fellow honourees on stage at Fayoum University's 18th Science Day, June 2026."
+  ],
+  [
+   "ev-09-gowns.jpg",
+   "بالزي الأكاديمي مع زميلاتها من أعضاء هيئة التدريس في احتفالية جامعية.",
+   "In academic dress with faculty colleagues at a university ceremony."
+  ],
+  [
+   "ev-03-president.jpg",
+   "تكريم عميد الكلية لرئيس جامعة الفيوم تقديرًا لجهوده في دعم مسيرة الجامعة، يوليو 2026.",
+   "The dean honours the President of Fayoum University for his support of the university, July 2026."
+  ],
+  [
+   "ev-01-graduates.jpg",
+   "افتتاح ملتقى المستفيدين ويوم الخريج تحت رعاية العميد، وتكريم أوائل دفعات 1993–1995 وخريجي 2024–2026، أكتوبر 2026.",
+   "Opening of the Stakeholders' Forum and Graduate Day under the dean's patronage, honouring top graduates of 1993–1995 and graduates of 2024–2026, October 2026."
+  ],
+  [
+   "ev-04-units.jpg",
+   "تكريم رئيس الجامعة لمديري وحدات الكلية التابعة لقطاع خدمة المجتمع وتنمية البيئة بحضور العميد، سبتمبر 2026.",
+   "The university president honours the faculty's community-service unit directors in the dean's presence, September 2026."
+  ],
+  [
+   "ev-12-honour-essawy.jpg",
+   "تكريم كلية التربية للأستاذ الدكتور عاصم فؤاد العيسوي.",
+   "The Faculty of Education honours Prof. Assem Fouad El-Essawy."
+  ],
+  [
+   "ev-11-phd-defense.jpg",
+   "مناقشة رسالة الدكتوراه المقدمة من الباحثة شرين محمد محمود أبو العيد عن برنامج مقترح في الجغرافيا المناخية.",
+   "The doctoral defence of researcher Sherine Mohamed Mahmoud Abu El-Eid, on a proposed programme in climate geography."
+  ],
+  [
+   "ev-10-defense-panel.jpg",
+   "لجنة مناقشة رسالة علمية بكلية التربية بالزي الأكاديمي.",
+   "A thesis examination committee in academic dress at the Faculty of Education."
+  ],
+  [
+   "ev-18-nta.jpg",
+   "ندوة الأكاديمية الوطنية للتدريب: مناقشة مخرجات تقرير المستقبل وعلاقتها بالخريجين وسوق العمل.",
+   "National Training Academy session on the outputs of a future-of-work report and their relation to graduates and the labour market."
+  ],
+  [
+   "ev-13-aesthetic-salon.jpg",
+   "صالون الثقافة الجمالية بكلية التربية جامعة الفيوم.",
+   "The Aesthetic Culture Salon at the Faculty of Education, Fayoum University."
+  ],
+  [
+   "ev-05-postgrad.jpg",
+   "اجتماع العميد مع طلاب الدراسات العليا لمناقشة احتياجات سوق العمل وربط البحث العلمي بمتطلبات التنمية، أبريل 2026.",
+   "The dean meets postgraduate students to discuss labour-market needs and linking research to development, April 2026."
+  ],
+  [
+   "ev-06-october.jpg",
+   "ندوة «انتصارات أكتوبر يوم العزة والكرامة» تحت رعاية العميد بمشاركة نخبة من الخبراء، أكتوبر 2026.",
+   "Seminar on the October victory, held under the dean's patronage with a panel of experts, October 2026."
+  ],
+  [
+   "ev-02-youth-conf.jpg",
+   "مؤتمر «دور الشباب في بناء الوطن» الذي نظمته الكلية تحت رعاية العميد، أكتوبر 2026.",
+   "The faculty's conference on the role of youth in building the nation, held under the dean's patronage, October 2026."
+  ],
+  [
+   "ev-14-shield.jpg",
+   "تسليم درع تكريم في إحدى فعاليات الكلية.",
+   "Presenting a shield of honour at a faculty event."
+  ],
+  [
+   "ev-15-guests.jpg",
+   "استقبال ضيوف الكلية.",
+   "Welcoming guests to the faculty."
+  ],
+  [
+   "ev-16-certificates.jpg",
+   "تسليم شهادات تقدير لعضوات هيئة التدريس.",
+   "Presenting certificates of appreciation to faculty members."
+  ],
+  [
+   "ev-17-certificate.jpg",
+   "تسليم شهادة تقدير في إحدى ندوات الكلية.",
+   "Presenting a certificate at a faculty seminar."
+  ],
+  [
+   "ev-19-graduation.jpg",
+   "بالزي الأكاديمي في حفل تخرج.",
+   "In academic dress at a graduation ceremony."
+  ],
+  [
+   "ev-20-staff.jpg",
+   "لقاء مع عضوات هيئة التدريس بمكتب العمادة.",
+   "Meeting faculty members in the dean's office."
+  ],
+  [
+   "ev-21-students.jpg",
+   "مع طلاب الكلية في إحدى الندوات.",
+   "With students at a faculty seminar."
+  ],
+  [
+   "ev-07-ideal.jpg",
+   "مسابقة الطالب والطالبة المثالية بالكلية تحت رعاية العميد، نوفمبر 2026.",
+   "The faculty's Ideal Student competition, held under the dean's patronage, November 2026."
+  ]
+ ],
+ "initiatives": [
+  [
+   "حياة كريمة",
+   "ندوات حقوق المرأة والفتاة والانتماء الوطني بقرية الظافر بمركز إطسا، ويوم الرحمة للأطفال الأولى بالرعاية.",
+   "Decent Life",
+   "Seminars on women's and girls' rights and national belonging in Al-Zafer village, and the Day of Mercy for disadvantaged children."
+  ],
+  [
+   "قادرون باختلاف",
+   "دورات لغة الإشارة والتخاطب، ورئاسة المؤتمر الدولي الأول لمركز الإرشاد النفسي عن تعليم ذوي الإعاقة السمعية، 2022.",
+   "Differently Abled",
+   "Sign-language and speech-therapy courses, and chairing the Counselling Centre's first international conference on teaching the hearing impaired, 2022."
+  ],
+  [
+   "100 مليون صحة",
+   "ندوات الكشف المبكر عن السكري والضغط وأمراض الكلى وسرطان الثدي بالتعاون مع مديرية الصحة بالفيوم.",
+   "100 Million Healthy Lives",
+   "Seminars on early detection of diabetes, hypertension, kidney disease and breast cancer with the Fayoum Health Directorate."
+  ],
+  [
+   "تأهيل الشباب للقيادة",
+   "دورات الأكاديمية العسكرية للدراسات العليا والاستراتيجية والأكاديمية الوطنية للتدريب، وتدريب موظفي المحافظة على حقوق الإنسان.",
+   "Leadership Qualification for Youth",
+   "Courses at the Military Academy for Postgraduate and Strategic Studies and the National Training Academy, and human-rights training for governorate staff."
+  ],
+  [
+   "بداية جديدة لبناء الإنسان",
+   "ندوات أهمية التعليم ومخاطر عمالة الأطفال لأولياء أمور المدارس المجتمعية، والتوعية بمواجهة الشائعات.",
+   "A New Beginning for Human Development",
+   "Seminars for community-school parents on the importance of education and the dangers of child labour, and on countering misinformation."
+  ]
+ ],
+ "cv": {
+  "ar": [
+   {
+    "h": "البيانات الأساسية",
+    "list": [
+     "الاسم: آمال جمعة عبد الفتاح محمد",
+     "المنصب الحالي: عميد كلية التربية، جامعة الفيوم",
+     "التخصص العام: أستاذ المناهج وطرق التدريس",
+     "التخصص الدقيق: المناهج وطرق تدريس الفلسفة وعلم الاجتماع، قسم المناهج وطرق التدريس",
+     "البريد الإلكتروني: aga02@fayoum.edu.eg"
+    ]
+   },
+   {
+    "h": "المؤهلات العلمية",
+    "list": [
+     "ليسانس في الآداب والتربية، تخصص فلسفة وعلم اجتماع، مايو 2000، بتقدير عام جيد جدًا مع مرتبة الشرف، كلية التربية جامعة القاهرة فرع الفيوم.",
+     "دبلوم خاص في التربية، تخصص مناهج وطرق تدريس، بتقدير عام جيد جدًا، 2002، كلية التربية جامعة القاهرة فرع الفيوم.",
+     "ماجستير في التربية، تخصص مناهج وطرق تدريس فلسفة وعلم اجتماع، بتقدير ممتاز مع التوصية بطبع الرسالة على نفقة الجامعة والتداول بين الجامعات المصرية، مايو 2005.",
+     "دكتوراه في التربية، تخصص مناهج وطرق تدريس فلسفة وعلم اجتماع، مع التوصية بطبع الرسالة على نفقة الجامعة والتداول بين الجامعات، أبريل 2008، كلية التربية جامعة الفيوم."
+    ]
+   },
+   {
+    "h": "التدرج الوظيفي",
+    "list": [
+     "معيدة بقسم المناهج وطرق التدريس، كلية التربية جامعة الفيوم، 9 نوفمبر 2000.",
+     "مدرس مساعد بذات القسم، يوليو 2005.",
+     "مدرس بذات القسم، يوليو 2008.",
+     "أستاذ مساعد، سبتمبر 2013.",
+     "أستاذ، يناير 2019."
+    ]
+   },
+   {
+    "h": "المناصب الإدارية",
+    "ol": true,
+    "list": [
+     "عميد كلية التربية جامعة الفيوم من 24 أغسطس 2022 حتى 2025، والفترة الحالية للعمادة من 14 أبريل 2026.",
+     "الإشراف على قسم التربية المقارنة منذ أغسطس 2022.",
+     "رئيس هيئة تحرير مجلة جامعة الفيوم للعلوم التربوية والنفسية منذ أغسطس 2022.",
+     "وكيل كلية التربية لشؤون خدمة المجتمع وتنمية البيئة من 30 مايو 2019 حتى 30 مايو 2022.",
+     "قائم بعمل وكيل الكلية لشؤون الدراسات العليا والبحوث من 2 سبتمبر حتى 28 نوفمبر 2019.",
+     "قائم بعمل وكيل الكلية لشؤون التعليم والطلاب من 23 ديسمبر 2020 حتى 22 يناير 2021.",
+     "منسق كلية التربية في مشروع نظم المعلومات الإدارية (MIS) من 2010 حتى يوليو 2019.",
+     "مدير وحدة متابعة الخريجين التابعة لوحدة ضمان الجودة من 2013 حتى يوليو 2019.",
+     "نائب المدير التنفيذي لمشروع التعلم الخدمي والتربية المدنية لبناء قادة المستقبل، بالشراكة بين جامعة ميريلاند الأمريكية وجامعة الفيوم، 2010–2012.",
+     "منسق كلية التربية في مشروع البوابة الإلكترونية من 2010 حتى مايو 2013.",
+     "مستشار مشروع تدريب الأقران وتفعيل المشاركة الطلابية في تنمية المهارات اللغوية ومهارات التحليل الإحصائي، 2011/2012.",
+     "منسق وحدة مناهضة العنف ضد المرأة بكلية التربية من 2018 حتى يوليو 2019.",
+     "رئيس مجلس إدارة وحدة متابعة الخريجين منذ 2022.",
+     "رئيس مجلس إدارة مركز التدريب التربوي منذ 2022.",
+     "رئيس مجلس إدارة وحدة إدارة الأزمات منذ 2022.",
+     "رئيس مجلس إدارة وحدة نظم التقويم والامتحانات منذ 2022.",
+     "رئيس مجلس إدارة مركز الإرشاد النفسي منذ 2022.",
+     "رئيس مجلس إدارة مركز الخدمة العامة منذ 2022.",
+     "رئيس مجلس إدارة مركز التميز للتنمية المهنية المستدامة منذ 2022.",
+     "رئيس مجلس إدارة مجلة جامعة الفيوم للعلوم التربوية والنفسية منذ 2022."
+    ]
+   },
+   {
+    "h": "عضوية اللجان والمجالس",
+    "list": [
+     "محكّم في اللجان العلمية الدائمة لترقية الأساتذة والأساتذة المساعدين، تخصص المناهج وطرق التدريس.",
+     "محكّم في عدد من المجلات العلمية المحلية والدولية.",
+     "عضو لجنة اختيار القيادات في التربية والتعليم بمحافظة الفيوم.",
+     "عضو هيئة تحرير مجلة جامعة الفيوم للعلوم التربوية والنفسية، 2014–2022.",
+     "عضو مجلس إدارة وحدة مناهضة العنف ضد المرأة بجامعة الفيوم، 2022–2025.",
+     "عضو مجلس إدارة مركز اللغات والترجمة بجامعة الفيوم، 2022–2024.",
+     "عضو مجلس إدارة المطبعة المركزية ومركز الخدمة العامة بجامعة الفيوم، 2024/2025.",
+     "عضو الفريق التنفيذي في وحدة ضمان الجودة بكلية التربية، 2010–2021.",
+     "عضو فرق الدعم الفني والمراجعة الداخلية والخارجية لمشروع تطوير نظم التقويم والامتحانات بجامعة الفيوم، 2010–2016.",
+     "عضو مجلس إدارة مركز التدريب التربوي بكلية التربية، 2009–2018."
+    ]
+   },
+   {
+    "h": "تطوير اللوائح والبرامج",
+    "list": [
+     "عضو فريق إعداد الخطة الاستراتيجية لجامعة الفيوم 2016–2021 و2022–2027.",
+     "رئيس فريق إعداد لائحة الدراسات العليا بنظام الساعات المعتمدة للدبلوم العامة والدبلومة المهنية معلّم فصل، 2023–2025.",
+     "استحداث الدبلومة المهنية في إعداد معلّم الفصل بقرار وزاري، 2023.",
+     "إعداد برامج بينية مع كليات الجامعة: معلّم ريادة الأعمال، التعليم الصناعي والهندسة التطبيقية، تطبيقات الذكاء الاصطناعي، التعليم الزراعي والبيوتكنولوجي.",
+     "استحداث برامج مميزة: معلّم الحاسب الآلي، التعليم الفندقي، العلوم والرياضيات باللغة الإنجليزية، اللغة العربية للناطقين بغيرها.",
+     "إضافة برنامجي بكالوريوس إعداد معلّم التربية الخاصة باللغتين العربية والإنجليزية."
+    ]
+   },
+   {
+    "h": "المبادرات الرئاسية",
+    "list": [
+     "حياة كريمة",
+     "قادرون باختلاف",
+     "100 مليون صحة",
+     "تأهيل الشباب للقيادة",
+     "بداية جديدة لبناء الإنسان"
+    ]
+   },
+   {
+    "h": "المشروعات البحثية والتطبيقية",
+    "list": [
+     "مشروع تميّز المعلّم الممول من المعونة الأمريكية، 2022–2027.",
+     "مشروع تكافؤ الفرص بجامعة الفيوم.",
+     "مشروع تطوير نظم التقويم والامتحانات بجامعة الفيوم.",
+     "مشروع التعلم الخدمي والتربية المدنية لإعداد قادة المستقبل، بالشراكة بين جامعة الفيوم وجامعة ميريلاند.",
+     "مشروع تدريب الأقران وتفعيل المشاركة الطلابية في تنمية المهارات اللغوية ومهارات التحليل الإحصائي.",
+     "مشروع اليوتوبيا المعاصرة بمدرسة أم المؤمنين الثانوية للبنات.",
+     "المشروع الصيفي لمحو الأمية وتعليم الكبار مع الهيئة العامة لمحو الأمية وتعليم الكبار.",
+     "مشروع الجودة بكلية التربية جامعة الفيوم.",
+     "مشروع الطرق المؤدية للتعليم العالي: تنمية المهارات القيادية للمرأة."
+    ]
+   },
+   {
+    "h": "الدورات التدريبية وورش العمل",
+    "list": [
+     "22 دورة شاركت في الإشراف على تنفيذها، و58 دورة مدرِّبةً، و33 دورة متدرِّبةً.",
+     "المرأة تقود في المحافظات المصرية، الأكاديمية الوطنية للتدريب، فبراير 2024.",
+     "الاستراتيجية القومية للأمن القومي، الأكاديمية العسكرية للدراسات العليا والاستراتيجية، يوليو 2024.",
+     "إدارة الأزمات وحل الصراع، الأكاديمية العسكرية للدراسات العليا والاستراتيجية، يوليو 2024.",
+     "التطور التكنولوجي والأمن القومي، الأكاديمية العسكرية للدراسات العليا والاستراتيجية، ديسمبر 2024.",
+     "أساليب الوقاية من الحروب الحديثة، الأكاديمية العسكرية للدراسات العليا والاستراتيجية، فبراير 2025."
+    ]
+   },
+   {
+    "h": "الكتب والمؤلفات العلمية (39)",
+    "ol": true,
+    "books": "ar"
+   },
+   {
+    "h": "الأبحاث المنشورة وأوراق العمل (64)",
+    "ol": true,
+    "list": [
+     "\"تقويم الأداء التدريسي لمعلمي علم النفس والاجتماع في ضوء معايير ومؤشرات الجودة الشاملة\"، مجلة القراءة والمعرفة، الجمعية المصرية للقراءة والمعرفة، العدد (87) الجزء الثاني, مارس 2009 م.",
+     "\"فاعلية استخدام نموذج بايبي للتعلم البنائي في تعديل التصورات الخاطئة لبعض المفاهيم الفلسفية لدي طلاب المرحلة الثانوية واتجاهاتهم نحو المادة\"، مجلة دراسات في المناهج وطرق التدريس، الجمعية المصرية للمناهج وطرق التدريس، العدد (156) الجزء الثاني, مارس 2010م.",
+     "\"فاعلية استخدام استراتيجية بناء توافق وجهات النظر في تدريس علم الاجتماع علي التحصيل وتنمية بعض مهارات التفاوض الاجتماعي لدي طلاب المرحلة الثانوية\"\"، مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية، العدد(٢ ٧) يوليو ٢٠ ١٠ م.",
+     "\"فاعلية برنامج مقترح في تدريس علم الاجتماع باستخدام التعلم الخدمي علي تنمية المسئولية الاجتماعية ومهارات اتخاذ القرار لدي الطلاب المعلمين شعبة الفلسفة والاجتماع\", مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية، العدد(42) مايو 2012 م.",
+     "\"فاعلية مقرر الكتروني مقترح في طرق تدريس المواد الفلسفية علي التحصيل الدراسي وبقاء أثر التعلم والاتجاه نحو استخدام التعلم الإلكتروني لدي طلاب كلية التربية\", المؤتمر الدولي الأول لمركز تطوير التعليم الجامعي, التميز في الأداء الجامعي \"فلسفته – آلياته – معاييره\", في الفترة من 10-11 فبراير 2013م.",
+     "\"فاعلية وحدة مقترحة في فلسفة الأخلاق التطبيقية لتنمية الوعي بالقضايا الأخلاقية لدي الطلاب المعلمين شعبة الفلسفة والاجتماع\" مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية، العدد(50) ابريل 2013م.",
+     "\"دور التربية المدنية في تنمية بعض القيم الاجتماعية والوعي لدى فئات عمرية مختلفة\" تجربة جامعة الفيوم \",المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.(بحث مشترك)",
+     "\"فاعلية استخدام استراتيجية تدريس الأقران في تنمية المهارات الأساسية في اللغة العربية لدي طلاب كلية التربية غير المتخصصين واتجاهاتهم نحو استخدام الإستراتيجية\",المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.(بحث مشترك)",
+     "فاعلية استخدام استراتيجية تدريس الأقران في تنمية مهارات كتابة الخطة البحثية لدي طلاب الدراسات العليا بكلية التربية واتجاهاتهم نحو استخدام الإستراتيجية \",المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.(بحث مشترك)",
+     "\"The Effectiveness of Using Peer Coaching Strategy on Developing The Faculty of Education Non-Majors' English Language Basic Skills and their Attitude towards the Strategy\",المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.(بحث مشترك)",
+     "سمات الشخصية المصرية بين الايجابية والسلبية قبل وبعد ثورة 25 يناير 2011 م في ضوء متغيري النوع والعمر الزمني \"., الندوة الثانية لقسم علم النفس بعنوان علم النفس وتحصين الشباب في عصر العولمة, فى الفترة 3-4 1434 هـ الموافق من 13-14 فبراير 2013م المملكة العربية السعودية جامعة الإمام محمد بن سعود الإسلامية كلية العلوم الاجتماعية -قسم علم النفس (2013). (بحث مشترك).",
+     "فاعلية برنامج مقترح فى تدريس علم الاجتماع السياسي باستخدام شبكات التواصل الاجتماعي على تنمية المفاهيم السياسية ومهارات الحوار لدى الطلاب المعلمين شعبة الفلسفة والاجتماع واتجاهاتهم نحوها \" مجلة دراسات عربية في التربية وعلم النفس، رابطة التربويين العرب،العدد (46) الجزء الرابع, فبراير 2014 م.",
+     "فاعلية استراتيجية التفكير بصوت عال في تدريس الفلسفة علي التحصيل وتنمية مهارات ما وراء المعرفة والذكاء الروحي والاتجاه نحو الاستراتيجية لدي طلاب المرحلة الثانوية, مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(86) ديسمبر 2016م.",
+     "فاعلية استخدام استراتيجية الرحلة المعرفية عبر الويب في تدريس الفلسفة علي تنمية مهارات التفكير المستقبلي والدافعية للانجاز لدي طلاب المرحلة الثانوية., مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(90) مايو 2017م.",
+     "فاعلية استخدام استراتيجية محطات التعلم في تدريس علم الاجتماع على تنمية التفكير الاستدلالي والتسامح الاجتماعي لدى طلاب المرحلة الثانوية مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(96) ديسمبر 2017م.",
+     "فاعلية استخدام استراتيجية التعلم التخيلي في تدريس الفلسفة علي تنمية مهارات الحكمة والتحصيل الدراسي وبقاء أثر التعلم لدي طلاب المرحلة الثانوية,مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(98) مارس 2018م.",
+     "تدريس الفلسفة وتنمية مهارات التفكير التأملي والمفاهيم الفلسفية لدي طلاب الصف الأول الثانوي, مجلة العلوم التربوية والنفسية، كلية التربية جامعة الفيوم, العدد (7) 2017م. (بحث مشترك).",
+     "فاعلية وحدة مقترحة في فلسفة الأخلاق التطبيقية باستخدام استراتيجية العصف الذهني علي تنمية التفكير الأخلاقي لدي الطلاب المعلمين شعبة الفلسفة والاجتماع, مجلة العلوم التربوية والنفسية، كلية التربية جامعة الفيوم, العدد (7) 2017م. (بحث مشترك).",
+     "\"أثر استخدام استراتيجية بناء توافق وجهات النظر في تدريس علم النفس علي تنمية مهارات الذكاء العملي لدي طلاب المرحلة الثانوية\" المؤتمر العلمي الدولي الرابع عشر بعنوان\"تطوير التعليم في عصر اقتصاد المعرفة وتكنولوجيا المستقبل\" والذي عقد في الفترة من 24 الي 26 أكتوبر 2017 م. (بحث مشترك)",
+     "فاعلية الدمج بين نموذج التعلم التوليدي والسقالات التعليمية في تدريس الفلسفة علي تنمية مهارات التفكير الفلسفي لدى طلاب المرحلة الثانوية, مجلة العلوم التربوية والنفسية، كلية التربية جامعة الفيوم, العدد (8) 2017م. (بحث مشترك).",
+     "وحدة مقترحة في المشكلات النفسية قائمة علي استراتيجية (K.W.L) لتنمية مهارات الذكاء الوجداني ليد الطلاب المعليمن شعبة علم النفس, مجلة العلوم التربوية والنفسية، كلية التربية جامعة الفيوم, العدد (8) 2017م. (بحث مشترك).",
+     "\"برنامج مقترح في قضايا علم الاجتماع الجنائي لتنمية القدرة علي تحمل الاحباط وتحمل الغموض والوعي بهذه القضايا لدى الطلاب المعلمين شعبة الفلسفة وعلم الاجتماع\", مجلة الجمعية التربوية للدراسات الاجتماعية، الجمعية التربوية للدراسات الاجتماعية, العدد(103) أغسطس 2018 م.",
+     "\"فاعلية برنامج مقترح في تدريس قضايا التلوث النفسي لتنمية المهارات الإبداعية وتحسين مستوي السعادة النفسية لدى الطلاب المعلمين شعبة علم النفس\" - مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (14), العدد(12).2020 م.",
+     "\"فاعلية برنامج مقترح في تدريس قضايا التلوث النفسي لتحسين مستوي المناعة النفسية لدى الطلاب المعلمين شعبة علم النفس\"- مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (14), العدد(12).2020 م.",
+     "استخدام استراتيجية التعلم التخيلي في تدريس علم النفس لتنمية مهارات التفكير الاستكشافي لدى طلاب الصف الثاني الثانوي- مجلة جامعة للعلوم التربوية والنفسية في المجلد الخامس عشر 2021.",
+     "فاعلية وحدة مقترحة في الثراء النفسى لتنمية المثابرة الأكاديمية لدي الطلاب المعلمين شعبة علم النفس- مجلة جامعة للعلوم التربوية والنفسية في المجلد الخامس عشر 2021.",
+     "فاعلية استخدام استراتيجية محطات التعلم في تدريس علم نفس السعادة على تنمية الرفاهية النفسية للطلاب المعلمين شعبة علم النفس- مجلة جامعة للعلوم التربوية والنفسية في المجلد الخامس عشر 2021.",
+     "\"استخدام استراتيجية بناء المعنى KWL في تدريس الفلکلور الشعبي لتنمية القدرة على تحدي الخرافات لدى طلاب الصف الأول الثانوي\",مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (14) العدد(1) شتاء 2020. (بحث مشترك).",
+     "\" فاعلية استخدام المدخل التفاعلي في تدريس علم الاجتماع على تنمية المسئولية الاجتماعية لدى طلاب المرحلة الثانوية,مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (14) العدد(1) شتاء 2020. (بحث مشترك).",
+     "\" فاعلية استخدام التعلم الخدمي في تدريس علم الاجتماع لتنمية بعض مهارات التفکير المنطقي لدى طلاب المرحلة الثانوية,مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (14) العدد(1) شتاء 2020. (بحث مشترك).",
+     "\"استخدام المدخل التفاوضي في تدريس علم الاجتماع لتنمية مهارات التواصل والتکيف مع المواقف الاجتماعية لدى طلاب الصف الثاني الثانوي\",مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (14) العدد(1) شتاء 2020. (بحث مشترك).",
+     "فاعلية برنامج مقترح في تدريس قضايا التلوث النفسي لتنمية المهارات الإبداعية وتحسين مستوي السعادة النفسية لدى الطلاب المعلمين شعبة علم النفس، مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (14), العدد(12).2020 م(بحث مشترك).",
+     "فاعلية برنامج مقترح في تدريس قضايا التلوث النفسي لتحسين مستوي المناعة النفسية لدى الطلاب المعلمين شعبة علم النفس، مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (14), العدد(12).2020 م(بحث مشترك).",
+     "فاعلية وحدة مقترحة في الثراء النفسى لتنمية المثابرة الأكاديمية لدي الطلاب المعلمين شعبة علم النفس، مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (15), 2020 م(بحث مشترك).",
+     "فاعلية استخدام استراتيجية محطات التعلم في تدريس علم نفس السعادة على تنمية الرفاهية النفسية للطلاب المعلمين شعبة علم النفس، مجلة جامعة الفيوم للعلوم التربوية والنفسية المجلد (15), 2021 م(بحث مشترك).",
+     "\"فاعلية استخدام مُدخل القضايا الجدلية في تدريس الفلسفة لتنمية مهارات الحوار وبقاء أثر التعلم لدى طلاب المرحلة الثانوية\"، مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (15) العدد 2021. (بحث مشترك).",
+     "استخدام استراتيجية التعلم التخيلي في تدريس علم النفس لتنمية مهارات التفكير الاستكشافي لدى طلاب الصف الثاني الثانوي، مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (15) العدد 2021. (بحث مشترك).",
+     "أثر استخدام استراتيجية الأبعاد السداسية في تدريس علم الاجتماع على التحصيل والاتجاه نحو الاستراتيجية لدي طلاب المرحلة الثانوية\"، مجلة جامعة الفيوم للعلوم التربوية والنفسية,المجلد (15) العدد 2021. (بحث مشترك).",
+     "ورقة عمل بعنوان: استراتيجيات التدريس والتعلم عن بعد لمواكبة تحديات العصر, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م.",
+     "ورقة عمل بعنوان: مهارات الثقافة الرقمية كمتطلب أساسي لمهارات القرن الحادي والعشرين), المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م. (ورقة مشتركة)",
+     "ورقة عمل بعنوان: ظاهرة التنمر الإلكتروني آفة الألفية الثالثة, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م(ورقة مشتركة)",
+     "ورقة عمل بعنوان: مستوى وعى طلاب المرحلة الثانوية بأخلاقيات القضايا البيئية المعاصرة, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م(ورقة مشتركة)",
+     "مستوي التلوث النفسي لدي طلاب كلية التربية, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م(بحث مشترك).",
+     "ورقة عمل بعنوان\"المخدرات الرقمية آفة عصر الرقمنة\" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
+     "ورقة عمل بعنوان\"التسامح ضرورة اجتماعية وتربوية وفريضة عصرية وأخلاقية\" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
+     "ورقة عمل بعنوان\"الابتزاز الالكتروني قنبلة موقوتة وآفة الجيل الرابع\" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
+     "ورقة عمل بعنوان\"دور الجامعة في تنمية قيم المواطنة الرقمية\" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
+     "ورقة عمل بعنوان\"الوعي بالتغيرات المناخية ضرورية تربوية وفريضة عصرية\", المؤتمر البيئي الثاني لقطاع خدمة المجتمع وتنمية البيئة بكلية التربية جامعة الفيوم بعنوان التغيرات المناخية ومنظومة التعليم\"\"رؤية مستقبلية\" خلال الفترة من (12 – 13) ديسمبر 2022 م.",
+     "اتجاهات طلاب جامعة الفيوم نحو استخدام التعلم الإلكتروني في التدريس\", المؤتمر العلمي الأول لقسم التربية المقارنة بعنوان الثورة الصناعية الخامسة وانعكاساتها علي المنظومة التربوية رؤي دولية\" كلية التربية جامعة الفيوم 2023م.",
+     "استخدام استراتيجيات محطات التعلم في تدريس الفلسفة لتنمية الدافعية للإنجاز والاتجاه نحو القضايا الفلسفية لدى طلاب المرحلة الثانوية\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 15، العدد 16، ديسمبر 2021م.",
+     "استخدام استراتيجيات محطات التعلم في تدريس الفلسفة لتنمية التحصيل والذكاء الروحي لدى طلاب المرحلة الثانوية\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 15، العدد 16، ديسمبر 2021م.",
+     "استخدام مدخل التحليل الأخلاقي في تدريس الفلسفة لتنمية التحصيل ومهارات حل المشکلات لدى طلاب الصف الثاني الثانوي\", مجلة جامعة الفيوم للعلوم التربوية والنفسية,أكتوبر 2022م.",
+     "برنامج مقترح في قضايا علم النفس السيبراني لتنمية الازدهار النفسي والاتجاه نحو هذه القضايا لدى الطلاب المعلمين شعبة علم النفس\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 17، العدد 6، إبريل 2023م.",
+     "وحدة مقترحة في قضايا علم اجتماع المرأة لتنمية التحصيل الدراسي والقدرة على تحمل الإحباط لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 16، العدد 10، ديسمبر 2022م.",
+     "\"فاعلية استخدام استراتيجية بناء توافق وجهات النظر في تدريس قضايا علم الاجتماع لتنمية مهارات الذكاء العملي و التحصيل الأكاديمي لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
+     "\"فاعلية استخدام استراتيجية محطات التعلم في تدريس قضايا علم الاجتماع لتنمية مهارات الذكاء التحليلي و الاتجاه نحو القضايا لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
+     "\"برنامج مقترح في تدريس علم الاجتماع قائم على استراتيجية بناء المعنى (k.w.l) لتنمية التنظيم الانفعالي وتحمل المسئولية لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
+     "\"برنامج مقترح في تدريس علم الاجتماع قائم على نموذج بايبي للتعلم البنائي لتعديل التصورات الخاطئة لدى الطلاب المعلمين\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
+     "\"برنامج مقترح في قضايا علم الاجتماع قائم على استراتيجية خرائط المفاهيم لتنمية الاتجاه نحو المادة وتحمل المسئولية لدى طلاب المرحلة الثانوية\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك)",
+     "\"برنامج مقترح في قضايا علم اجتماع الجريمة لتنمية الكفاءة الشخصية وحل المشكلات لدى طلاب المرحلة الثانوية\", مجلة جامعة الفيوم للعلوم التربوية والنفسية, المجلد 18، العدد 13، سبتمبر 2024 م. (مشترك).",
+     "مهارات الأمن السيبراني في عصر الثورة الصناعية الرابعة ورقة عمل مقدمة في الملتقي الثقافي الثاني لكلية التربية جامعة الفيوم بعنوان قضايا الأمن السيبراني رؤية تربوية,2025 م.",
+     "اتجاهات طلاب المرحلة الثانوية نحو استخدام المنصات التعليمية الالكترونية في تدريس المواد العلمية\", الملتقي الثقافي الثاني لكلية التربية جامعة الفيوم بعنوان قضايا الأمن السيبراني رؤية تربوية,2025 م. (مشترك)",
+     "واقع استخدام المعامل الافتراضية في تدريس العلوم لدي طلاب كلية التربية جامعة الفيوم, الملتقي الثقافي الثاني لكلية التربية جامعة الفيوم بعنوان قضايا الأمن السيبراني رؤية تربوية,2025 م. (مشترك)",
+     "التنمر الالكتروني لدي طلاب كلية التربية جامعة الفيوم في ضوء بعض المتغيرات الديموجرافية, الملتقي الثقافي الثاني لكلية التربية جامعة الفيوم بعنوان قضايا الأمن السيبراني رؤية تربوية,2025 م. (مشترك)"
+    ]
+   },
+   {
+    "h": "المؤتمرات العلمية التي شاركت فيها بالحضور أو إلقاء بحث (47)",
+    "ol": true,
+    "list": [
+     "حضور مؤتمر الجمعية التربوية للدراسات الاجتماعية: كلية التربية جامعة عين شمس بعنوان: \"تربية المواطنة ومناهج الدراسات الاجتماعية\" والذي عقد في الفترة من 19 الي 20 يوليو 2008.",
+     "حضور مؤتمر الجمعية المصرية للمناهج وطرق التدريس: كلية التربية جامعة عين شمس بعنوان: \"مناهج التعليم والهوية الثقافية\" والذي عقد في الفترة من 30 الي 31 يوليو 2008.",
+     "حضور مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي التاسع \"تطوير التعليم في الوطن العربي الواقع والمأمول\" والذي عقد في الفترة من 14 الي 15 أكتوبر 2008.",
+     "حضور مؤتمر كلية التربية جامعة الزقازيق بعنوان: المؤتمر العلمي السنوي السابع \"التحديات التكنولوجية وتطوير منظومة التعليم\" والذي عقد في الفترة من 29 الي 30 ابريل 2009.",
+     "حضور مؤتمر الجمعية المصرية للمناهج وطرق التدريس: كلية التربية جامعة عين شمس بعنوان: المؤتمر العلمي الحادي والعشرون,\"تطوير المناهج الدراسية بين الأصالة والمعاصرة\", والذي عقد في الفترة من 28 إلي 29 يوليو 2009.",
+     "حضور مؤتمر الجمعية المصرية للقراءة والمعرفة: كلية التربية جامعة عين شمس بعنوان: \"كتب القراءة بين الإنقرائية والإخراج\", والذي عقد في الفترة من 15 إلي 16 يوليو 2009.",
+     "حضور ندوة البحث العلمي في قسم المناهج وطرق التدريس كلية التربية جامعة الفيوم في 11/5/2009 م.",
+     "حضور المؤتمر العلمي السنوي العاشر للجمعية المصرية لتربويات الرياضيات:بعنوان \"الاتجاهات الحديثة في تطوير تدريس الرياضيات\" في 3/8/2010م.",
+     "حضور مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي العاشر \"البحث التربوي في الوطن العربي رؤية مستقبلية\" والذي عقد في الفترة من 20 الي 21 أبريل 2010م.",
+     "رئيس اللجنة الإعلامية في مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الحادي عشر بعنوان \"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.",
+     "المشاركة بأربعة أبحاث مع مجموعة من الأساتذة في المؤتمر العلمي الحادي عشر لكلية التربية جامعة الفيوم:\"أزمة القيم في المؤسسات التعليمية\" في الفترة من 30,29 مايو 2012م.",
+     "المشاركة في إعداد كتاب المؤتمر الختامي لمشروع التعلم الخدمي والتربية المدنية لبناء قادة المستقبل في المجتمع المصري والمشروع شراكة بين جامعة ميريلاند بالولايات المتحدة الأمريكية وجامعة الفيوم سبتمبر 2012م.",
+     "المشاركة ببحث بعنوان: فاعلية مقرر الكتروني مقترح في طرق تدريس المواد الفلسفية علي التحصيل الدراسي وبقاء أثر التعلم والاتجاه نحو استخدام التعلم الإلكتروني لدي طلاب كلية التربية\", المؤتمر الدولي الأول لمركز تطوير التعليم الجامعي, التميز في الأداء الجامعي\" فلسفته – آلياته – معاييره \", في الفترة من 10-11 فبراير 2013م.",
+     "المشاركة ببحث بعنوان: سمات الشخصية المصرية بين الايجابية والسلبية قبل وبعد ثورة 25 يناير 2011 م في ضوء متغيري النوع والعمر الزمني \"., الندوة الثانية لقسم علم النفس بعنوان علم النفس وتحصين الشباب في عصر العولمة, فى الفترة 3-4 1434 هـ الموافق من 13-14 فبراير 2013م المملكة العربية السعودية جامعة الإمام محمد بن سعود الإسلامية كلية العلوم الاجتماعية -قسم علم النفس. (بحث مشترك).",
+     "حضور مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الثاني عشر بعنوان\"التربية وبناء الانسان العربي في ضؤ تحديات الحاضر وتطلعات المستقبل\" والذي عقد في الفترة من 23 الي 24 أكتوبر 2013 م.",
+     "رئيس اللجنة الإعلامية في مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الحادي عشر بعنوان \"التربية وبناء الانسان العربي في ضؤ تحديات الحاضر وتطلعات المستقبل\" والذي عقد في الفترة من 23 الي 24 أكتوبر 2013 م.",
+     "حضور مؤتمر الجمعية المصرية للمناهج وطرق التدريس المؤتمر العلمي الثالث والعشرون الدولي الثاني: كلية التربية جامعة عين شمس بعنوان: \"تطوير المناهج رؤي وتوجهات\" والذي عقد في الفترة من 13 إلي 14 أغسطس 2014م.",
+     "حضور المؤتمر الدولي الثاني للتنمية والتدريب في التعليم العالي لجامعة بني سويف بعنوان \"تنمية الموهبة وفتح افاق المستقبل\" والذي عقد في 18 نوفمبر 2014م.",
+     "حضور مؤتمر كلية التربية جامعة حلوان بعنوان: المؤتمر العلمي السنوي الثامن عشر \"التربية ودعم الشخصية المصرية\" والذي عقد في الفترة من 18 الي 19 نوفمبر 2015م.",
+     "حضور المؤتمر الدولي الثالث لجامعة بني سويف بالتعاون مع منظمة جامعة الدول العربية بعنوان \"صعوبات التعلم: البيئة والتنمية والخبرات\" والذي عقد في الفترة من 20 الي 21 ديسمبر 2015م.",
+     "حضور المؤتمر الدولي الأول لقطاع خدمة المجتمع بجامعة الفيوم بعنوان \"التوجهات الحديثة في رعاية متحدي الإعاقة\" والذي عقد في الفترة من 9 الي 11 نوفمبر 2015م.",
+     "حضور مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الدولي الثالث عشر بعنوان\"العنف في مؤسسات التعليم المظاهر الأسباب سبل المواجهة\" والذي عقد في الفترة من 15 الي 17 أكتوبر 2016 م.",
+     "حضور مؤتمر الجمعية التربوية للدراسات الاجتماعية: كلية التربية جامعة عين شمس بعنوان: \"التسامح وقبول الأخر\" والذي عقد في الفترة من 3 الي 4 أكتوبر 2017م.",
+     "المشاركة ببحث في مؤتمر كلية التربية جامعة الفيوم بعنوان: المؤتمر العلمي الدولي الرابع عشر بعنوان\"تطوير التعليم في عصر اقتصاد المعرفة وتكنولوجيا المستقبل\" والذي عقد في الفترة من 24 الي 26 أكتوبر 2017 م. عنوان البحث:\"أثر استخدام استراتيجية بناء توافق وجهات النظر في تدريس علم النفس علي تنمية مهارات الذكاء العملي لدي طلاب المرحلة الثانوية\".",
+     "حضور مؤتمر كلية الخدمة الاجتماعية جامعة الفيوم بعنوان: المؤتمر العلمي السابع والعشرون \"التربية وبناء الإنسان العربي في ضؤ تحديات الحاضر وتطلعات المستقبل الخدمة الاجتماعية وقضايا المرأة العربية\" والذي عقد في الفترة من 2 الي 3 مايو 2018 م.",
+     "رئيس اللجنة العلمية الأساتذة في المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة,\"التنمية المستدامة وبناء الإنسان في ظل تحديات العصر\" بكلية التربية جامعة الفيوم 30 نوفمبر 2021م.",
+     "المشاركة بأربعة أوراق عمل مع مجموعة من الأساتذة في المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة,\"التنمية المستدامة وبناء الإنسان في ظل تحديات العصر\" بكلية التربية جامعة الفيوم 30 نوفمبر 2021م. وهي كالتالي:.",
+     "بحث منشور بعنوان: مستوي التلوث النفسي لدي طلاب كلية التربية, المؤتمر البيئي الأول لقطاع خدمة المجتمع وتنمية البيئة, بكلية التربية جامعة الفيوم 30 نوفمبر 2021م(بحث مشترك)",
+     "مقرر \" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.",
+     "المشاركة بأربعة أوراق عمل مع مجموعة من الأساتذة \" المنتدى الثقافي الأول لقطاع خدمة المجتمع وتنمية البيئة بعنوان منظومة القيم في عصر الرقمنة, جامعة الفيوم ـ كلية التربية,20 مارس 2022م.وهي كالتالي:.",
+     "المؤتمر الدولي الأول لمركز الإرشاد النفسي لقطاع خدمة المجتمع وتنمية البيئة بكلية التربية جامعة الفيوم بعنوان الاتجاهات المعاصرة في تعليم وتعلم ذوي الإعاقة السمعية خلال الفترة 7 يونيو 2022 م.",
+     "المشاركة في المؤتمر البيئي الثاني لقطاع خدمة المجتمع وتنمية البيئة بكلية التربية جامعة الفيوم بعنوان التغيرات المناخية ومنظومة التعليم\"\"رؤية مستقبلية\"خلال الفترة من (12 – 13) ديسمبر 2022 م. بورقة عمل بعنوان\" الوعي بالتغيرات المناخية ضرورية تربوية وفريضة عصرية\".",
+     "المؤتمر القومي الأول لقطاع الدراسات التربوية لقطاع الدراسات التربوية بالمجلس الأعلى للجامعات للمشاركة في فعاليات المؤتمر القومي الأول لقطاع الدراسات التربوية المعنون بـ \"التعليم والشراكة المجتمعية، ومؤسسات إعداد المعلم وتأهيله في الجمهورية الجديدة\" والذي عقد يومي 3-4 ديسمبر 2022م.",
+     "(إفادة حضور المؤتمر القومي الأول لقطاع الدراسات التربوية) المقدمة من المجلس الأعلى للجامعات لجنة قطاع الدراسات التربوية المعنون بـ \"التعليم والشراكة المجتمعية، ومؤسسات إعداد المعلم وتأهيله في الجمهورية الجديدة\" والذي عقد يومي 3-4 ديسمبر 2022م.",
+     "رئيس المؤتمر البيئي الثاني لقطاع خدمة المجتمع وتنمية البيئة بكلية التربية جامعة الفيوم بعنوان التغيرات المناخية ومنظومة التعليم\"\"رؤية مستقبلية\" خلال الفترة من (12 – 13) ديسمبر 2022 م.",
+     "المؤتمر الدولي الرابع عشر عنوان المؤتمر: التربية من أجل بيئة خضراء وواقع ومستقبل التغيرات المناخية (المخاطر والحلول) معًا لمواجهة التحديات المناخية من أجل حماية كوكبنا برعاية: الجمعية العربية لأصول التربية والتعليم المستمر، والمجلة الدولية للبحوث والدراسات وجمعية رواد التميز للتنمية المستدامة، والعديد من الجهات الراعية الأخرى الفترة من 4-6 فبراير 2023م.",
+     "المؤتمر الدولي السادس عشر لأكاديمية رواد التميز عنوان المؤتمر: التربية الوجدانية والأخلاقية وقيم المواطنة للطالب العربي في ظل عالم افتراضي معًا من أجل مجتمع عربي متحضر برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC) ا الفترة من 2-4 سبتمبر 2023م.",
+     "المؤتمر الدولي السادس عشر لأكاديمية رواد التميز للتعليم والتدريب والاستشارات عنوان المؤتمر: التربية الوجدانية والأخلاقية وقيم المواطنة للطالب العربي في ظل عالم افتراضي معًا من أجل مجتمع عربي متحضر برعاية: الجمعية العربية لأصول التربية والتعليم المستمر، والمجلة الدولية للبحوث والدراسات وجمعية رواد التميز للتنمية المستدامة، والعديد من الجهات الراعية الفترة من 7-9 أكتوبر 2023م.",
+     "المؤتمر الدولي السادس عشر لأكاديمية رواد التميز للتعليم والتدريب والاستشارات (PEATCHD) عنوان المؤتمر: التربية الوجدانية والأخلاقية وقيم المواطنة للطالب العربي في ظل عالم افتراضي معًا من أجل مجتمع عربي متحضر برعاية: الجمعية العربية لأصول التربية والتعليم المستمر، والمجلة الدولية للبحوث والدراسات وجمعية رواد التميز للتنمية المستدامة، والعديد من الجهات الراعية الفترة من 7-8 أكتوبر 2023م.",
+     "المؤتمر الدولي الرابع عشر لأكاديمية رواد التميز للتعليم والتدريب والاستشارات (PEATCHD) عنوان المؤتمر: التربية من أجل بيئة خضراء وواقع ومستقبل التغيرات المناخية (المخاطر والحلول) معًا لمواجهة التحديات المناخية من أجل حماية كوكبنا برعاية: أكاديمية رواد التميز للتعليم والتدريب والاستشارات الفترة من 4-6 فبراير 2023م.",
+     "المؤتمر الدولي الرابع عشر لأكاديمية رواد التميز عنوان المؤتمر: التربية من أجل بيئة خضراء وواقع ومستقبل التغيرات المناخية (المخاطر والحلول) معًا لمواجهة التحديات المناخية من أجل حماية كوكبنا برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC) الفترة من 4-6 فبراير 2023م.",
+     "المؤتمر الدولي الخامس عشر لأكاديمية رواد التميز عنوان المؤتمر: التربية الأسرية في المجتمع العربي على ضوء تداعيات العصر الرقمي (التحديات والحلول) يداً بيد من أجل أبناء أسوياء برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC الفترة من 3-5 يونيو 2023م.",
+     "المؤتمر الدولي الثامن عشر لأكاديمية رواد التميز عنوان المؤتمر: تعليم ورعاية الأبناء في عصر الذكاء الاصطناعي - رؤى الواقع، وتحديات الحاضر، وآمال المستقبل معًا من أجل مستقبل أفضل لأبنائنا برعاية: أكاديمية رواد التميز للتعليم والتدريب والاستشارات PEATCHD الفترة من 24-26 أغسطس 2024م.",
+     "المؤتمر الدولي الثالث عشر لأكاديمية رواد التميز عنوان المؤتمر: وسائل التواصل بين الإفراط والاعتدال وانعكاساتها التربوية والمجتمعية – الواقع والمأمول) معًا لتكوين طالب سوي نفسيًا وصحيًا وتربويًا ذي إدارة قوية برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC) الفترة من 5-6 نوفمبر 2022م بواقع 15 ساعة تدريبية.",
+     "المؤتمر الدولي الثامن عشر لأكاديمية رواد التميز عنوان المؤتمر: تعليم ورعاية الأبناء في عصر الذكاء الاصطناعي – رؤى الواقع، وتحديات الحاضر، وآمال المستقبل معًا من أجل مستقبل أفضل لأبنائنا برعاية: الجمعية العربية لأصول التربية والتعليم المستمر للمؤتمرات الدولية (CASIC) الفترة: أيام (السبت - الاثنين) 20-22 صفر 1446 هـ، الموافق 24-26 أغسطس 2024م.",
+     "المؤتمر الدولي العربي الأول بعنوان تطوير منظومة تقويم المعلمين بالمرحلة الابتدائية في الوطن العربي الواقع والمأمول نحو تقويم عربي موحد برعاية المؤسسة القومية للبحوث والاستشارات والتدريب,كلية التربية جامعة الأزهر في الفترة من 26 أبريل إلي 28 أبريل 2025م.",
+     "المؤتمر العلمي الأول لقسم الإدارة التربوية وسياسات التعليم كلية التربية جامعة الفيوم بعنوان الذكاء الاصطناعي وتطوير منظومة الإدارة التربوية في عصر المعلوماتية في مايو 2025م."
+    ]
+   },
+   {
+    "h": "الرسائل العلمية التي شاركت في الإشراف عليها (35)",
+    "ol": true,
+    "list": [
+     "ماجستير: \"فاعلية استخدام إستراتيجية خرائط العقل في تدريس الفلسفة لطلاب المرحلة الثانوية على استيعاب المفاهيم الفلسفية وتنمية التفكير التأملي\", تاريخ المنح, 19/10/2016م.",
+     "ماجستير: فاعلية استخدام نموذج التعلم التوليدي في تنمية مهارات التفكير الفلسفي والاتجاه نحو دراسة الفلسفة لدى طلاب المرحلة الثانوية, \", تاريخ المنح, 19/10/2016م.",
+     "ماجستير: فاعلية وحــدة مقترحــة فـي تدريس المشكــــــلات النفسيــــة على تنميـة الوعي بها ومهارات الذكــاء الوجــداني لدي الطــلاب المعلميـن شعبــة علــم النفــس. \", تاريخ المنح, 19/10/2016م.",
+     "ماجستير: فاعلية برنامج مقترح في قضايا فلسفة الأخلاق التطبيقية لتنمية التفكير الأخلاقي لدى الطلاب المعلمين شعبة الفلسفة واتجاهاتهم نحو هذه القضايا, \", تاريخ المنح, 19/10/2016م.",
+     "ماجستير: فاعلية استخدام إستراتيجية بناء توافق وجهات النظر في تدريس علم النفس على تنمية مهارات الذكاء الناجح والتفكير المستقبلي لطلاب المرحلة الثانوية, تاريخ المنح, 10/1/2018م.",
+     "ماجستير: تطوير نظام التربية العملية بكليات التربية فى الجامعات المصرية \"دراسة مقارنة\", تاريخ المنح, 13/8/2018م.",
+     "ماجستير: تصميم إستراتيجية تعليم مدمج قائمة على دعامات التعلم لتنمية بعض المهارات الحياتية لدى تلاميذ المدارس الفكرية القابلين للتعلم, تاريخ التسجيل, 13/4/2016م.",
+     "ماجستير: فاعلية استخدام المدخل التفاعلي في تدريس علم الاجتماع على تنمية التحصيل الدراسي ومهارات التفاعل الاجتماعي لدى طلاب المرحلة الثانوية, تاريخ التسجيل, 13/4/2016م.",
+     "ماجستير: أثر استخدام التعلم الخدمي فى تدريس علم الاجتماع على تنمية بعض مهارات التفكير التأملي وقيم المشاركة المجتمعية لدى طلاب المرحلة الثانوية, تاريخ التسجيل, 13/4/2016م.",
+     "ماجستير: برنامج مقترح في علم الاجتماع قائم على بعض قضايا الأمن القومي لتنمية التفكير الجمعي والمسئولية الاجتماعية لدى طلاب كلية التربية, تاريخ التسجيل, 19/10/2016م.",
+     "ماجستير: فاعلية استخدام مدخل القضايا الجدلية في تدريس الفلسفة على التحصيل الدراسي وتنمية مهارات التفاوض لدى طلاب المرحلة الثانوية. تاريخ التسجيل 19/4/2017م.",
+     "ماجستير: اثر أنموذجي(التناوب على محطات التعلم/الفصل المعكوس)في بيئة تعلم مدمج على تنمية بعض مهارات نظم تكنولوجيا المعلومات لدى طلاب كلية السياحة والفنادق. تاريخ التسجيل 19/4/2017م.",
+     "دكتوراه: برنامج مقترح باستخدام استراتيجيات محطات التعلم لتنمية الوعي بالقضايا الفلسفية ومهارات الحكمة لدى طلاب المرحلة الثانوية تاريخ التسجيل 14/3/2018م.",
+     "ماجستير: وحدة مقترحة في الفلكلور الشعبي لتنمية القدرة على تحدى الخرافات والاتجاه نحو دراسة علم الاجتماع لدى طلاب المرحلة الثانوية, تاريخ التسجيل 11/4/2018م.",
+     "ماجستير: استخدام المدخل التفاوضي في تدريس علم الاجتماع لتنمية مهارات اتخاذ القرار والذكاء الاجتماعي لدي طلاب المرحلة الثانوية, تاريخ التسجيل 11/4/2018م.",
+     "ماجستير: برنامج مقترح في الفلسفة الأخلاقية لتنمية المفاهيم واتخاذ القرار الأخلاقي لدى طلاب المرحلة الثانوية, تاريخ التسجيل 11/4/2018م.",
+     "ماجستير: فاعلية استراتيجية التسريع المعرفي في تدريس علم الاجتماع على تنمية عادات العقل وبقاء أثر التعلم لدى طلاب المرحلة الثانوية. تاريخ التسجيل 11/4/2018م.",
+     "ماجستير: استخدام نموذج التعلم القائم علي المواقف المزدوجة في تدريس علم الاجتماع لتعديل التصورات الخطأ للمفاهيم الاجتماعية وتنمية الكفاءة الذاتية لدى طلاب المرحلة الثانوية, تاريخ التسجيل 11/4/2018م.",
+     "ماجستير: فاعلية وحدة مقترحة في قضايا فلسفة القيم لتنمية الوعي بهذه القضايا والتفكير الايجابي لدى طلاب المرحلة الثانوية تاريخ التسجيل /4/2019م.",
+     "ماجستير: استخدام استراتيجية التعلم التخيلي في تدريس علم النفس لتنمية التفكير البصري والتحصيل لدى طلاب المرحلة الثانوية تاريخ التسجيل /4/2019م.",
+     "ماجستير: استخدام استراتيجية الأبعاد السداسية في تدريس علم الاجتماع لتنمية التفكير التحليلي لدى طلاب المرحلة الثانوية تاريخ التسجيل /4/2019م.",
+     "ماجستير: برنامج مقترح في تدريس قضايا علم اجتماع المرأة لتنمية قوة التحمل النفسي والوعي بهذه القضايا لدى الطلاب المعلمين, تاريخ المنح.2020م.",
+     "ماجستير: برنامج مقترح في قضايا علم النفس السيبراني لتنمية الوعي بأخلاقيات التكنولوجيا المعاصرة والرفاهية النفسية لدى الطلاب المعلمين شعبة علم نفس, 2022م.",
+     "دكتوراه: برنامج مقترح في قضايا علم الاجتماع البيئي لتنمية الوعي بأخلاقيات البيئة والذكاء الثقافي لدى طلاب المرحلة الثانوية \", 2024م.",
+     "دكتوراه: برنامج مقترح في قضايا علم الاجتماع الطبي لتعديل التصورات الخاطئة عن الصحة والمرض وتنمية مهارات التفكير الإيجابي لدى الطلاب المعلمين\", 2024م.",
+     "دكتوراه: برنامج مقترح في قضايا علم اجتماع الجريمة لتنمية الوعي الاجتماعي والصمود النفسي لدى طلاب المرحلة الثانوية. \", 2024م.",
+     "دكتوراه: برنامج مقترح في قضايا علم الاجتماع الأسري لتنمية الوعي بمشكلات الأسرة ومهارات الذكاء الناجح لدى الطلاب المعلمين\", 2024م.",
+     "دكتوراه: برنامج مقترح في قضايا علم الاجتماع الآلي لتنمية مهارات الذكاء الرقمي والتفكير التقويمي لدى الطلاب المعلمين\", 2024م.",
+     "دكتوراه: برنامج مقترح في قضايا الفلسفة الطبية لتنمية الوعي بهذه القضايا والمسئولية الأخلاقية لدى الطلاب المعلمين\", 2024م.",
+     "دكتوراه: تفاعل بين نمط الوكيل الذكي والمثابرة الأكاديمية وأثره في تنمية مهارات إدارة مخاطر الأمن السيبراني واليقظة العقلية لدى تلاميذ المرحلة الابتدائية\", 2024م.",
+     "ماجستير: استخدام التعلم النقال في تدريس علم الاجتماع وأثره في تنمية المفاهيم الاجتماعية والدافعية للإنجاز لدي طلاب المرحلة الثانوية\", 2024م.",
+     "دكتوراه: برنامج مقترح في قضايا علم النفس الإعلامي لتنمية القدرة على تحدي الشائعات والرشاقة المعرفية لدى الطلاب المعلمين 2024م.",
+     "دكتوراه: نمط التنافس في بيئة محفزات رقمية قائمة على المشاعر وأثره في تنمية المهارات الحياتية الإلكترونية والطفو الأكاديمي لدى تلاميذ المرحلة الابتدائية 2024م.",
+     "دكتوراه: برنامج مقترح في قضايا علم النفس الأسري لتنمية المفاهيم والمرونة النفسية لدى الطلاب المعلمين شعبة علم النفس\" 2024م.",
+     "دكتوراه: برنامج مقترح في تدريس قضايا علم اجتماع الشباب لتنمية التوازن المعرفي والثراء النفسي لدى الطلاب المعلمين 2024م."
+    ]
+   },
+   {
+    "h": "التقديرات",
+    "list": [
+     "جائزة جامعة الفيوم للتفوق في خدمة المجتمع وتنمية البيئة، 2025.",
+     "جائزة جامعة الفيوم التشجيعية في التأليف العلمي (القطاع الأدبي)، 2025.",
+     "72 شهادة تقدير ودرعًا من الكلية والجامعة والمحافظة والطلاب."
+    ]
+   },
+   {
+    "h": "المقررات التي تدرّسها",
+    "list": [
+     "مرحلة الليسانس: طرق تدريس الفلسفة والاجتماع وعلم النفس، التدريس المصغر، تكنولوجيا التعليم، التفكير الفلسفي والعلمي.",
+     "الدبلوم العامة والمهنية والخاصة: طرق التدريس، مناهج البحث، التدريب الميداني، مناهج ذوي الاحتياجات الخاصة، الاتجاهات الحديثة في طرق التدريس.",
+     "تمهيدي الماجستير والدكتوراه: مناهج البحث، الاتجاهات الحديثة في البحث التربوي والتدريس، مشكلات تدريس المواد الفلسفية.",
+     "مقرر إلكتروني من تأليفها وإنتاجها: طرق تدريس المواد الفلسفية، مركز التعلم الإلكتروني بجامعة الفيوم."
+    ]
+   },
+   {
+    "h": "الجمعيات العلمية",
+    "list": [
+     "الجمعية المصرية للدراسات الفلسفية والنفسية.",
+     "رابطة التربية الحديثة.",
+     "الجمعية المصرية للدراسات الاجتماعية.",
+     "الجمعية المصرية للمناهج وطرق التدريس.",
+     "الجمعية العربية لاتحاد الجامعات العربية."
+    ]
+   }
+  ],
+  "en": [
+   {
+    "h": "Basic information",
+    "list": [
+     "Name: Amal Gomaa Abdel-Fattah Mohammad",
+     "Current position: Dean, Faculty of Education, Fayoum University",
+     "General specialisation: Professor of Curriculum and Instruction",
+     "Specialisation: Curriculum and methods of teaching philosophy and sociology, Department of Curriculum and Instruction",
+     "Email: aga02@fayoum.edu.eg"
+    ]
+   },
+   {
+    "h": "Academic qualifications",
+    "list": [
+     "Bachelor of Arts and Education in philosophy and sociology, May 2000, very good with honours, Faculty of Education, Cairo University, Fayoum Branch.",
+     "Special Diploma in Education, curricula and teaching methods, very good, 2002, Faculty of Education, Cairo University, Fayoum Branch.",
+     "Master's in Education, curricula and methods of teaching philosophy and sociology, excellent, with a recommendation to print the thesis at the university's expense and circulate it among Egyptian universities, May 2005.",
+     "Doctorate in Education, curricula and methods of teaching philosophy and sociology, with a recommendation to print the thesis at the university's expense and circulate it among universities, April 2008, Faculty of Education, Fayoum University."
+    ]
+   },
+   {
+    "h": "Academic positions",
+    "list": [
+     "Demonstrator, Department of Curricula and Teaching Methods, Faculty of Education, Fayoum University, 9 November 2000.",
+     "Assistant lecturer, July 2005.",
+     "Lecturer, July 2008.",
+     "Assistant professor, September 2013.",
+     "Professor, January 2019."
+    ]
+   },
+   {
+    "h": "Administrative positions",
+    "ol": true,
+    "list": [
+     "Dean of the Faculty of Education, Fayoum University, from 24 August 2022 to 2025; current term began on 14 April 2026.",
+     "Supervisor of the Department of Comparative Education since August 2022.",
+     "Editor-in-Chief of the Fayoum University Journal of Educational and Psychological Sciences since August 2022.",
+     "Vice Dean for Community Service and Environmental Development, 30 May 2019 to 30 May 2022.",
+     "Acting Vice Dean for Graduate Studies and Research, 2 September to 28 November 2019.",
+     "Acting Vice Dean for Education and Student Affairs, 23 December 2020 to 22 January 2021.",
+     "Faculty coordinator for the Management Information Systems (MIS) project, 2010 to July 2019.",
+     "Director of the Alumni Monitoring Unit of the Quality Assurance Unit, 2013 to July 2019.",
+     "Deputy Executive Director of the Service-Learning and Civic Education Project for Future Leaders, a partnership between the University of Maryland, USA, and Fayoum University, 2010–2012.",
+     "Faculty coordinator for the Electronic Portal Project, 2010 to May 2013.",
+     "Advisor to the Peer Training and Student Participation Project for developing language and statistical analysis skills, 2011/2012.",
+     "Coordinator of the Anti-Violence Against Women Unit at the Faculty of Education, 2018 to July 2019.",
+     "Chairperson of the Graduate Follow-up Unit since 2022.",
+     "Chairperson of the Educational Training Centre since 2022.",
+     "Chairperson of the Crisis Management Unit since 2022.",
+     "Chairperson of the Assessment and Examination Systems Unit since 2022.",
+     "Chairperson of the Psychological Counselling Centre since 2022.",
+     "Chairperson of the Public Service Centre since 2022.",
+     "Chairperson of the Centre of Excellence for Sustainable Professional Development since 2022.",
+     "Chairperson of the board of the Fayoum University Journal of Educational and Psychological Sciences since 2022."
+    ]
+   },
+   {
+    "h": "Committees and boards",
+    "list": [
+     "Referee on the permanent scientific committees for the promotion of professors and assistant professors in curriculum and instruction.",
+     "Referee for a number of local and international scholarly journals.",
+     "Member of the committee for selecting education leaders in Fayoum Governorate.",
+     "Member of the editorial board of the Fayoum University Journal of Educational and Psychological Sciences, 2014–2022.",
+     "Board member of the Anti-Violence Against Women Unit, Fayoum University, 2022–2025.",
+     "Board member of the Language and Translation Centre, Fayoum University, 2022–2024.",
+     "Board member of the Central Printing Press and the Public Service Centre, Fayoum University, 2024/2025.",
+     "Member of the executive team of the Quality Assurance Unit, Faculty of Education, 2010–2021.",
+     "Member of the technical support and internal and external review teams of the university-wide Assessment and Examinations Development Project, 2010–2016.",
+     "Board member of the Educational Training Centre, Faculty of Education, 2009–2018."
+    ]
+   },
+   {
+    "h": "Regulations and programme development",
+    "list": [
+     "Member of the teams that prepared Fayoum University's strategic plans for 2016–2021 and 2022–2027.",
+     "Chair of the team that drafted the credit-hour postgraduate bylaws for the General Diploma and the Professional Diploma (classroom teacher), 2023–2025.",
+     "Introduced the Professional Diploma in Classroom Teacher Preparation by ministerial decree, 2023.",
+     "Prepared interdisciplinary programmes with other faculties: entrepreneurship teacher, industrial education and applied engineering, AI applications, agricultural education and biotechnology.",
+     "Introduced distinguished programmes: computer teacher, hospitality education, science and mathematics in English, Arabic for non-native speakers.",
+     "Added two bachelor's programmes in special education teacher preparation, in Arabic and in English."
+    ]
+   },
+   {
+    "h": "Presidential initiatives",
+    "list": [
+     "Decent Life (Haya Karima)",
+     "Differently Abled",
+     "100 Million Healthy Lives",
+     "Leadership Qualification for Youth",
+     "A New Beginning for Human Development"
+    ]
+   },
+   {
+    "h": "Research and applied projects",
+    "list": [
+     "Teacher Excellence Initiative, funded by USAID, 2022–2027.",
+     "Equal Opportunity Project, Fayoum University.",
+     "Assessment and Examination Systems Development Project, Fayoum University.",
+     "Service-Learning and Civic Education Project for Future Leaders, a partnership between Fayoum University and the University of Maryland.",
+     "Peer Training and Student Participation Project for developing language and statistical analysis skills.",
+     "Contemporary Utopia Project, Umm Al-Mu'mineen Secondary School for Girls.",
+     "Summer Project for Literacy and Adult Education, with the General Authority for Literacy and Adult Education.",
+     "Quality Assurance Project, Faculty of Education, Fayoum University.",
+     "Pathways to Higher Education: developing leadership skills for women."
+    ]
+   },
+   {
+    "h": "Training courses and workshops",
+    "list": [
+     "22 courses supervised, 58 delivered as a trainer and 33 attended as a trainee.",
+     "Women Lead in Egyptian Governorates, National Training Academy, February 2024.",
+     "National Security Strategy, Military Academy for Postgraduate and Strategic Studies, July 2024.",
+     "Crisis Management and Conflict Resolution, Military Academy for Postgraduate and Strategic Studies, July 2024.",
+     "Technological Development and National Security, Military Academy for Postgraduate and Strategic Studies, December 2024.",
+     "Methods of Protection Against Modern Warfare, Military Academy for Postgraduate and Strategic Studies, February 2025."
+    ]
+   },
+   {
+    "h": "Books (39)",
+    "ol": true,
+    "books": "en"
+   },
+   {
+    "h": "Published research and working papers (64)",
+    "ol": true,
+    "list": [
+     "\"Evaluating The Teaching Performance of psychology and Sociology Teachers in Light of Total Quality Standards and Indicators\", The Journal of Reading and Knowledge, The Egyptian Association for Reading and Knowledge, No. (87), Part Two, March 2009.",
+     "\"The Effectiveness of Using Bybee's Constructivist Learning Model in Manipulating Some Philosophical Misconceptions of Secondary Stage students and their Attitudes towards Philosophy\", Journal of Studies in Curricula and Teaching Methods, The Egyptian Association for Curricula and Teaching Methods, No. (156) Part Two, March 2010.",
+     "\"The Effectiveness of A Suggested Program Using Service Learning in Teaching Sociology in Developing Philosophy and Sociology Section Students' Social Responsibility and Decision Making Skills\"\", Journal of the Educational Association for Social Studies, Issue (42) May 2012.",
+     "\"The Effectiveness of A Suggested E-Syllabus in Methods of Teaching Philosophy in Faculty of Education Studnts' Achievement, Learning Retention and Attitudes Towards Using E-Learning\", The First International Conference of the Center for University Education Development, Excellence in University Performance \"Philosophy - Mechanisms - Standards\", from 10-11 February 2013.",
+     "\"The Effectiveness of a Suggested Unit in Applied Ethics in Developing Awareness of Moral Issues among Students Teachers, Department of Philosophy and Sociology,\" Journal of the Educational Association for Social Studies, Issue (50) April 2013.",
+     "\"The role of civic education in developing some social values and awareness among different age groups\", the experience of Fayoum University, the eleventh scientific conference of the Faculty of Education, Fayoum University: \"The crisis of values in educational institutions\" in the period from May 29 to 30, 2012. (Joint search)",
+     "\"The effectiveness of using the peer teaching strategy in developing basic skills in the Arabic language for non-specialized students of the College of Education and their attitudes towards the use of the strategy\", the eleventh scientific conference of the Faculty of Education, Fayoum University: \"The crisis of values in educational institutions\" in the period from May 29, to 30, 2012 (joint research)",
+     "\"The Effectiveness of Using Peer Coaching Strategy on Developing The Faculty of Education Non-Majors' English Language Basic Skills and their Attitude towards the Strategy\", the eleventh scientific conference of the Faculty of Education, Fayoum University: \"The crisis of values in institutions Educational program\"from May 29, 30 2012. (joint research)",
+     "Egyptian personality traits between positive and negative before and after the revolution of January 25, 2011 in the light of the variables of gender and chronological age. From 13-14 February 2013, Saudi Arabia, Imam Muhammad bin Saud Islamic University, College of Social Sciences - Department of Psychology (2013) (Joint research).",
+     "“The Effectiveness of a Suggested Program in Teaching Political Sociology Using Social Media networks in Developing Political Concepts and Dialogue Skills of Philosophy and Sociology Section Student Teachers and their Attitudes towards political sociology issues and using social media networks”, Journal of Arab Studies in Education and Psychology, Arab Education Association, No. (46), Part Four, February 2014.",
+     "The Effectiveness of Thinking Aloud Strategy in Teaching Philosophy to Secondary Stage Students in their Achievement, Development of Meta-Cognitive Skills, Spiritual Intelligence, and Attitudes towards the Strategy, Journal of the Educational Association for Social Studies, Issue (86) December 2016.",
+     "The Effectiveness of Using the Web Quest Strategy in Teaching Philosophy in Developing Secondary School Students’ Future Thinking Skills and Achievement Motivation, Journal of the Educational Association for Social Studies, Issue (90) May 2017.",
+     "The Effectiveness of Using Learning Stations Strategy in Teaching Sociology in Developing Reasoning Thinking and Social Tolerance of Secondary School Students, Journal of the Educational Association for Social Studies, Issue (96) December 2017.",
+     "The Effectiveness of Using the Imaginative Learning Strategy in Teaching Philosophy in Developing Wisdom Skills, Academic Achievement and Learning Retention of Secondary Stage Students, Journal of the Educational Association for Social Studies, No. (98) March 2018.",
+     "Teaching philosophy and developing reflective thinking skills and philosophical concepts among first-year secondary students, Journal of Educational and Psychological Sciences, Faculty of Education, Fayoum University, No. (7) 2017. (Joint research).",
+     "The Effectiveness of a Suggested Unit in Applied Ethics in philosophy in Developing Student Teachers' Awareness of Ethical Issues at the Philosophy and Sociology Section”, Department of Philosophy and Sociology, Journal of Educational and Psychological Sciences, Faculty of Education, Fayoum University, No. (7) 2017. (Joint research).",
+     "\"The Effectiveness of Using Consensus Building Strategy in Teaching Sociology in Achievement and the Development of Secondary Stage Students' Social Negotiation Skills\" The 14th International Scientific Conference entitled \"Development of Education in the Age of Knowledge Economy and Future Technology\" which was held from 24 of October to 26, 2017.",
+     "The Effectiveness of Combining the Generative Learning Model with Educational Scaffolding in Teaching Philosophy in Developing Philosophical Thinking Skills for High School Students, Journal of Educational and Psychological Sciences, Faculty of Education, Fayoum University, No. (8) 2017. (Joint research).",
+     "A Suggested Unit in Psychological Problems Based on a K.W.L Strategy for Developing Emotional Intelligence Skills for Educated Students in the Psychology section, Journal of Educational and Psychological Sciences, Faculty of Education, Fayoum University, No. (8) 2017. (Joint research).",
+     "\"A Proposed Program in Criminal Sociology Issues for Developing the Ability to Bear Frustration and Ambiguity and to Raise Awareness of these Issues among Student Teachers at Philosophy and Sociology Section\", Journal of the Educational Association for Social Studies, Educational Association for Social Studies, Issue (103) August 2018.",
+     "\"The Effectiveness of a Suggested Program Using Cognitive and Meta-cognitive Strategies in Teaching Social Issues on the Development of Student- Teachers at The Philosophy and Sociology Section's Awareness and Critical Thinking\" Summary of The Ph.D. Degree - Fayoum University.",
+     "“The Effectiveness of a Suggested Program in Teaching Psychological Pollution Issues for Developing Creative Skills and for Enhancing Psychological Happiness Level among Pre-Service Teachers in Psychology Major” Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (14), Issue (12) 2020.",
+     "The Effectiveness of a Suggested Program in Teaching Psychological Pollution Issues for Enhancing Psychological Immunity Level among Pre-Service Teachers in Psychology Major- Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (14), Issue (12) 2020.",
+     "“Using the Imaginative Learning Strategy in Teaching psychology to Develop Students exploratory Thinking Skills and their Attitude Towards the Strategy among Secondary School Students” Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (15), 2021.",
+     "“The Effectiveness of a Proposed Unit in Psychological Wealth in Developing Academic Perseverance among Student Teachers, Psychology Section” -Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (15), 2021.",
+     "“The Effectiveness of Using the Learning Stations Strategy in Teaching the Psychology of Happiness in Developing the Psychological Well-Being of Student Teachers, Psychology Section” Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (15), 2021.",
+     "“The Effectiveness of Using Controversial Issues Approach in Teaching Philosophy in Developing Dialogue Skills and The learning effect remains among Secondary School Students” Journal of the Educational Association for Social Studies, Educational Association for Social Studies, volume (5), 2021.",
+     "“Using the KWL meaning-building strategy in teaching folklore to develop the ability to challenge myths among first-year secondary students”, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue (1), Winter 2020. (Joint research).",
+     "“The Effectiveness of Using the Interactive Approach in Teaching Sociology on Developing Social Responsibility for High School Students, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue (1), Winter 2020. (Joint research).",
+     "“The Effectiveness of Using Service Learning in Teaching Sociology in Developing Some Logical Thinking Skills for High School Students, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue (1), Winter 2020. (Joint research).",
+     "“Using the Negotiating Approach in Teaching Sociology to Develop Communication Skills and Adapt to Social Situations for Second Year Students”, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue (1), Winter 2020. (joint research).",
+     "“The Effectiveness of a Suggested Program in Teaching Psychological Pollution Issues for Developing Creative Skills and for Enhancing Psychological Happiness Level among Pre-Service Teachers in Psychology Major”, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue 2020. (joint search).",
+     "“The Effectiveness of a Suggested Program in Teaching Psychological Pollution Issues for Enhancing Psychological Immunity Level among Pre-Service Teachers in Psychology Major”, Fayoum University Journal of Educational and Psychological Sciences, Volume 14, Issue 2020. (joint search).",
+     "“The Effectiveness of Using the Dialectical Issues Approach in Teaching Philosophy in Developing Dialogue Skills and Sustaining the Impact of Learning for High School Students”, Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 2021. (joint search).",
+     "\" The Effectiveness of a Proposed Unit in Psychological Wealth in Developing Academic Perseverance among Student Teachers, Psychology Section”, Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 2021. (joint search).",
+     "\" Using the Imaginative Learning Strategy in Teaching psychology to Develop Students exploratory Thinking Skills and their Attitude Towards the Strategy among Secondary School Students”, Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 2021. (joint search).",
+     "\" The Effectiveness of Using the Learning Stations Strategy in Teaching the Psychology of Happiness in Developing the Psychological Well-Being of Student Teachers, Psychology Section”, Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 2021. (joint search).",
+     "A working paper entitled: Teaching and distance learning strategies to keep pace with the challenges of the times, the first environmental conference for the community service and environmental development sector, Faculty of Education, Fayoum University, November 30, 2021.",
+     "A working paper entitled: Digital Culture Skills as a Prerequisite for Twenty-First Century Skills), the First Environmental Conference for the Community Service and Environmental Development Sector, Faculty of Education, Fayoum University, November 30, 2021 AD. (joint paper)",
+     "A working paper entitled: The Phenomenon of Electronic Bullying, the Pest of the Third Millennium, the First Environmental Conference for the Community Service and Environmental Development Sector, Faculty of Education, Fayoum University, November 30, 2021 (joint paper)",
+     "A working paper entitled: The level of awareness of secondary school students about the ethics of contemporary environmental issues, the first environmental conference for the community service and environmental development sector, at the Faculty of Education, Fayoum University, November 30, 2021 (joint paper)",
+     "The Level of Psychological Pollution among Students of the Faculty of Education, the First Environmental Conference for the Community Service and Environmental Development Sector, Faculty of Education, Fayoum University, November 30, 2021 (joint research)",
+     "Using Learning Stations Strategies in Teaching Philosophy to Develop Motivation for Achievement and Attitude toward Philosophical Issues among Secondary School Students,” Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 16, December 2021.",
+     "Using Learning Stations Strategies in Teaching Philosophy to Develop Achievement and Spiritual Intelligence among Secondary School Students,” Fayoum University Journal of Educational and Psychological Sciences, Volume 15, Issue 16, December 2021.",
+     "Using the ethical analysis approach in teaching philosophy to develop achievement and problem-solving skills among second-year secondary school students,” Fayoum University Journal of Educational and Psychological Sciences, October 2022.",
+     "A proposed program on issues of cyberpsychology to develop psychological prosperity and the attitude towards these issues among student teachers in the Psychology Division,” Fayoum University Journal of Educational and Psychological Sciences, Volume 17, Issue 6, April 2023.",
+     "A proposed unit on women’s sociology issues to develop academic achievement and the ability to tolerate frustration among student teachers,” Fayoum University Journal of Educational and Psychological Sciences, Volume 16, Issue 10, December 2022.",
+     "A working paper entitled “Digital drugs are the scourge of the digital age,” the First Cultural Forum for the Community Service and Environmental Development Sector, entitled The Value System in the Age of Digitalization, Fayoum University - Faculty of Education, March 20, 2022 AD.",
+     "A working paper entitled “Tolerance is a social and educational necessity and a modern and moral obligation,” the First Cultural Forum for the Community Service and Environmental Development Sector, entitled The System of Values in the Age of Digitalization, Fayoum University - Faculty of Education, March 20, 2022 AD.",
+     "A working paper entitled “Electronic blackmail is a time bomb and the scourge of the fourth generation,” the First Cultural Forum for the Community Service and Environmental Development Sector, entitled The Value System in the Age of Digitalization, Fayoum University - Faculty of Education, March 20, 2022 AD.",
+     "A working paper entitled “The role of the university in developing the values of digital citizenship”, the First Cultural Forum for the Community Service and Environmental Development Sector, entitled The Value System in the Age of Digitalization, Fayoum University - Faculty of Education, March 20, 2022 AD.",
+     "A working paper entitled “Awareness of climate changes is a modern educational and obligatory necessity,” the second environmental conference for the community service and environmental development sector at the Faculty of Education, Fayoum University, entitled “Climate changes and the education system,” a “future vision,” during the period from (12-13) December 2022 AD.",
+     "“Attitudes of Fayoum University students towards using e-learning in teaching”, the First Scientific Conference of the Department of Comparative Education entitled “The Fifth Industrial Revolution and its Repercussions on the Educational System, International Perspectives”, Faculty of Education, Fayoum University 2023 AD.",
+     "Cybersecurity Skills in the Era of the Seventh Industrial Revolution, a working paper presented at the Second Cultural Forum of the Faculty of Education, Fayoum University, entitled Cybersecurity Issues: An Educational Vision, 2024 AD.",
+     "\"The effectiveness of using the strategy of building consensus of viewpoints in teaching sociology issues to develop practical intelligence skills and academic achievement among student teachers\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
+     "\"The effectiveness of using the strategy of learning stations in teaching sociology issues to develop analytical intelligence skills and the trend towards issues among student teachers\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
+     "\"A proposed program in teaching sociology based on the meaning building strategy (k.w.l) to develop emotional regulation and responsibility among student teachers\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
+     "\"A proposed program in teaching sociology based on the Bybee model of constructive learning to modify misconceptions among student teachers\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
+     "\"A proposed program in sociology issues based on the concept maps strategy to develop the attitude towards the subject and assume responsibility among secondary school students\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint)",
+     "\"A proposed program in sociology issues of crime to develop personal efficiency and problem solving among secondary school students\", Fayoum University Journal of Educational and Psychological Sciences, Volume 18, Issue 13, September 2024 AD. (Joint).",
+     "Cybersecurity Skills in the Era of the Fourth Industrial Revolution – A working paper presented at the Second Cultural Forum of the Faculty of Education, Fayoum University, titled “Cybersecurity Issues: An Educational Vision,” 2025.",
+     "High School Students' Attitudes Towards Using E-learning Platforms in Teaching Scientific Subjects – Presented at the Second Cultural Forum of the Faculty of Education, Fayoum University, titled “Cybersecurity Issues: An Educational Vision,” 2025. (Co-authored)",
+     "The Reality of Using Virtual Labs in Teaching Science Among Students of the Faculty of Education, Fayoum University – Presented at the same forum, 2025. (Co-authored)",
+     "Cyber bullying Among Students of the Faculty of Education, Fayoum University in Light of Some Demographic Variables – Presented at the same forum, 2025. (Co-authored)"
+    ]
+   },
+   {
+    "h": "Scientific conferences attended or presented at",
+    "ol": true,
+    "list": [
+     "Attending the conference of the Educational Association for Social Studies: Faculty of Education, Ain Shams University, entitled: \"Citizenship Education and Social Studies Curricula\", which was held from 19 to 20 July 2008.",
+     "Attending the Egyptian Association for Curricula and Teaching Methodology conference: Faculty of Education, Ain Shams University, entitled: \"Curricula of Education and Cultural Identity,\" which was held from 30 to 31 July 2008.",
+     "Attending the Conference of the Faculty of Education, Fayoum University, entitled: The Ninth Scientific Conference \"Developing education in the Arab world, reality and aspirations,\" which was held from 14 to 15 October 2008.",
+     "Attending the conference of the Faculty of Education, Zagazig University, entitled: The seventh annual scientific conference \"Technological challenges and the development of the education system\", which was held from 29 to 30 April 2009.",
+     "Attending the Egyptian Association for Curricula and Teaching Methodology conference: Faculty of Education, Ain Shams University, entitled: Twenty-first scientific conference, \"Curriculum development between originality and contemporary\", which was held from 28 to 29 July 2009.",
+     "Attending the Egyptian Association for Reading and Knowledge: The Faculty of Education, Ain Shams University, entitled: \"Reading Books between Induction and Directing,\" which was held from 15 to 16 July 2009.",
+     "Attending a symposium on scientific research in the Department of Curricula and Teaching Methods, Faculty of Education, Fayoum University, 11/5/2009.",
+     "Attending the tenth annual scientific conference of the Egyptian Association for Mathematics Education: entitled \"New Trends in the Development of Mathematics Teaching\" on 3/8/2010.",
+     "Attending the Conference of the Faculty of Education, Fayoum University, entitled: The Tenth Scientific Conference, \"Educational Research in the Arab World, A Future Vision\", which was held from 20 to 21 April 2010.",
+     "Head of the media committee at the Faculty of Education, Fayoum University, entitled: The eleventh scientific conference, entitled \"The Crisis of Values in Educational Institutions\", from May 30-29, 2012.",
+     "Participating with four research papers with a group of professors at the eleventh scientific conference of the Faculty of Education, Fayoum University: \"The Crisis of Values in Educational Institutions\" from May 30 to 29, 2012.",
+     "Participating in preparing the final conference book for the service learning and civic education project to build future leaders in Egyptian society. The project is a partnership between the University of Maryland in the United States of America and Fayoum University in September 2012.",
+     "A research paper entitled: \"The Effectiveness of A Suggested E-Syllabus in Methods of Teaching Philosophy in Faculty of Education Studnts' Achievement, Learning Retention and Attitudes Towards Using E-Learning\", The First International Conference of the Center for University Education Development, Excellence in University Performance \"Philosophy - Mechanisms - Standards\", from 10-11 February 2013.",
+     "A research paper entitled: Egyptian personality traits between positive and negative before and after the revolution of January 25, 2011 in the light of the variables of gender and chronological age. From 13-14 February 2013, Saudi Arabia, Imam Muhammad bin Saud Islamic University, College of Social Sciences - Department of Psychology (2013) (Joint research).",
+     "Attending the Conference of the Faculty of Education, Fayoum University, entitled: The Twelfth Scientific Conference entitled \"Education and Building the Arab Man in the Light of Present Challenges and Future Aspirations\", which was held from 23 to 24 October 2013.",
+     "Head of the Media Committee at the Faculty of Education, Fayoum University, entitled: The Eleventh Scientific Conference, entitled \"Education and Building the Arab Person in the Light of Present Challenges and Future aspirations,\" which was held from October 23 to 24, 2013.",
+     "Attending the Egyptian Association for Curricula and Teaching Methodology, the 23rd International Scientific Conference, Faculty of Education, Ain Shams University, entitled: \"Curriculum Development, Visions and Trends\", which was held from 13 to 14 August 2014.",
+     "Attending the second international conference for the development and training in higher education at Beni Suef University, entitled \"Talent Development and Opening Horizons for the Future\" which was held on November 18, 2014.",
+     "Attending the conference of the Faculty of Education, Helwan University, entitled: The Eighteenth Annual Scientific Conference \"Education and Support for the Egyptian Personality\", which was held from 18 to 19 November 2015.",
+     "Attending the third international conference of Beni Suef University in cooperation with the Organization of the League of Arab States, entitled \"Learning Disabilities: Environment, Development and Experiences\", which was held from 20 to 21 December 2015.",
+     "Attending the first international conference for the community service sector at Fayoum University, entitled \"New trends in care for people with disabilities\" which was held from 9 to 11 November 2015.",
+     "Attending the Conference of the Faculty of Education, Fayoum University, entitled: The Thirteenth International Scientific Conference, entitled \"Violence in educational institutions, appearances, causes, and ways of confrontation\", which was held from 15 to 17 October 2016.",
+     "Attending the conference of the Educational Association for Social Studies: Faculty of Education, Ain Shams University, entitled: \"Tolerance and acceptance of the other,\" which was held from 3 to 4 October 2017.",
+     "Participating with research in the conference of the Faculty of Education, Fayoum University, entitled: The Fourteenth International Scientific Conference entitled \"Development of Education in the Age of Knowledge Economy and Future Technology\", which was held from 24 to 26 October 2017. The research title: \"The Effectiveness of Using Consensus Building Strategy in Teaching Sociology in Achievement and the Development of Secondary Stage Students' Social Negotiation Skills\".",
+     "Participating with four research papers with a group of researchers in the first environmental conference for the community service and environmental development sector of the Faculty of Education, Fayoum University, entitled “sustainable development and human building in light of the age challenges” November30/ 2021. The research papers are:.",
+     "A published research entitled “the level of Psychological Pollution for Faculty of Education students” Faculty of Education, Fayoum University, 30/11/2021 (joint research)",
+     "Scheduled: \"The First Cultural Forum for the Community Service and Environmental Development Sector: The Value System in the Digital Age,\" Faculty of Education, Fayoum University, March 20, 2022.",
+     "Participation with Four Research Papers in the First Cultural Forum for the Community Service and Environmental Development Sector: The Value System in the Digital Age, Faculty of Education, Fayoum University, March 20, 2022:.",
+     "Participation in the First International Conference of the Psychological Counseling Center for the Community Service and Environmental Development Sector at the Faculty of Education, Fayoum University: \"Contemporary Trends in the Education and Learning of Hearing-Impaired Individuals,\" June 7, 2022.",
+     "Participation in the Second Environmental Conference for the Community Service and Environmental Development Sector at the Faculty of Education, Fayoum University: \"Climate Change and the Education System: A Future Vision,\" December 12–13, 2022, with a research paper titled: \"Awareness of Climate Change: An Educational Necessity and a Contemporary Obligation.\".",
+     "Participation in the First National Conference for the Educational Studies Sector at the Supreme Council of Universities: \"Education, Community Partnership, and Teacher Preparation and Qualification in the New Republic,\" December 3–4, 2022.",
+     "Attendance Certificate: First National Conference for the Educational Studies Sector at the Supreme Council of Universities.",
+     "Conference Chairperson: The Second Environmental Conference for the Community Service and Environmental Development Sector at the Faculty of Education, Fayoum University: \"Climate Change and the Education System: A Future Vision,\" December 12–13, 2022.",
+     "Participation in the 14th International Conference: \"Education for a Green Environment and the Reality and Future of Climate Change (Risks and Solutions),\" February 4–6, 2023.",
+     "Participation in the 16th International Conference of the Academy of Pioneers of Excellence: \"Emotional and Moral Education and Citizenship Values for the Arab Student in a Virtual World,\" September 2–4, 2023.",
+     "Participation in the 16th International Conference of the Academy of Pioneers of Excellence for Education, Training, and Consulting: \"Emotional and Moral Education and Citizenship Values for the Arab Student in a Virtual World,\" October 7–9, 2023.",
+     "Participation in the 16th International Conference of the Academy of Pioneers of Excellence for Education, Training, and Consulting (PEATCHD): \"Emotional and Moral Education and Citizenship Values for the Arab Student in a Virtual World,\" October 7–8, 2023.",
+     "Participation in the 14th International Conference of the Academy of Pioneers of Excellence for Education, Training, and Consulting (PEATCHD): \"Education for a Green Environment and the Reality and Future of Climate Change (Risks and Solutions),\" February 4–6, 2023.",
+     "Participation in the 15th International Conference of the Academy of Pioneers of Excellence: \"Family Education in the Arab Society in Light of the Digital Age (Challenges and Solutions),\" June 3–5, 2023.",
+     "Participation in the 18th International Conference of the Academy of Pioneers of Excellence: \"Teaching and Caring for Children in the Age of Artificial Intelligence – Reality Perspectives, Present Challenges, and Future Hopes,\" August 24–26, 2024.",
+     "Participation in the 13th International Conference of the Academy of Pioneers of Excellence: \"Social Media Between Excess and Moderation and Its Educational and Social Implications – Reality and Aspirations,\" November 5–6, 2022 (15 training hours).",
+     "Participation in the 18th International Conference of the Academy of Pioneers of Excellence: \"Teaching and Caring for Children in the Age of Artificial Intelligence – Reality Perspectives, Present Challenges, and Future Hopes,\" August 24–26, 2024.",
+     "First Arab International Conference: \"Developing the Evaluation System for Primary-School Teachers in the Arab World: Reality and Aspirations, towards a Unified Arab Evaluation\", National Foundation for Research, Consultancy and Training, Faculty of Education, Al-Azhar University, 26–28 April 2025.",
+     "First Scientific Conference of the Department of Educational Administration and Education Policies, Faculty of Education, Fayoum University: \"Artificial Intelligence and the Development of Educational Administration in the Information Age\", May 2025."
+    ]
+   },
+   {
+    "h": "Theses and dissertations co-supervised (35)",
+    "ol": true,
+    "list": [
+     "Master: \"The Effectiveness of Using Mind Mapping Strategy in Teaching Philosophy for Secondary School Students in Understanding Philosophical Concepts and Developing Reflective Thinking\", Grant Date, 10/19/2016.",
+     "Master: The Effectiveness of Using the Generative Learning Model in Developing Philosophical Thinking Skills and the Attitude toward the Study of Philosophy among Secondary School Students, \"Date of Scholarships, October 19 /2016.",
+     "Master: The Effectiveness of a Suggested Unit in Teaching Psychological Problems in Developing Awareness of them and Emotional Intelligence Skills for Student teachers in the Psychology section. Date of Grants, 10/19/2016.",
+     "Master: The Effectiveness of a Proposed Program in Applied Ethics Philosophy Issues in the Development of Moral Thinking for Teachers' Students, Philosophy Section and Their Attitudes Towards These Issues, Date of Grant, 10/19/2016.",
+     "Master: The Effectiveness of Using Consensus Building Strategy in Teaching Psychology in Developing Successful Intelligence Skills and Future Thinking for Secondary Stage Students, Scholarship Date, 10/1/2018.",
+     "Master: Developing a system of practical education in colleges of education in Egyptian universities: a comparative study\", grant date, 13/8/2018.",
+     "Master: Designing an integrated education strategy based on the pillars of learning for developing some life skills for intellectual school students who are capable of learning, registration date, 4/13/2016.",
+     "Master: The Effectiveness of Using the Interactive Approach in Teaching Sociology in Developing Academic Achievement and Social Interaction Skills for Secondary School Students, Registration Date, 4/13/2016.",
+     "Master: The effect of using service learning in teaching sociology on developing some reflective thinking skills and societal participation values among secondary school students, registration date, 4/13/2016.",
+     "Master: A Proposed Program in Sociology Based on Some National Security Issues for the Development of Collective Thinking and Social Responsibility among College of Education Students, Registration Date, 10/19/2016.",
+     "Master: The Effectiveness of Using the Controversial Issues Approach in Teaching Philosophy in Academic Achievement and Development of Negotiation Skills for Secondary School Students. Registration date 4/19/2017.",
+     "Master: A Typical Impact (Rotation on Learning Stations / Inverted Classroom) in an Integrated Learning Environment on the Development of Some Skills of Information Technology Systems for College of Tourism and Hotels Students. Registration date 4/19/2017.",
+     "PhD: A Proposed Program Using Learning Stations Strategies for Developing Awareness of Philosophical Issues and Wisdom Skills for Secondary School Students. Registration Date 3/14/2018.",
+     "Master: A proposed unit in popular folklore for developing the ability to challenge myths and the attitude towards studying sociology for secondary school students. registration date 4/11/2018.",
+     "Master: Using the negotiating approach in teaching sociology for developing decision-making skills and social intelligence for secondary school students, registration date 11/4/2018.",
+     "Master: A Proposed Program in Moral Philosophy for Conceptual Development and Moral Decision-Making for Secondary School Students, Registration Date 11/4/2018.",
+     "Master: The effectiveness of the strategy of cognitive acceleration in teaching sociology in developing mind habits and maintaining the impact of learning among secondary school students. Registration date 4/11/2018.",
+     "Master: Using the learning model based on dual situations in teaching sociology for modifying wrong perceptions of social concepts and developing self-efficacy for secondary school students. Registration date 4/11/2018.",
+     "Master: Effectiveness of a proposed unit on issues of philosophy of values in developing awareness of these issues and positive thinking for secondary school students. registration date 4/4/2019.",
+     "Master: Using imaginative learning strategy in teaching psychology for developing visual thinking and achievement among secondary stage students, registration date 4/4/2019.",
+     "Master: \"Using the Hexagonal Dimensions Strategy in Teaching Sociology to Develop Analytical Thinking Among Secondary School Students,\" Registered: April 2019.",
+     "Master: \"A Proposed Program for Teaching Women’s Sociology Issues to Develop Psychological Resilience and Awareness Among Pre-Service Teachers,\" Awarded: 2020.",
+     "Master: \"A Proposed Program in Cyber Psychology Issues to Develop Awareness of Contemporary Technological Ethics and Psychological Well-being Among Pre-Service Psychology Teachers,\" 2022.",
+     "PhD: \"A Proposed Program in Environmental Sociology Issues to Develop Awareness of Environmental Ethics and Cultural Intelligence Among Secondary School Students,\" 2024.",
+     "PhD: \"A Proposed Program in Medical Sociology Issues to Modify Misconceptions About Health and Illness and Develop Positive Thinking Skills Among Pre-Service Teachers,\" 2024.",
+     "PhD: \"A Proposed Program in Criminology to Develop Social Awareness and Psychological Resilience Among Secondary School Students,\" 2024.",
+     "PhD: \"A Proposed Program in Family Sociology to Develop Awareness of Family Issues and Successful Intelligence Skills Among Pre-Service Teachers,\" 2024.",
+     "PhD: \"A Proposed Program in Automated Sociology to Develop Digital Intelligence Skills and Evaluative Thinking Among Pre-Service Teachers,\" 2024.",
+     "PhD: \"A Proposed Program in Medical Philosophy to Develop Awareness of These Issues and Ethical Responsibility Among Pre-Service Teachers,\" 2024.",
+     "PhD: \"The Effectiveness of the Intelligent Agent Pattern and Academic Perseverance in Developing Cybersecurity Risk Management Skills and Mental Vigilance Among Elementary School Students,\" 2024.",
+     "Master: \"Using Mobile Learning in Teaching Sociology and Its Impact on Developing Social Concepts and Achievement Motivation Among Secondary School Students,\" 2024.",
+     "PhD: \"A Proposed Program in Media Psychology Issues to Develop the Ability to Challenge Misinformation and Cognitive Agility Among Pre-Service Teachers,\" 2024.",
+     "PhD: \"The Effect of a Competitive Model in a Digitally Motivated Environment Based on Emotions on Developing E-Life Skills and Academic Resilience Among Elementary School Students,\" 2024.",
+     "PhD: \"A Proposed Program in Family Psychology Issues to Develop Concepts and Psychological Flexibility Among Pre-Service Psychology Teachers,\" 2024.",
+     "PhD: \"A Proposed Program in Youth Sociology Issues to Develop Cognitive Balance and Psychological Enrichment Among Pre-Service Teachers,\" 2024."
+    ]
+   },
+   {
+    "h": "Honours",
+    "list": [
+     "Fayoum University Award for Excellence in Community Service and Environmental Development, 2025.",
+     "Fayoum University Incentive Award for Scholarly Authorship (humanities), 2025.",
+     "72 certificates of appreciation and shields from the faculty, the university, the governorate and students."
+    ]
+   },
+   {
+    "h": "Courses taught",
+    "list": [
+     "Undergraduate: methods of teaching philosophy, sociology and psychology; micro-teaching; educational technology; philosophical and scientific thinking.",
+     "General, professional and special diplomas: teaching methods, research methods, teaching practice, curricula for people with special needs, new trends in teaching methods.",
+     "Pre-master's and pre-doctoral: research methods, new trends in educational research and teaching, problems of teaching philosophical subjects.",
+     "An e-course she authored and produced: methods of teaching philosophical subjects, E-Learning Centre, Fayoum University."
+    ]
+   },
+   {
+    "h": "Scholarly societies",
+    "list": [
+     "Egyptian Association for Philosophical and Psychological Studies.",
+     "Modern Education Association.",
+     "Egyptian Association for Social Studies.",
+     "Egyptian Association for Curriculum and Teaching Methods.",
+     "Arab association of the Association of Arab Universities."
+    ]
+   }
+  ]
+ },
+ "books": [
+  [
+   "التعلم التعاوني والمهارات الاجتماعية",
+   "Cooperative Learning and Social Skills",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2010,
+   0
+  ],
+  [
+   "القضايا الاجتماعية في القرن الحادي والعشرين",
+   "Social Issues in the Twenty-first Century",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2010,
+   0
+  ],
+  [
+   "استراتيجيات التدريس والتعلم: نماذج وتطبيقات",
+   "Teaching and Learning Strategies: Models and Applications",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2010,
+   0
+  ],
+  [
+   "القضايا الأخلاقية في الألفية الثالثة",
+   "Ethical Issues in the Third Millennium",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2015,
+   0
+  ],
+  [
+   "مهارات التفكير: رؤية تربوية معاصرة",
+   "Thinking Skills: A Contemporary Educational Vision",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2015,
+   0
+  ],
+  [
+   "القضايا والمشكلات الاجتماعية المعاصرة",
+   "Contemporary Social Issues and Problems",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2015,
+   0
+  ],
+  [
+   "التربية المدنية واستراتيجيات تنميتها: قضايا وتطبيقات",
+   "Civic Education and its Development Strategies: Issues and Applications",
+   "دار الفكر العربي، القاهرة",
+   "Arab Thought House, Cairo",
+   2013,
+   1
+  ],
+  [
+   "علم النفس الاجتماعي: قراءة تحليلية لقضاياه المعاصرة",
+   "Analytical Readings in Social Psychology and its Contemporary Issues",
+   "دار الزهراء للنشر والتوزيع",
+   "Dar Al-Zahraa",
+   2014,
+   1
+  ],
+  [
+   "الذكاءات المتعددة واستراتيجيات تنميتها",
+   "Multiple Intelligences and their Development Strategies",
+   "دار الزهراء للنشر والتوزيع",
+   "Dar Al-Zahraa",
+   2014,
+   1
+  ],
+  [
+   "مدخل إلى صعوبات التعلم",
+   "Introduction to Learning Difficulties",
+   "دار الرشد، الرياض",
+   "Al-Rushd, Riyadh",
+   2014,
+   1
+  ],
+  [
+   "استراتيجيات التدريس والتعلم لذوي صعوبات التعلم، الجزء الأول",
+   "Teaching and Learning Strategies for People with Learning Disabilities, Part One",
+   "دار الرشد، الرياض",
+   "Al-Rushd, Riyadh",
+   2014,
+   1
+  ],
+  [
+   "استراتيجيات التدريس والتعلم لذوي صعوبات التعلم، الجزء الثاني",
+   "Teaching and Learning Strategies for People with Learning Disabilities, Part Two",
+   "دار الرشد، الرياض",
+   "Al-Rushd, Riyadh",
+   2014,
+   1
+  ],
+  [
+   "مناهج ذوي الاحتياجات الخاصة: رؤية تربوية معاصرة",
+   "Curricula for People with Special Needs: A Contemporary Educational Vision",
+   "دار الرشد، الرياض",
+   "Al-Rushd, Riyadh",
+   2014,
+   1
+  ],
+  [
+   "أساليب تقييم ذوي الاحتياجات الخاصة في ضوء الجودة الشاملة",
+   "Methods for Evaluating People with Special Needs in Light of Total Quality",
+   "دار الرشد، الرياض",
+   "Al-Rushd, Riyadh",
+   2014,
+   1
+  ],
+  [
+   "الاتجاهات الحديثة في استراتيجيات التدريس والتعلم للموهوبين والمتفوقين",
+   "New Trends in Teaching and Learning Strategies for the Gifted and Talented",
+   "دار المتنبي، الدمام",
+   "Dar Al-Mutanabi, Dammam",
+   2015,
+   1
+  ],
+  [
+   "مهارات القيادة في الألفية الثالثة",
+   "Leadership Skills in the Third Millennium",
+   "دار المتنبي، الدمام",
+   "Dar Al-Mutanabi, Dammam",
+   2015,
+   1
+  ],
+  [
+   "الصحة النفسية لذوي الاحتياجات الخاصة",
+   "Mental Hygiene for People with Special Needs",
+   "دار المتنبي، الدمام",
+   "Dar Al-Mutanabi, Dammam",
+   2015,
+   1
+  ],
+  [
+   "برامج التوجيه والإرشاد النفسي: النظرية والتطبيق",
+   "Psychological Guidance and Counselling Programmes: Theory and Practice",
+   "دار المتنبي، الدمام",
+   "Dar Al-Mutanabi, Dammam",
+   2015,
+   1
+  ],
+  [
+   "علم نفس النمو لذوي الاحتياجات الخاصة",
+   "Developmental Psychology for People with Special Needs",
+   "دار المتنبي، الدمام",
+   "Dar Al-Mutanabi, Dammam",
+   2015,
+   1
+  ],
+  [
+   "استراتيجيات التدريس والتعلم لعلم النفس",
+   "Teaching and Learning Strategies for Psychology",
+   "دار الزهراء للنشر والتوزيع",
+   "Dar Al-Zahraa",
+   2016,
+   1
+  ],
+  [
+   "استراتيجيات التدريس والتعلم لذوي الإعاقة الفكرية",
+   "Teaching and Learning Strategies for People with Intellectual Disabilities",
+   "دار الزهراء للنشر والتوزيع",
+   "Dar Al-Zahraa",
+   2016,
+   1
+  ],
+  [
+   "البرامج الانتقالية لذوي الاحتياجات الخاصة: رؤية مستقبلية",
+   "Transitional Programmes for People with Special Needs: A Future Vision",
+   "دار الزهراء للنشر والتوزيع",
+   "Dar Al-Zahraa",
+   2017,
+   1
+  ],
+  [
+   "البرامج التربوية لذوي الاحتياجات الخاصة: مفاهيم وتطبيقات",
+   "Educational Programmes for People with Special Needs: Concepts and Applications",
+   "دار الزهراء للنشر والتوزيع",
+   "Dar Al-Zahraa",
+   2017,
+   1
+  ],
+  [
+   "التدريب الميداني في مجالات علم النفس: بين النظرية والتطبيق",
+   "Teaching Practicum in the Fields of Psychology: Between Theory and Practice",
+   "دار الزهراء للنشر والتوزيع",
+   "Dar Al-Zahraa",
+   2017,
+   1
+  ],
+  [
+   "التفكير الفلسفي والعلمي: رؤية تربوية",
+   "Philosophical and Scientific Thinking: An Educational Vision",
+   "دار البيان، الفيوم",
+   "Dar Al-Bayan, Fayoum",
+   2017,
+   0
+  ],
+  [
+   "الاتجاهات الحديثة في طرق واستراتيجيات التدريس والتعلم لذوي الاحتياجات الخاصة",
+   "New Trends in Teaching Methods and Learning Strategies for People with Special Needs",
+   "دار ميرنا، القاهرة",
+   "Dar Merna, Cairo",
+   2019,
+   0
+  ],
+  [
+   "مهارات الممارسة الاجتماعية",
+   "Social Practice Skills",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2019,
+   0
+  ],
+  [
+   "علم الاجتماع البيئي",
+   "Environmental Sociology",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2019,
+   0
+  ],
+  [
+   "أخلاقيات علم الاجتماع التطبيقي",
+   "Ethics of Applied Sociology",
+   "دار الكتاب الجامعي، العين",
+   "University Book House, Al-Ain",
+   2019,
+   0
+  ],
+  [
+   "استراتيجيات التدريس والتعلم الممتع",
+   "Enjoyable Learning Strategies",
+   "الناشرون المتحدون، الإمارات",
+   "United Publishers, UAE",
+   2022,
+   0
+  ],
+  [
+   "ثنائية الألفية الثالثة: التفكير الناقد والوعي الاجتماعي",
+   "The Third Millennium Duality: Critical Thinking and Social Awareness",
+   "الناشرون المتحدون، الإمارات",
+   "United Publishers, UAE",
+   2022,
+   0
+  ],
+  [
+   "التلوث النفسي: آفة الألفية الثالثة",
+   "Psychological Pollution: The Scourge of the Third Millennium",
+   "الناشرون المتحدون، الإمارات",
+   "United Publishers, UAE",
+   2022,
+   0
+  ],
+  [
+   "المشكلات النفسية في مرحلة المراهقة",
+   "Psychological Problems in Adolescence",
+   "الناشرون المتحدون، الإمارات",
+   "United Publishers, UAE",
+   2022,
+   0
+  ],
+  [
+   "علم النفس الإيجابي: السعادة، رؤية تربوية معاصرة",
+   "Positive Psychology: Psychological Happiness, A Contemporary Educational Vision",
+   "الناشرون المتحدون، الإمارات",
+   "United Publishers, UAE",
+   2023,
+   0
+  ],
+  [
+   "استراتيجيات التدريس والتعلم في عصر الرقمنة: نماذج وتطبيقات",
+   "Teaching and Learning Strategies in the Era of Digitisation: Models and Applications",
+   "الناشرون المتحدون، الإمارات",
+   "United Publishers, UAE",
+   2023,
+   0
+  ],
+  [
+   "مهارات القراءة واستراتيجيات تنميتها",
+   "Reading Skills and Strategies for Developing Them",
+   "الناشرون المتحدون، الإمارات",
+   "United Publishers, UAE",
+   2023,
+   0
+  ],
+  [
+   "الجرائم الإلكترونية",
+   "Cybercrimes",
+   "مكتبة الأنجلو المصرية، القاهرة",
+   "Anglo-Egyptian Library, Cairo",
+   2024,
+   0
+  ],
+  [
+   "استراتيجيات علاج قضايا الأمن السيبراني",
+   "Strategies for Addressing Cybersecurity Issues",
+   "المركز الأكاديمي العربي، القاهرة",
+   "Arab Academic Center, Cairo",
+   2025,
+   0
+  ],
+  [
+   "مهارات عصر الرقمنة",
+   "Skills of the Digital Age",
+   "المركز الأكاديمي العربي، القاهرة",
+   "Arab Academic Center, Cairo",
+   2025,
+   0
+  ]
+ ],
+ "covers": [
+  "b01.jpg",
+  "b02.jpg",
+  "b03.jpg",
+  "b04.jpg",
+  "b05.jpg",
+  "b06.jpg",
+  "b07.jpg",
+  "b08.jpg",
+  "b09.jpg",
+  "b10.jpg",
+  "b11.jpg",
+  "b12.jpg",
+  "b13.jpg",
+  "b14.jpg",
+  "b15.jpg",
+  "b16.jpg",
+  "b17.jpg",
+  "b18.jpg",
+  "b19.jpg",
+  "b20.jpg",
+  "b21.jpg",
+  "b22.jpg",
+  "b23.jpg",
+  "b24.jpg",
+  "b25.jpg",
+  "b26.jpg",
+  "b27.jpg",
+  "b28.jpg",
+  "b29.jpg",
+  "b30.jpg",
+  "b31.jpg",
+  "b32.jpg",
+  "b33.jpg"
+ ]
+}/*END*/;
