@@ -9,6 +9,16 @@
    "iv": "L7Oxt1jGhuIzbFZ0",
    "ct": "YeWKElUyN0L5QhMNsiYZjlrVrxT/nxx1B+o403ykONra2ZUWt2hfaXL0TlaCCPK96IlYCrpjDzd5Ag5HLnYZ3beiHnGoYsLPE09n/+tgwec4uhIDchFodZIl4jrfUUunIMrJ1kNXeeZZTNy9UQ==",
    "iter": 310000
+  },
+  {
+   "u": "dramalgomaa",
+   "role": "editor",
+   "created": "2026-11-16T12:36:15.852Z",
+   "by": "mohammedrefaat",
+   "salt": "/dhmXca/thzhPeE8UAPujg==",
+   "iv": "PllFgVquzMiLokkf",
+   "ct": "bahL+/19/70ueSro2ngl1I2wOj8LVgILh6aE/3ygjJBJTrVPju0IlAFr9fqnBPOvk1cVrF+bQioH11T7XoD1MM90P3AGPf4vdcAwpHvn2pDBFlXg+Vl0KMAV8dvvxR0S9e8/md46kqwWM+NyWw==",
+   "iter": 310000
   }
  ]
 }
